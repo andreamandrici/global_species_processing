@@ -95,9 +95,23 @@ IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_gdb INTO import_tables;
 
 ## Pre-Processing
 
-Each foreign table is converted to real table (geometric or non-geometric) with following parameters (where they apply):
+### converting from foreign to real tables 
 
-`WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
+Each foreign table is converted to real table (geometric or non-geometric).
+Geometric tables include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season** (above corresponds to sql `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`).
 
-which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
+An ad-hoc schema is created:
+
+```
+-- SCHEMA
+DROP SCHEMA IF EXISTS species_202001 CASCADE; CREATE SCHEMA species_202001;
+```
+
+#### birds
+```
+SELECT * INTO species_2021.birds_all_species
+FROM import_tables.all_species WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
+--SELECT 14963
+--Query returned successfully in 15 min 6 secs.
+```
 
