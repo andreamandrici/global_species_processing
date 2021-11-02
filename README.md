@@ -29,7 +29,20 @@ Received on 20201217.
 
 Spatial and non-spatial data are made available as foreign tables pointing at external files (shp, gdb, csv, xlsx) files in different schemas. Actions needed are:
 
-### General configuration
+### data preparation
+All data sources are extracted in `/data/swap/inputdata/` subfolders according to the format:
+
+`/data/swap/inputdata/shp/` accepts many \*.shp (and ancillary files \*.shx, \*.dbf, etc...)
+
+`/data/swap/inputdata/csv/` accepts many \*.csv
+
+`/data/swap/inputdata/gdb/inputgdb.gdb` accepts a single folder named exactly inputgdb.gdb
+
+`/data/swap/inputdata/gpkg/inputgpkg.gpkg` accepts a single file named exactly inputgpkg.gpkg
+
+`/data/swap/inputdata/xlsx/inputxlsx.xlsx` accepts a single file named exactly inputxlsx.xlsx
+
+### foreign data wrapper
 ```
 ------------------------------------------
 -- AS SUPERUSER
@@ -68,11 +81,7 @@ ALTER SERVER ogr_fdw_xlsx OWNER TO h05ibex;
 CREATE SERVER ogr_fdw_gdb FOREIGN DATA WRAPPER ogr_fdw
 OPTIONS (datasource '/data/swap/inputdata/gdb/inputgdb.gdb', format 'OpenFileGDB');
 ALTER SERVER ogr_fdw_gdb OWNER TO h05ibex;
-```
-At this point, all sources data are extracted in `/data/swap/inputdata/` subfolders according to the format:
 
-
-```
 ------------------------------------------------
 -- AS USER
 ------------------------------------------------
