@@ -143,6 +143,10 @@ ORDER BY id_no,fid
 ORDER BY id_no,fid;
 --SELECT 842
 --Query returned successfully in 1 min 46 secs.
+-----------------------------------------------
+-- CLEANUP
+------------------------------------------------
+DROP FOREIGN TABLE import_tables.reef_forming_corals_part1,import_tables.reef_forming_corals_part2,import_tables.reef_forming_corals_part3;
 ```
 
 ##### sharks, rays, chimaeras
@@ -153,6 +157,10 @@ WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
 --SELECT 1194
 --Query returned successfully in 47 secs 192 msec.
+-----------------------------------------------
+-- CLEANUP
+------------------------------------------------
+DROP FOREIGN TABLE import_tables.sharks_rays_chimaeras;
 ```
 
 ##### amphibians
@@ -161,6 +169,10 @@ SELECT * INTO import_tables.spatial_amphibians
 FROM import_tables.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
 --SELECT 7823
 --Query returned successfully in 32 secs 52 msec.
+-----------------------------------------------
+-- CLEANUP
+------------------------------------------------
+DROP FOREIGN TABLE import_tables.amphibians;
 ```
 
 ##### mammals
@@ -171,6 +183,10 @@ WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
 --SELECT 11867
 --Query returned successfully in 1 min 3 secs.
+-----------------------------------------------
+-- CLEANUP
+------------------------------------------------
+DROP FOREIGN TABLE import_tables.mammals;
 ```
 
 ##### birds
@@ -180,6 +196,10 @@ FROM import_tables.all_species
 WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
 --SELECT 14963
 --Query returned successfully in 15 min 1 secs.
+-----------------------------------------------
+-- CLEANUP
+------------------------------------------------
+DROP FOREIGN TABLE import_tables.all_species;
 ```
 
 ### non-spatial data
@@ -305,11 +325,11 @@ SELECT * FROM import_tables_2.usetrade
 --SELECT 12977
 --Query returned successfully in 179 msec.
 ---- NON-PASSERIFORMES ONLY
-DROP TABLE IF EXISTS import_tables.fao;
+DROP TABLE IF EXISTS import_tables.non_spatial_fao;
 SELECT * INTO import_tables.fao FROM import_tables_1.fao;
 --SELECT 7755
 --Query returned successfully in 126 msec.
-DROP TABLE IF EXISTS import_tables.lme;
+DROP TABLE IF EXISTS import_tables.non_spatial_lme;
 SELECT * INTO import_tables.lme FROM import_tables_1.lme;
 --SELECT 9316
 --Query returned successfully in 153 msec.
