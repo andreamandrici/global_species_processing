@@ -150,6 +150,6 @@ SELECT * INTO import_tables.spatial_birds
 FROM import_tables.all_species
 WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
 --SELECT 14963
---Query returned successfully in 15 min 6 secs.
+--Query returned successfully in 15 min 1 secs.
 ```
 
