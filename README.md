@@ -313,3 +313,8 @@ DROP TABLE IF EXISTS import_tables.lme;
 SELECT * INTO import_tables.lme FROM import_tables_1.lme;
 --SELECT 9316
 --Query returned successfully in 153 msec.
+DROP SCHEMA IF EXISTS import_tables_1 CASCADE;
+DROP SCHEMA IF EXISTS import_tables_2 CASCADE;
+```
+
+
