@@ -304,3 +304,12 @@ SELECT * FROM import_tables_2.usetrade
 ) a;
 --SELECT 12977
 --Query returned successfully in 179 msec.
+---- NON-PASSERIFORMES ONLY
+DROP TABLE IF EXISTS import_tables.fao;
+SELECT * INTO import_tables.fao FROM import_tables_1.fao;
+--SELECT 7755
+--Query returned successfully in 126 msec.
+DROP TABLE IF EXISTS import_tables.lme;
+SELECT * INTO import_tables.lme FROM import_tables_1.lme;
+--SELECT 9316
+--Query returned successfully in 153 msec.
