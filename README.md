@@ -106,6 +106,13 @@ An ad-hoc schema is created:
 -- SCHEMA
 DROP SCHEMA IF EXISTS species_202001 CASCADE; CREATE SCHEMA species_202001;
 ```
+#### corals
+
+#### sharks, rays, chimaeras
+
+#### amphibians
+
+#### mammals
 
 #### birds
 ```
