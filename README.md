@@ -28,11 +28,9 @@ Received on 20201217.
 ## Pre-Processing
 
 Spatial and non-spatial data are available as foreign tables pointing at external files (shp, gdb, csv, xlsx) files in different schemas.
-Each foreign table is converted to real table (geometric or non-geometric) inside the schema **species_2021** using [this sql script](./species_2020_preprocessing.sql), with following parameters (where they apply):
+Each foreign table is converted to real table (geometric or non-geometric) with following parameters (where they apply):
 
 `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`
 
 which will include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season**.
 
-## BIRDLIFE tables
-Spatial and non-spatial data for **birds** are available as foreign tables pointing at gdb file in schema **species_birdlife_201903**, and they contain the fields (relevants in **bold**):
