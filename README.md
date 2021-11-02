@@ -100,24 +100,55 @@ IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_gdb INTO import_tables;
 Each foreign table is converted to real table (geometric or non-geometric).
 Geometric tables include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season** (above corresponds to sql `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`).
 
-An ad-hoc schema is created:
-
-```
--- SCHEMA
-DROP SCHEMA IF EXISTS species_202001 CASCADE; CREATE SCHEMA species_202001;
-```
 #### corals
+```
+-- split sources are merged
+SELECT * INTO import_tables.spatial_corals FROM
+(SELECT * FROM import_tables.reef_forming_corals_part1 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ UNION
+ SELECT * FROM import_tables.reef_forming_corals_part2 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ UNION
+ SELECT * FROM import_tables.reef_forming_corals_part3 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ORDER BY id_no,fid
+) a
+ORDER BY id_no,fid;
+--SELECT 842
+--Query returned successfully in 1 min 46 secs.
+```
 
 #### sharks, rays, chimaeras
+```
+SELECT * INTO import_tables.spatial_sharks_rays_chimaeras
+FROM import_tables.sharks_rays_chimaeras
+WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ORDER BY id_no,fid;
+--SELECT 1194
+--Query returned successfully in 47 secs 192 msec.
+```
 
 #### amphibians
+```
+SELECT * INTO import_tables.spatial_amphibians
+FROM import_tables.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
+--SELECT 7823
+--Query returned successfully in 32 secs 52 msec.
+```
 
 #### mammals
+```
+SELECT * INTO import_tables.spatial_mammals
+FROM import_tables.mammals
+WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ORDER BY id_no,fid;
+--SELECT 11867
+--Query returned successfully in 1 min 3 secs.
+```
 
 #### birds
 ```
-SELECT * INTO species_2021.birds_all_species
-FROM import_tables.all_species WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
+SELECT * INTO import_tables.spatial_birds
+FROM import_tables.all_species
+WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
 --SELECT 14963
 --Query returned successfully in 15 min 6 secs.
 ```
