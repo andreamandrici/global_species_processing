@@ -68,7 +68,11 @@ ALTER SERVER ogr_fdw_xlsx OWNER TO h05ibex;
 CREATE SERVER ogr_fdw_gdb FOREIGN DATA WRAPPER ogr_fdw
 OPTIONS (datasource '/data/swap/inputdata/gdb/inputgdb.gdb', format 'OpenFileGDB');
 ALTER SERVER ogr_fdw_gdb OWNER TO h05ibex;
+```
+At this point, all sources data are extracted in `/data/swap/inputdata/` subfolders according to the format:
 
+
+```
 ------------------------------------------------
 -- AS USER
 ------------------------------------------------
