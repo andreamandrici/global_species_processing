@@ -1,1 +1,2 @@
-# global_species_processing
+# GLOBAL SPECIES PROCESSING
+## Complete workflow for species import.
