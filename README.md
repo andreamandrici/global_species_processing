@@ -1,5 +1,5 @@
 # GLOBAL SPECIES PROCESSING
-# Complete workflow for species import.
+# Complete workflow for species import, pre- and post-processing.
 
 ## Sources
 
