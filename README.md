@@ -29,315 +29,277 @@ Received on 20201217.
 
 Spatial and non-spatial data are made available as foreign tables pointing at external files (shp, gdb, csv, xlsx) files in different schemas. Actions needed are:
 
-### data preparation
+---
 All data sources are extracted in `/data/swap/inputdata/` subfolders according to the format:
 
 `/data/swap/inputdata/shp/` accepts many \*.shp (and ancillary files \*.shx, \*.dbf, etc...)
 
 `/data/swap/inputdata/csv/` accepts many \*.csv
 
-`/data/swap/inputdata/gdb/inputgdb.gdb` accepts a single folder named exactly inputgdb.gdb
+`/data/swap/inputdata/gdb/input.gdb` accepts a single folder named exactly _input.gdb_.
 
-`/data/swap/inputdata/gpkg/inputgpkg.gpkg` accepts a single file named exactly inputgpkg.gpkg
+`/data/swap/inputdata/gpkg/input.gpkg` accepts a single file named exactly _input.gpkg_.
 
-`/data/swap/inputdata/xlsx/inputxlsx.xlsx` accepts a single file named exactly inputxlsx.xlsx
+`/data/swap/inputdata/xlsx/input.xlsx` accepts a single file named exactly _input.xlsx_.
 
 ### foreign data wrapper
-```
-------------------------------------------
--- AS SUPERUSER
-------------------------------------------
--- DB is called Wallace, user is called h05ibex
-CREATE EXTENSION ogr_fdw;
-GRANT ALL PRIVILEGES ON FOREIGN DATA WRAPPER ogr_fdw TO h05ibex;
-ALTER DATABASE wallace SET postgis.enable_outdb_rasters = true;
-ALTER DATABASE wallace SET postgis.gdal_enabled_drivers TO 'ENABLE_ALL';
-SELECT pg_reload_conf();
-
-DROP SERVER IF EXISTS ogr_fdw_shp CASCADE;
---DROP SERVER IF EXISTS ogr_fdw_csv CASCADE; -- more on this later
-DROP SERVER IF EXISTS ogr_fdw_gpkg CASCADE;
-DROP SERVER IF EXISTS ogr_fdw_xlsx CASCADE;
-DROP SERVER IF EXISTS ogr_fdw_gdb CASCADE;
-
---open "path": the following accept a folder as input
-CREATE SERVER ogr_fdw_shp FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/shp/', format 'ESRI Shapefile');
-ALTER SERVER ogr_fdw_shp OWNER TO h05ibex;
-
---more on this later
---CREATE SERVER ogr_fdw_csv FOREIGN DATA WRAPPER ogr_fdw
---OPTIONS (datasource '/data/swap/inputdata/csv/', format 'CSV');
---ALTER SERVER ogr_fdw_csv OWNER TO h05ibex;
-
---closed "path": the following accept a file as input
-CREATE SERVER ogr_fdw_gpkg FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/gpkg/inputgpkg.gpkg', format 'GPKG');
-ALTER SERVER ogr_fdw_gpkg OWNER TO h05ibex;
-
-CREATE SERVER ogr_fdw_xlsx FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/xlsx/inputxlsx.xlsx', format 'XLSX');
-ALTER SERVER ogr_fdw_xlsx OWNER TO h05ibex;
-
-CREATE SERVER ogr_fdw_gdb FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/gdb/inputgdb.gdb', format 'OpenFileGDB');
-ALTER SERVER ogr_fdw_gdb OWNER TO h05ibex;
-
-------------------------------------------------
--- AS USER
-------------------------------------------------
-DROP SCHEMA IF EXISTS import_tables CASCADE; CREATE SCHEMA import_tables;
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_shp INTO import_tables;
---IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_csv INTO import_tables; -- more on this later
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_gpkg INTO import_tables;
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_xlsx INTO import_tables;
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_gdb INTO import_tables;
-```
-
-#### special case for IUCN non-spatial data.
-Download of non spatial data for birds from [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search) is affected by an annoying limit of 10K objects, which is bypassed by dividing the search query for _non passeriformes_ and _passeriformes_. This implies the duplication of homonymous tables, which must undergo an append before becoming useful. For this reason, import of non-spatial csv from IUCN receive the following different treatment:
-```
-------------------------------------------
--- AS SUPERUSER
-------------------------------------------
-DROP SERVER IF EXISTS ogr_fdw_csv1 CASCADE;
-DROP SERVER IF EXISTS ogr_fdw_csv2 CASCADE;
-DROP SCHEMA IF EXISTS import_tables_1 CASCADE;
-DROP SCHEMA IF EXISTS import_tables_2 CASCADE;
-CREATE SCHEMA import_tables_1;
-CREATE SCHEMA import_tables_2;
-
-CREATE SERVER ogr_fdw_csv1 FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/csv/non_passeriformes', format 'CSV');
-ALTER SERVER ogr_fdw_csv1 OWNER TO h05ibex;
-
-CREATE SERVER ogr_fdw_csv2 FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/csv/passeriformes', format 'CSV');
-ALTER SERVER ogr_fdw_csv2 OWNER TO h05ibex;
-------------------------------------------------
--- AS USER
-------------------------------------------------
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_csv1 INTO import_tables_1;
-IMPORT FOREIGN SCHEMA ogr_all FROM SERVER ogr_fdw_csv2 INTO import_tables_2;
-```
-
-## Pre-Processing
-
-### converting from foreign to real tables 
-
+Foreign data servers are created in bulk; foreign data tables are imported in bulk in specific, temporary schemes.
 Each foreign table is converted to real table (geometric or non-geometric).
+
 Geometric tables include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season** (above corresponds to sql `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`).
 
-#### spatial data
-##### corals
+Download of non spatial data for birds from [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search) is affected by an annoying limit of 10K objects, which is bypassed by dividing the search query for _non passeriformes_ and _passeriformes_. This implies the duplication of homonymous tables, which must undergo an append before becoming useful, which is done going through the creation of two temporary schemes.
+
+At the end of the import all foreign objects and temporary schemes are dropped.
+
 ```
+--------------------------------------------------------------
+-- CREATE INPUT TARGET SCHEMA
+--------------------------------------------------------------
+DROP SCHEMA IF EXISTS import_tables CASCADE;
+CREATE SCHEMA import_tables;
+
+--------------------------------------------------------------
+-- IMPORT IUCN SPATIAL
+--------------------------------------------------------------
+-- CREATE FDW SERVER
+---------------------------------------------------------------
+DROP SERVER IF EXISTS fdw_iucn_spatial CASCADE;
+CREATE SERVER fdw_iucn_spatial
+FOREIGN DATA WRAPPER ogr_fdw
+OPTIONS (datasource '/data/swap/inputdata/iucn/spatial/', format 'ESRI Shapefile');
+--------------------------------------------------------------
+-- CREATE FDW SCHEMA AND TABLES (temporary)
+---------------------------------------------------------------
+DROP SCHEMA IF EXISTS iucn_spatial CASCADE;CREATE SCHEMA iucn_spatial;
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_spatial INTO iucn_spatial;
+--------------------------------------------------------------
+-- IMPORT CORALS
+--------------------------------------------------------------
 -- split sources are merged
+DROP TABLE IF EXISTS import_tables.spatial_corals;
 SELECT * INTO import_tables.spatial_corals FROM
-(SELECT * FROM import_tables.reef_forming_corals_part1 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+(SELECT * FROM iucn_spatial.reef_forming_corals_part1 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
  UNION
- SELECT * FROM import_tables.reef_forming_corals_part2 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ SELECT * FROM iucn_spatial.reef_forming_corals_part2 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
  UNION
- SELECT * FROM import_tables.reef_forming_corals_part3 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ SELECT * FROM iucn_spatial.reef_forming_corals_part3 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid
 ) a
 ORDER BY id_no,fid;
 --SELECT 842
---Query returned successfully in 1 min 46 secs.
------------------------------------------------
--- CLEANUP
-------------------------------------------------
-DROP FOREIGN TABLE import_tables.reef_forming_corals_part1,import_tables.reef_forming_corals_part2,import_tables.reef_forming_corals_part3;
-```
-
-##### sharks, rays, chimaeras
-```
+--Query returned successfully in 1 min 53 secs.
+--------------------------------------------------------------
+-- IMPORT SHARKS,RAYS,CHIMAERAS
+--------------------------------------------------------------
+DROP TABLE IF EXISTS import_tables.spatial_sharks_rays_chimaeras;
 SELECT * INTO import_tables.spatial_sharks_rays_chimaeras
-FROM import_tables.sharks_rays_chimaeras
+FROM iucn_spatial.sharks_rays_chimaeras
 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
 --SELECT 1194
---Query returned successfully in 47 secs 192 msec.
------------------------------------------------
--- CLEANUP
-------------------------------------------------
-DROP FOREIGN TABLE import_tables.sharks_rays_chimaeras;
-```
-
-##### amphibians
-```
+--Query returned successfully in 51 secs 657 msec.
+--------------------------------------------------------------
+-- IMPORT AMPHIBIANS
+--------------------------------------------------------------
+DROP TABLE IF EXISTS import_tables.spatial_amphibians;
 SELECT * INTO import_tables.spatial_amphibians
-FROM import_tables.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
+FROM iucn_spatial.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
 --SELECT 7823
---Query returned successfully in 32 secs 52 msec.
------------------------------------------------
--- CLEANUP
-------------------------------------------------
-DROP FOREIGN TABLE import_tables.amphibians;
-```
-
-##### mammals
-```
+--Query returned successfully in 34 secs 327 msec.
+--------------------------------------------------------------
+-- IMPORT MAMMALS
+--------------------------------------------------------------
+DROP TABLE IF EXISTS import_tables.spatial_mammals;
 SELECT * INTO import_tables.spatial_mammals
-FROM import_tables.mammals
+FROM iucn_spatial.mammals
 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
 --SELECT 11867
 --Query returned successfully in 1 min 3 secs.
------------------------------------------------
--- CLEANUP
-------------------------------------------------
-DROP FOREIGN TABLE import_tables.mammals;
-```
 
-##### birds
-```
+--------------------------------------------------------------
+-- IMPORT BIRDLIFE
+--------------------------------------------------------------
+-- CREATE FDW SERVER
+---------------------------------------------------------------
+DROP SERVER IF EXISTS fdw_birdlife CASCADE;
+CREATE SERVER fdw_birdlife FOREIGN DATA WRAPPER ogr_fdw
+OPTIONS (datasource '/data/swap/inputdata/birdlife/BOTW.gdb', format 'OpenFileGDB');
+--------------------------------------------------------------
+-- CREATE FDW SCHEMA AND TABLES (temporary)
+---------------------------------------------------------------
+DROP SCHEMA IF EXISTS birdlife CASCADE;CREATE SCHEMA birdlife;
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_birdlife INTO birdlife;
+--------------------------------------------------------------
+-- CREATE BIRDS (spatial and non-spatial)
+---------------------------------------------------------------
+-- spatial
+DROP TABLE IF EXISTS import_tables.spatial_birds;
 SELECT * INTO import_tables.spatial_birds
-FROM import_tables.all_species
+FROM birdlife.all_species
 WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
 --SELECT 14963
---Query returned successfully in 15 min 1 secs.
------------------------------------------------
--- CLEANUP
-------------------------------------------------
-DROP FOREIGN TABLE import_tables.all_species;
-```
+--Query returned successfully in 15 min 18 secs.
+---------------------------------------------------------------
+-- non-spatial
+DROP TABLE IF EXISTS import_tables.non_spatial_birds;
+SELECT * INTO import_tables.non_spatial_birds
+FROM birdlife.birdlife_taxonomic_checklist_v5;
+--SELECT 11158
+--Query returned successfully in 259 ms.
 
-### non-spatial data
-```
+
+--------------------------------------------------------------
+-- IMPORT IUCN NON-SPATIAL
+--------------------------------------------------------------
+-- CREATE FDW SERVERS
+---------------------------------------------------------------
+-- non passeriformes
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_non_passeriformes CASCADE;
+CREATE SERVER fdw_iucn_non_spatial_non_passeriformes FOREIGN DATA WRAPPER ogr_fdw
+OPTIONS (datasource '/data/swap/inputdata/iucn/non_spatial/non_passeriformes/', format 'CSV');
+-- passeriformes
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_passeriformes CASCADE;
+CREATE SERVER fdw_iucn_non_spatial_passeriformes FOREIGN DATA WRAPPER ogr_fdw
+OPTIONS (datasource '/data/swap/inputdata/iucn/non_spatial/passeriformes/', format 'CSV');
+--------------------------------------------------------------
+-- CREATE FDW SCHEMA AND TABLES (temporary)
+---------------------------------------------------------------
+-- non passeriformes
+DROP SCHEMA IF EXISTS iucn_non_spatial_non_passeriformes CASCADE;CREATE SCHEMA iucn_non_spatial_non_passeriformes;
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_non_spatial_non_passeriformes INTO iucn_non_spatial_non_passeriformes;
+-- passeriformes
+DROP SCHEMA IF EXISTS iucn_non_spatial_passeriformes CASCADE;CREATE SCHEMA iucn_non_spatial_passeriformes;
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_non_spatial_passeriformes INTO iucn_non_spatial_passeriformes;
+
+--------------------------------------------------------------
+-- IMPORT AND MERGE ALL IUCN NON-SPATIAL
+--------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.non_spatial_all_other_fields;
 SELECT * INTO import_tables.non_spatial_all_other_fields FROM (
-SELECT * FROM import_tables_1.all_other_fields
+SELECT * FROM iucn_non_spatial_non_passeriformes.all_other_fields
 UNION 
-SELECT * FROM import_tables_2.all_other_fields
+SELECT * FROM iucn_non_spatial_passeriformes.all_other_fields
 ) a;
---SELECT 27658
---Query returned successfully in 367 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_assessments;
 SELECT * INTO import_tables.non_spatial_assessments FROM (
-SELECT * FROM import_tables_1.assessments
+SELECT * FROM iucn_non_spatial_non_passeriformes.assessments
 UNION 
-SELECT * FROM import_tables_2.assessments
+SELECT * FROM iucn_non_spatial_passeriformes.assessments
 ) a;
---SELECT 27658
---Query returned successfully in 2 secs 672 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_common_names;
 SELECT * INTO import_tables.non_spatial_common_names FROM (
-SELECT * FROM import_tables_1.common_names
+SELECT * FROM iucn_non_spatial_non_passeriformes.common_names
 UNION 
-SELECT * FROM import_tables_2.common_names
+SELECT * FROM iucn_non_spatial_passeriformes.common_names
 ) a;
---SELECT 51427
---Query returned successfully in 273 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_conservation_needed;
 SELECT * INTO import_tables.non_spatial_conservation_needed FROM (
-SELECT * FROM import_tables_1.conservation_needed
+SELECT * FROM iucn_non_spatial_non_passeriformes.conservation_needed
 UNION 
-SELECT * FROM import_tables_2.conservation_needed
+SELECT * FROM iucn_non_spatial_passeriformes.conservation_needed
 ) a;
---SELECT 37530
---Query returned successfully in 255 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_countries;
 SELECT * INTO import_tables.non_spatial_countries FROM (
-SELECT * FROM import_tables_1.countries
+SELECT * FROM iucn_non_spatial_non_passeriformes.countries
 UNION 
-SELECT * FROM import_tables_2.countries
+SELECT * FROM iucn_non_spatial_passeriformes.countries
 ) a;
---SELECT 226859
---Query returned successfully in 1 secs 233 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_credits;
 SELECT * INTO import_tables.non_spatial_credits FROM (
-SELECT * FROM import_tables_1.credits
+SELECT * FROM iucn_non_spatial_non_passeriformes.credits
 UNION 
-SELECT * FROM import_tables_2.credits
+SELECT * FROM iucn_non_spatial_passeriformes.credits
 ) a;
---SELECT 97746
---Query returned successfully in 742 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_dois;
 SELECT * INTO import_tables.non_spatial_dois FROM (
-SELECT * FROM import_tables_1.dois
+SELECT * FROM iucn_non_spatial_non_passeriformes.dois
 UNION 
-SELECT * FROM import_tables_2.dois
+SELECT * FROM iucn_non_spatial_passeriformes.dois
 ) a;
---SELECT 27658
---Query returned successfully in 208 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_habitats;
 SELECT * INTO import_tables.non_spatial_habitats FROM (
-SELECT * FROM import_tables_1.habitats
+SELECT * FROM iucn_non_spatial_non_passeriformes.habitats
 UNION 
-SELECT * FROM import_tables_2.habitats
+SELECT * FROM iucn_non_spatial_passeriformes.habitats
 ) a;
---SELECT 116131
---Query returned successfully in 638 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_references;
 SELECT * INTO import_tables.non_spatial_references FROM (
-SELECT * FROM import_tables_1.references
+SELECT * FROM iucn_non_spatial_non_passeriformes.references
 UNION 
-SELECT * FROM import_tables_2.references
+SELECT * FROM iucn_non_spatial_passeriformes.references
 ) a;
---SELECT 231966
---Query returned successfully in 1 secs 994 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_research_needed;
 SELECT * INTO import_tables.non_spatial_research_needed FROM (
-SELECT * FROM import_tables_1.research_needed
+SELECT * FROM iucn_non_spatial_non_passeriformes.research_needed
 UNION 
-SELECT * FROM import_tables_2.research_needed
+SELECT * FROM iucn_non_spatial_passeriformes.research_needed
 ) a;
---SELECT 57547
---Query returned successfully in 319 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_simple_summary;
 SELECT * INTO import_tables.non_spatial_simple_summary FROM (
-SELECT * FROM import_tables_1.simple_summary
+SELECT * FROM iucn_non_spatial_non_passeriformes.simple_summary
 UNION 
-SELECT * FROM import_tables_2.simple_summary
+SELECT * FROM iucn_non_spatial_passeriformes.simple_summary
 ) a;
---SELECT 27658
---Query returned successfully in 307 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_synonyms;
 SELECT * INTO import_tables.non_spatial_synonyms FROM (
-SELECT * FROM import_tables_1.synonyms
+SELECT * FROM iucn_non_spatial_non_passeriformes.synonyms
 UNION 
-SELECT * FROM import_tables_2.synonyms
+SELECT * FROM iucn_non_spatial_passeriformes.synonyms
 ) a;
---SELECT 16791
---Query returned successfully in 189 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_taxonomy;
 SELECT * INTO import_tables.non_spatial_taxonomy FROM (
-SELECT * FROM import_tables_1.taxonomy
+SELECT * FROM iucn_non_spatial_non_passeriformes.taxonomy
 UNION 
-SELECT * FROM import_tables_2.taxonomy
+SELECT * FROM iucn_non_spatial_passeriformes.taxonomy
 ) a;
---SELECT 27658
---Query returned successfully in 315 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_threats;
 SELECT * INTO import_tables.non_spatial_threats FROM (
-SELECT * FROM import_tables_1.threats
+SELECT * FROM iucn_non_spatial_non_passeriformes.threats
 UNION 
-SELECT * FROM import_tables_2.threats
+SELECT * FROM iucn_non_spatial_passeriformes.threats
 ) a;
---SELECT 75851
---Query returned successfully in 629 msec.
+
 DROP TABLE IF EXISTS import_tables.non_spatial_usetrade;
 SELECT * INTO import_tables.non_spatial_usetrade FROM (
-SELECT * FROM import_tables_1.usetrade
+SELECT * FROM iucn_non_spatial_non_passeriformes.usetrade
 UNION 
-SELECT * FROM import_tables_2.usetrade
+SELECT * FROM iucn_non_spatial_passeriformes.usetrade
 ) a;
---SELECT 12977
---Query returned successfully in 179 msec.
+
 ---- NON-PASSERIFORMES ONLY
 DROP TABLE IF EXISTS import_tables.non_spatial_fao;
-SELECT * INTO import_tables.fao FROM import_tables_1.fao;
---SELECT 7755
---Query returned successfully in 126 msec.
+SELECT * INTO import_tables.non_spatial_fao FROM iucn_non_spatial_non_passeriformes.fao;
+
 DROP TABLE IF EXISTS import_tables.non_spatial_lme;
-SELECT * INTO import_tables.lme FROM import_tables_1.lme;
---SELECT 9316
---Query returned successfully in 153 msec.
-----------------------------------------------
--- CLEANUP
-----------------------------------------------
-DROP SCHEMA IF EXISTS import_tables_1 CASCADE;
-DROP SCHEMA IF EXISTS import_tables_2 CASCADE;
+SELECT * INTO import_tables.non_spatial_lme FROM iucn_non_spatial_non_passeriformes.lme;
+
+--------------------------------------------------------------
+-- CLEANUP TEMPORARY OBJECTS
+--------------------------------------------------------------
+DROP SERVER IF EXISTS fdw_birdlife CASCADE;
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_non_passeriformes CASCADE;
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_passeriformes CASCADE;
+DROP SERVER IF EXISTS fdw_iucn_spatial CASCADE;
+
+DROP SCHEMA IF EXISTS birdlife CASCADE;
+DROP SCHEMA IF EXISTS iucn_non_spatial_non_passeriformes CASCADE;
+DROP SCHEMA IF EXISTS iucn_non_spatial_passeriformes CASCADE;
+DROP SCHEMA IF EXISTS iucn_spatial CASCADE;
 ```
 
 
