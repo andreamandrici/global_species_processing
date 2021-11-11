@@ -47,6 +47,19 @@ For version 2021, there are 25774 non-redundant species coming from spatial tabl
 
 ### Ecosystems
 
+--ECOSYSTEMS FOR ALL SPECIES
+DROP TABLE IF EXISTS ecosystems;
+CREATE TEMPORARY TABLE ecosystems AS
+WITH
+a AS (SELECT DISTINCT internaltaxonid::bigint id_no,LOWER(systems)::text systems
+	  FROM import_tables.non_spatial_assessments
+	  WHERE internaltaxonid::bigint IN (SELECT id_no FROM import_tables.all_species_list)
+	  ORDER BY id_no),
+b AS (SELECT id_no,UNNEST(STRING_TO_ARRAY(systems::text,'|')) systems FROM a ORDER BY id_no),
+c AS (SELECT id_no,CASE WHEN systems = 'freshwater (=inland waters)' THEN 'freshwater' ELSE systems END systems FROM b ORDER BY id_no),
+d AS (SELECT *,CASE systems WHEN 'marine' THEN 1 WHEN 'terrestrial' THEN 2 WHEN 'freshwater' THEN 3 END system_order FROM c ORDER BY id_no,system_order)
+SELECT id_no,ARRAY_AGG (systems) systems FROM d GROUP BY id_no ORDER BY id_no;
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
