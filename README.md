@@ -1,6 +1,8 @@
 # GLOBAL SPECIES PROCESSING
 # Complete workflow for species import, pre- and post-processing.
 
+## [Sources](./sources.md)
+
 ## Sources
 
 +  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2021-2 (published on 20210904). **Non-spatial** attributes (**only species selected, no subspecies or subpopulations selected**) for:
