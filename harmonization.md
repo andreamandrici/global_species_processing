@@ -1,7 +1,11 @@
-The atomic taxonomic unit is the species. In general, spatial tables (both from IUCN and Birdlife) contribute only with the geometry, while all the attributes are provided by IUCN.
+The atomic taxonomic unit is the species (information related to subspecies, subpopulations, island populations is included in the main species ranges).
+In general, spatial tables (both from IUCN and Birdlife) contribute only with the geometry, while all the attributes are provided by IUCN non-spatial tables.
 
 For version 2021, there are 25774 non-redundant species coming from spatial tables (IUCN+Birdlife), 26542 coming from non-spatial tables (IUCN), and the union of the two groups returns 25771 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
- 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
 1.  In Birdlife Version 2019-1 information on Ecosystems for few species is missing. This information is recovered from IUCN non-spatial dataset. [fix_missing_ecosystems.sql](./species_2020/fix_missing_ecosystems.sql)
 2.  Some **selected attributes** are extracted and transformed from IUCN **geometric** data:
     +  id_no (bigint),
