@@ -46,7 +46,7 @@ SELECT id_no,class,binomial FROM all_species_list ORDER BY id_no;
 For version 2021, there are 25774 non-redundant species coming from spatial tables (IUCN+Birdlife), 26542 coming from non-spatial tables (IUCN), and the union of the two groups returns 25771 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
 
 ### Ecosystems
-
+```
 --ECOSYSTEMS FOR ALL SPECIES
 DROP TABLE IF EXISTS ecosystems;
 CREATE TEMPORARY TABLE ecosystems AS
@@ -59,7 +59,7 @@ b AS (SELECT id_no,UNNEST(STRING_TO_ARRAY(systems::text,'|')) systems FROM a ORD
 c AS (SELECT id_no,CASE WHEN systems = 'freshwater (=inland waters)' THEN 'freshwater' ELSE systems END systems FROM b ORDER BY id_no),
 d AS (SELECT *,CASE systems WHEN 'marine' THEN 1 WHEN 'terrestrial' THEN 2 WHEN 'freshwater' THEN 3 END system_order FROM c ORDER BY id_no,system_order)
 SELECT id_no,ARRAY_AGG (systems) systems FROM d GROUP BY id_no ORDER BY id_no;
-
+```
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 
