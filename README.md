@@ -5,3 +5,6 @@
 
 ## [Import](./import.md)
 
+## [Dataset description](./dataset_description.md)
+
+## [Harmonization](./harmonization.md)
