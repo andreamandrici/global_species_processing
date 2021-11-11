@@ -276,78 +276,42 @@ The available fields (by table) are (relevants in **bold**):
 +  non_spatial_usetrade.subsistence
 
 ## BIRDLIFE tables
-Spatial and non-spatial data for **birds** are available as foreign tables pointing at gdb file in schema **species_birdlife_201903**, and they contain the fields (relevants in **bold**):
+Spatial and non-spatial data for **birds** are available in the schema **`import_tables`** as:
 
-### Birdlife: spatial table "All_species"
++  spatial_birds
++  non_spatial_birds
 
-+  fid bigint,
-+  **shape geometry(MultiPolygon,4326)**,
-+  **sisid** integer **(corresponds to IUCN spatial table field: id_no)**,
-+  **sciname** character varying  **(corresponds to IUCN spatial table field: binomial)**,
-+  date_ character varying,
-+  source character varying,
-+  **presence** integer,
-+  **origin** integer,
-+  **seasonal** integer,
-+  data_sens character varying,
-+  sens_comm character varying,
-+  compiler character varying,
-+  tax_com character varying,
-+  dist_com character varying,
-+  reviewers character varying,
-+  citation character varying,
-+  version character varying,
-+  shape_length double precision,
-+  shape_area double precision,
-+  filename character varying,
-+  vxcount integer
+The available fields (by table) are (relevants in **bold**):
 
-### Birdlife: non-spatial table "SppListAdditional"
-
-+  fid bigint,
-+  **id_no** integer,
-+  **binomial** character varying,
-+  common_name character varying,
-+  **kingdom** character varying,
-+  **phylum** character varying,
-+  **class** character varying,
-+  **order_** character varying,
-+  **family** character varying,
-+  **genus** character varying,
-+  **category** character varying,
-+  criteria character varying,
-+  assessor character varying,
-+  assessment_date timestamp with time zone,
-+  **biome_marine** character varying **(corresponds to IUCN spatial table field: marine)**,
-+  **biome_terrestrial** character varying **(corresponds to IUCN spatial table field: terrestrial)**,
-+  **biome_freshwater** character varying **(corresponds to IUCN spatial table field: freshwater)**,
-+  publication_yr smallint,
-+  population_trend character varying
-
-### Birdlife: non-spatial table "BirdLife_HBW_Taxonomic_Checklist_V4"
-
-+  fid bigint,
-+  sequence integer,
-+  **order_** character varying,
-+  **family_name** character varying **(corresponds to IUCN spatial table field: family)**,
-+  family character varying,
-+  subfamily_name character varying,
-+  tribe_name character varying,
-+  common_name character varying,
-+  **scientific_name** character varying **(corresponds to IUCN spatial table field: binomial)**,
-+  authority character varying,
-+  birdlife_taxonomic_treatment character varying,
-+  **f2019_iucn_red_list_category** character varying **(corresponds to IUCN spatial table field: category)**,
-+  synonyms character varying,
-+  alternative_common_names character varying,
-+  taxonomic_notes character varying,
-+  taxonomic_source character varying,
-+  **sisrecid** integer **(corresponds to IUCN spatial table field: id_no)**,
-+  **marine character varying**,
-+  **freshwater character varying**,
-+  **terrestrial character varying**
-
-An additional non spatial table is available as foreign table pointing at xlsx file in schema/table **species_birdlife_non_spatial_201903.sheet1**, and contains just a list with five species ( **22712690, 22716650, 22732350, 103774724, 103878817**) missing information related to ecosystems.
-
-**The analysis and selection of the relevant fields out of the total (216) is one of the target of the preprocessing task.**
-
++  spatial_birds.binomial
++  spatial_birds.citation
++  spatial_birds.compiler
++  spatial_birds.dist_comm
++  spatial_birds.fid
++  **spatial_birds.origin**
++  **spatial_birds.presence**
++  **spatial_birds.seasonal**
++  **spatial_birds.shape**
++  spatial_birds.shape_area
++  spatial_birds.shape_length
++  **spatial_birds.sisid
++  spatial_birds.source
++  spatial_birds.version
++  spatial_birds.yrcompiled
++  non_spatial_birds.alternativecommonnames
++  non_spatial_birds.authority
++  non_spatial_birds.birdlifetaxonomy
++  non_spatial_birds.commonname
++  non_spatial_birds.family
++  non_spatial_birds.familyname
++  non_spatial_birds.fid
++  non_spatial_birds.order_
++  non_spatial_birds.redlistcategory_2020
++  non_spatial_birds.scientificname
++  non_spatial_birds.sequence
++  non_spatial_birds.sisrecid
++  non_spatial_birds.subfamily
++  non_spatial_birds.synonyms
++  non_spatial_birds.taxonomicnotes
++  non_spatial_birds.taxonomicsource
++  non_spatial_birds.tribe.
