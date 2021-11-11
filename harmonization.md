@@ -35,6 +35,12 @@ DROP TABLE IF EXISTS all_species_list;
 CREATE TEMPORARY TABLE all_species_list AS
 SELECT a.* FROM non_spatial_list a JOIN spatial_list USING(id_no) ORDER BY id_no;
 --SELECT 25771
+
+-------------------------------------------------------------------------------------------------
+-- OUTPUT (SPECIES LIST)
+-------------------------------------------------------------------------------------------------
+DROP TABLE IF EXISTS import_tables.all_species_list;CREATE TABLE import_tables.all_species_list AS
+SELECT id_no,class,binomial FROM all_species_list ORDER BY id_no;
 ```
 
 For version 2021, there are 25774 non-redundant species coming from spatial tables (IUCN+Birdlife), 26542 coming from non-spatial tables (IUCN), and the union of the two groups returns 25771 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
