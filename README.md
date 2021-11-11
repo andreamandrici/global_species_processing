@@ -302,13 +302,13 @@ DROP SCHEMA IF EXISTS iucn_non_spatial_passeriformes CASCADE;
 DROP SCHEMA IF EXISTS iucn_spatial CASCADE;
 ```
 
-**NOTE** The most expensive of the above operation is import/coversion to real table of birds geographic dataset. This operation is tested on different servers (dedicated exclusive D6 VS shared JEODPP), with different versions of gdal-ogr, postgres-postgis, data disk:
+**NOTE** The most expensive of the above operations is import/coversion to real table of birds geographic dataset. This operation is tested on different servers (dedicated exclusive D6 VS shared JEODPP), with different versions of gdal-ogr, postgres-postgis, data disk:
 
 +  DB 247p - PostgreSQL 10.5 - postgis 2.4 - GDAL 2.2.2 - import from SSD (/data/swap/inputdata/birdlife/BOTW.gdb)
 
 Query returned successfully in **6 min 42 secs**
 
-`SELECT * FROM import_tables.spatial_birds WHERE ST_NPoints(shape) < 4 --> sisid:105965570,binomial:Amaurospiza moesta)`
+There is actually a failure: `SELECT * FROM import_tables.spatial_birds WHERE ST_NPoints(shape) < 4 --> sisid:105965570,binomial:Amaurospiza moesta)`
 
 +  DB 321p - PostgreSQL 13.3 - postgis 3.1 - GDAL 3.3.2 - import from SSD (/data/swap/inputdata/birdlife/BOTW.gdb)
 
