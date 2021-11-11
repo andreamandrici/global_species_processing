@@ -1,7 +1,46 @@
+## Species selection
+
 The atomic taxonomic unit is the species (information related to subspecies, subpopulations, island populations is included in the main species ranges).
 In general, spatial tables (both from IUCN and Birdlife) contribute only with the geometry, while all the attributes are provided by IUCN non-spatial tables.
 
 For version 2021, there are 25774 non-redundant species coming from spatial tables (IUCN+Birdlife), 26542 coming from non-spatial tables (IUCN), and the union of the two groups returns 25771 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
+
+```
+--SPECIES LIST FROM SPATIAL TABLES
+DROP TABLE IF EXISTS spatial_list;
+CREATE TEMPORARY TABLE spatial_list AS
+SELECT DISTINCT id_no,binomial FROM import_tables.spatial_corals
+UNION
+SELECT DISTINCT id_no,binomial FROM import_tables.spatial_sharks_rays_chimaeras
+UNION
+SELECT DISTINCT id_no,binomial FROM import_tables.spatial_amphibians
+UNION
+SELECT DISTINCT id_no,binomial FROM import_tables.spatial_mammals
+UNION
+SELECT DISTINCT sisid id_no,binomial FROM import_tables.spatial_birds
+ORDER BY id_no;
+--SELECT 25774
+
+--SPECIES LIST FROM NON SPATIAL TABLES
+DROP TABLE IF EXISTS non_spatial_list;
+CREATE TEMPORARY TABLE non_spatial_list AS
+SELECT DISTINCT
+internaltaxonid::bigint id_no,
+scientificname::text AS binomial,
+classname::text AS class
+FROM import_tables.non_spatial_taxonomy
+ORDER BY id_no;
+--SELECT 26542
+
+--SPECIES LIST EXISTING IN BOTH SPATIAL AND NON SPATIAL TABLES
+DROP TABLE IF EXISTS all_species_list;
+CREATE TEMPORARY TABLE all_species_list AS
+SELECT a.* FROM non_spatial_list a JOIN spatial_list USING(id_no) ORDER BY id_no;
+--SELECT 25771
+```
+
+
+### Ecosystems
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
