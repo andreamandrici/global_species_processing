@@ -294,7 +294,7 @@ The available fields (by table) are (relevants in **bold**):
 +  **spatial_birds.shape**
 +  spatial_birds.shape_area
 +  spatial_birds.shape_length
-+  **spatial_birds.sisid
++  **spatial_birds.sisid**
 +  spatial_birds.source
 +  spatial_birds.version
 +  spatial_birds.yrcompiled
