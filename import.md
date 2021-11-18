@@ -20,9 +20,9 @@ Foreign data servers are created in bulk; foreign data tables are imported in bu
 Each foreign table is converted to real table (geometric or non-geometric).
 
 Geometric tables are filtered in the way to include:
-+  **PRESENCE:1-Extant**
-+  **ORIGIN:1-Native,2-Reintroduced,6-Assisted Colonisation**
-+  **SEASONALITY:1-Resident,2-Breeding Season,3-Non-breeding Season**
++  PRESENCE:1-Extant
++  ORIGIN:1-Native,2-Reintroduced,6-Assisted Colonisation
++  SEASONALITY:1-Resident,2-Breeding Season,3-Non-breeding Season
 
 (above corresponds to sql `WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)`).
 
