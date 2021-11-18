@@ -18,7 +18,7 @@ Filters active on the download page are:
 
   **Geographical Scope**
   +  Regional Assessments
-      +  Global
+     +  Global
 
   **Include**
   +  Species
