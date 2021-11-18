@@ -7,14 +7,14 @@ Downloaded on 20210906.
 Filters active on the download page are:
 
 **Taxonomy:**
-  + Phylum:
-    + Cnidaria
-    + Chordata:
+  + _Phylum_:
+    + _Cnidaria_
+    + _Chordata_:
       + Class:
-        +  Amphibia
-        +  Mammalia
-        +  Chondrichthyes
-        +  Aves
+        +  _Amphibia_
+        +  _Mammalia_
+        +  _Chondrichthyes_
+        +  _Aves_
 
   **Geographical Scope**
   +  Regional Assessments
