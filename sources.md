@@ -8,7 +8,7 @@
    +  Mammals.
 Downloaded on 20210906.
 
-Filters active on the download page are
+Filters active on the download page are:
 
 **Taxonomy:**
 + Phylum:
@@ -19,7 +19,18 @@ Filters active on the download page are
       +  Mammalia
       +  Chondrichthyes
       +  Aves
- +  )only species selected, no subspecies or subpopulations selected
+
+**Geographical Scope**
++  Regional Assessments
+   +  Global
+
+**Include**
++  Species
+
+A further subset is downloaded independentely as:
+
++  Filter on
+   +  Endemic  
 
 +  [IUCN Red List of Threatened Species Spatial Data](https://www.iucnredlist.org/resources/spatial-data-download).  IUCN, Version 2021-2 (published on 20210904). **Spatial** data for:
    +  Reef-forming Corals (_Hydrozoa_ and _Anthozoa_)
