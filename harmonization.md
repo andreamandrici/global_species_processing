@@ -17,7 +17,7 @@ SELECT DISTINCT id_no,binomial FROM import_tables.spatial_mammals
 UNION
 SELECT DISTINCT sisid id_no,binomial FROM import_tables.spatial_birds
 ORDER BY id_no;
---SELECT 25774
+--SELECT 25772
 
 --SPECIES LIST FROM NON SPATIAL TABLES
 DROP TABLE IF EXISTS non_spatial_list;
@@ -28,22 +28,23 @@ scientificname::text AS binomial,
 classname::text AS class
 FROM import_tables.non_spatial_taxonomy
 ORDER BY id_no;
---SELECT 26542
+--SELECT 26434
 
 --SPECIES LIST EXISTING IN BOTH SPATIAL AND NON SPATIAL TABLES
 DROP TABLE IF EXISTS all_species_list;
 CREATE TEMPORARY TABLE all_species_list AS
 SELECT a.* FROM non_spatial_list a JOIN spatial_list USING(id_no) ORDER BY id_no;
---SELECT 25771
+--SELECT 25769
 
 -------------------------------------------------------------------------------------------------
 -- OUTPUT (SPECIES LIST)
 -------------------------------------------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.all_species_list;CREATE TABLE import_tables.all_species_list AS
 SELECT id_no,class,binomial FROM all_species_list ORDER BY id_no;
+--SELECT 25769
 ```
 
-For version 2021, there are 25774 non-redundant species coming from spatial tables (IUCN+Birdlife), 26542 coming from non-spatial tables (IUCN), and the union of the two groups returns 25771 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
+For version 2021, there are 25772 non-redundant species coming from spatial tables (IUCN+Birdlife), 26434 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25769 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
 
 ### Ecosystems
 ```
