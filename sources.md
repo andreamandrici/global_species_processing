@@ -1,6 +1,7 @@
 ## Sources
 
-+  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2021-2 (published on 20210904). **Non-spatial** attributes. Downloaded on 20210906.
++  [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search). IUCN, Version 2021-2 (published on 20210904). **Non-spatial** attributes.
+Downloaded on 20210906.
 
 Filters active on the download page are:
 
