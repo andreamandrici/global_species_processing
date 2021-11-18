@@ -5,26 +5,28 @@
 Filters active on the download page are:
 
 **Taxonomy:**
-+ Phylum:
-  + Cnidaria
-  + Chordata:
-    + Class:
-      +  Amphibia
-      +  Mammalia
-      +  Chondrichthyes
-      +  Aves
+  + Phylum:
+    + Cnidaria
+    + Chordata:
+      + Class:
+        +  Amphibia
+        +  Mammalia
+        +  Chondrichthyes
+        +  Aves
 
-**Geographical Scope**
-+  Regional Assessments
-   +  Global
+  **Geographical Scope**
+  +  Regional Assessments
+      +  Global
 
-**Include**
-+  Species
+  **Include**
+  +  Species
 
-A further subset is downloaded independentely as:
+  A further subset is downloaded independentely as:
 
-+  Filter on
-   +  Endemic  
+  **Filter on**
+  +  Endemic  
+
+---
 
 +  [IUCN Red List of Threatened Species Spatial Data](https://www.iucnredlist.org/resources/spatial-data-download).  IUCN, Version 2021-2 (published on 20210904). **Spatial** data for:
    +  Reef-forming Corals (_Hydrozoa_ and _Anthozoa_)
@@ -33,6 +35,8 @@ A further subset is downloaded independentely as:
    +  Mammals.
 
 Downloaded on 20210906.
+
+---
 
 +  [BirdLife's species distribution data](http://datazone.birdlife.org/species/requestdis). BirdLife International, Version 2020-v1. Spatial and non-spatial tables for Birds.
 
