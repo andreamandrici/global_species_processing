@@ -19,7 +19,12 @@ All data sources are extracted in `/data/swap/inputdata/` subfolders according t
 Foreign data servers are created in bulk; foreign data tables are imported in bulk in specific, temporary schemes.
 Each foreign table is converted to real table (geometric or non-geometric).
 
-Geometric tables include: **Extant** and **Probably Extant** (IUCN will discontinue this code); **Native** and **Reintroduced**; **Resident**, **Breeding Season** and **Non-breeding Season** (above corresponds to sql `WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)`).
+Geometric tables are filtered in the way to include:
++  **PRESENCE:1-Extant**
++  **ORIGIN:1-Native,2-Reintroduced,6-Assisted Colonisation**
++  **SEASONALITY:1-Resident,2-Breeding Season,3-Non-breeding Season**
+
+(above corresponds to sql `WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)`).
 
 Download of non spatial data for birds from [IUCN Red List of Threatened Species](https://www.iucnredlist.org/search) is affected by an annoying limit of 10K objects, which is bypassed by dividing the search query for _non passeriformes_ and _passeriformes_. This implies the duplication of homonymous tables, which must undergo an append before becoming useful, which is done going through the creation of two temporary schemes.
 
@@ -52,44 +57,44 @@ IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_spatial INTO iucn_spatial;
 -- split sources are merged
 DROP TABLE IF EXISTS import_tables.spatial_corals;
 SELECT * INTO import_tables.spatial_corals FROM
-(SELECT * FROM iucn_spatial.reef_forming_corals_part1 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+(SELECT * FROM iucn_spatial.reef_forming_corals_part1 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
  UNION
- SELECT * FROM iucn_spatial.reef_forming_corals_part2 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ SELECT * FROM iucn_spatial.reef_forming_corals_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
  UNION
- SELECT * FROM iucn_spatial.reef_forming_corals_part3 WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+ SELECT * FROM iucn_spatial.reef_forming_corals_part3 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid
 ) a
 ORDER BY id_no,fid;
 --SELECT 842
---Query returned successfully in 1 min 53 secs.
+--Query returned successfully in 1 min 43 secs.
 --------------------------------------------------------------
 -- IMPORT SHARKS,RAYS,CHIMAERAS
 --------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.spatial_sharks_rays_chimaeras;
 SELECT * INTO import_tables.spatial_sharks_rays_chimaeras
 FROM iucn_spatial.sharks_rays_chimaeras
-WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
 --SELECT 1194
---Query returned successfully in 51 secs 657 msec.
+--Query returned successfully in 49 secs 916 msec.
 --------------------------------------------------------------
 -- IMPORT AMPHIBIANS
 --------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.spatial_amphibians;
 SELECT * INTO import_tables.spatial_amphibians
-FROM iucn_spatial.amphibians WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3) ORDER BY id_no,fid;
---SELECT 7823
---Query returned successfully in 34 secs 327 msec.
+FROM iucn_spatial.amphibians WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3);
+--SELECT 7812
+--Query returned successfully in 31 secs 74 msec.
 --------------------------------------------------------------
 -- IMPORT MAMMALS
 --------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.spatial_mammals;
 SELECT * INTO import_tables.spatial_mammals
 FROM iucn_spatial.mammals
-WHERE presence IN (1,2) AND origin IN (1,2) AND seasonal IN (1,2,3)
+WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
 ORDER BY id_no,fid;
---SELECT 11867
---Query returned successfully in 1 min 3 secs.
+--SELECT 11740
+--Query returned successfully in 1 min 2 secs.
 
 --------------------------------------------------------------
 -- IMPORT BIRDLIFE
@@ -111,17 +116,16 @@ IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_birdlife INTO birdlife;
 DROP TABLE IF EXISTS import_tables.spatial_birds;
 SELECT * INTO import_tables.spatial_birds
 FROM birdlife.all_species
-WHERE PRESENCE IN (1,2) AND ORIGIN IN (1,2) AND SEASONAL IN (1,2,3);
---SELECT 14963
---Query returned successfully in 15 min 18 secs.
+WHERE PRESENCE IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3);
+--SELECT 14968
+--Query returned successfully in 15 min 9 secs.
 ---------------------------------------------------------------
 -- non-spatial
 DROP TABLE IF EXISTS import_tables.non_spatial_birds;
 SELECT * INTO import_tables.non_spatial_birds
 FROM birdlife.birdlife_taxonomic_checklist_v5;
 --SELECT 11158
---Query returned successfully in 259 ms.
-
+--Query returned successfully in 252 ms.
 
 --------------------------------------------------------------
 -- IMPORT IUCN NON-SPATIAL
