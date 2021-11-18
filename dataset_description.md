@@ -35,7 +35,11 @@ Spatial data are available in the schema **`import_tables`** as **`spatial_coral
 +  shape_leng double precision,
 +  shape_area double precision
 
-These fields are (partially?) described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards).
+These fields are described on [Mapping and Distribution Data Attribute Standards for the IUCN Red List of Threatened Species](https://www.iucnredlist.org/resources/mappingstandards), specifically, for the 2021 version:
+
++ [Mapping_attribute_codes_v1.19_2021.pdf](https://nc.iucnredlist.org/redlist/content/attachment_files/Mapping_attribute_codes_v1.19_2021.pdf)
++ [https://nc.iucnredlist.org/redlist/content/attachment_files/IUCN_Standard_attributes_for_spatial_data_v1.19_2021.xlsx.zip](https://nc.iucnredlist.org/redlist/content/attachment_files/IUCN_Standard_attributes_for_spatial_data_v1.19_2021.xlsx.zip)
+
 
 **fid** is a weak, temporary, serial field (is not unique in case of appended corals).
 The field **id_no** is **unique by species**, but redundant by fields (within the ones of some interest for the analysis): presence, origin, seasonal, subspecies, subpop, (others?), and each row corresponds to a different polygon. A specific steps in spatial processing merge/dissolve these polygons by id_no, making this field unique, Primary Key. 
