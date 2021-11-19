@@ -55,6 +55,7 @@ All the non-spatial tables are available in the schema **`import_tables`** (rele
 +  non_spatial_countries
 +  non_spatial_credits
 +  non_spatial_dois
++  **non_spatial_endemic (this is a clone of non_spatial_simple_summary which contains ONLY species defined endemic by IUCN)**
 +  non_spatial_fao (not available for all the groups)
 +  non_spatial_habitat
 +  non_spatial_lme (not available for all the groups)
@@ -163,6 +164,26 @@ The available fields (by table) are (relevants in **bold**):
 +  non_spatial_dois.fid
 +  non_spatial_dois.internaltaxonid
 +  non_spatial_dois.scientificname
++  non_spatial_endemic.fid
++  **non_spatial_endemic.assessmentid** (this is a subset, cloned by non_spatial_simple_summary, which contains ONLY species defined endemic by IUCN)
++  **non_spatial_endemic.internaltaxonid** (this is a subset, cloned by non_spatial_simple_summary, which contains ONLY species defined endemic by IUCN)
++  non_spatial_endemic.scientificname
++  non_spatial_endemic.kingdomname
++  non_spatial_endemic.phylumname
++  non_spatial_endemic.ordername
++  non_spatial_endemic.classname
++  non_spatial_endemic.familyname
++  non_spatial_endemic.genusname
++  non_spatial_endemic.speciesname
++  non_spatial_endemic.infratype
++  non_spatial_endemic.infraname
++  non_spatial_endemic.infraauthority
++  non_spatial_endemic.authority
++  non_spatial_endemic.redlistcategory
++  non_spatial_endemic.redlistcriteria
++  non_spatial_endemic.criteriaversion
++  non_spatial_endemic.populationtrend
++  non_spatial_endemic.scopes
 +  non_spatial_fao.assessmentid
 +  non_spatial_fao.code
 +  non_spatial_fao.fid
@@ -207,8 +228,8 @@ The available fields (by table) are (relevants in **bold**):
 +  non_spatial_research_needed.name
 +  non_spatial_research_needed.note
 +  non_spatial_research_needed.scientificname
-+  non_spatial_simple_summary.assessmentid
-+  non_spatial_simple_summary.authority
++  **non_spatial_simple_summary.assessmentid**
++  **non_spatial_simple_summary.authority**
 +  non_spatial_simple_summary.classname
 +  non_spatial_simple_summary.criteriaversion
 +  non_spatial_simple_summary.familyname
