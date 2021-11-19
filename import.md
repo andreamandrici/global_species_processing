@@ -140,6 +140,10 @@ OPTIONS (datasource '/data/swap/inputdata/iucn/non_spatial/non_passeriformes/', 
 DROP SERVER IF EXISTS fdw_iucn_non_spatial_passeriformes CASCADE;
 CREATE SERVER fdw_iucn_non_spatial_passeriformes FOREIGN DATA WRAPPER ogr_fdw
 OPTIONS (datasource '/data/swap/inputdata/iucn/non_spatial/passeriformes/', format 'CSV');
+-- endemic
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_endemic CASCADE;
+CREATE SERVER fdw_iucn_non_spatial_endemic FOREIGN DATA WRAPPER ogr_fdw
+OPTIONS (datasource '/data/swap/inputdata/iucn/non_spatial/global_endemic/', format 'CSV');
 --------------------------------------------------------------
 -- CREATE FDW SCHEMA AND TABLES (temporary)
 ---------------------------------------------------------------
@@ -149,7 +153,9 @@ IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_non_spatial_non_passeriformes
 -- passeriformes
 DROP SCHEMA IF EXISTS iucn_non_spatial_passeriformes CASCADE;CREATE SCHEMA iucn_non_spatial_passeriformes;
 IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_non_spatial_passeriformes INTO iucn_non_spatial_passeriformes;
-
+-- endemic
+DROP SCHEMA IF EXISTS iucn_non_spatial_endemic CASCADE;CREATE SCHEMA iucn_non_spatial_endemic;
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER fdw_iucn_non_spatial_endemic INTO iucn_non_spatial_endemic;
 --------------------------------------------------------------
 -- IMPORT AND MERGE ALL IUCN NON-SPATIAL
 --------------------------------------------------------------
@@ -258,6 +264,11 @@ UNION
 SELECT * FROM iucn_non_spatial_passeriformes.usetrade
 ) a;
 
+---- ENDEMIC LIST FROM simple_summary (endemics only)
+DROP TABLE IF EXISTS import_tables.non_spatial_endemic;
+SELECT * INTO import_tables.non_spatial_endemic
+FROM iucn_non_spatial_endemic.simple_summary;
+
 ---- NON-PASSERIFORMES ONLY
 DROP TABLE IF EXISTS import_tables.non_spatial_fao;
 SELECT * INTO import_tables.non_spatial_fao FROM iucn_non_spatial_non_passeriformes.fao;
@@ -271,11 +282,13 @@ SELECT * INTO import_tables.non_spatial_lme FROM iucn_non_spatial_non_passerifor
 DROP SERVER IF EXISTS fdw_birdlife CASCADE;
 DROP SERVER IF EXISTS fdw_iucn_non_spatial_non_passeriformes CASCADE;
 DROP SERVER IF EXISTS fdw_iucn_non_spatial_passeriformes CASCADE;
+DROP SERVER IF EXISTS fdw_iucn_non_spatial_endemic CASCADE;
 DROP SERVER IF EXISTS fdw_iucn_spatial CASCADE;
 
 DROP SCHEMA IF EXISTS birdlife CASCADE;
 DROP SCHEMA IF EXISTS iucn_non_spatial_non_passeriformes CASCADE;
 DROP SCHEMA IF EXISTS iucn_non_spatial_passeriformes CASCADE;
+DROP SCHEMA IF EXISTS iucn_non_spatial_endemic CASCADE;
 DROP SCHEMA IF EXISTS iucn_spatial CASCADE;
 ```
 
