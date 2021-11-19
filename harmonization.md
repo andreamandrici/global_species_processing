@@ -36,15 +36,25 @@ CREATE TEMPORARY TABLE all_species_list AS
 SELECT a.* FROM non_spatial_list a JOIN spatial_list USING(id_no) ORDER BY id_no;
 --SELECT 25769
 
+--ENDEMIC SPECIES LIST EXISTING IN BOTH SPATIAL AND NON SPATIAL TABLES
+DROP TABLE IF EXISTS endemic_species_list;
+CREATE TEMPORARY TABLE endemic_species_list AS
+SELECT DISTINCT
+a.internaltaxonid::bigint id_no,TRUE endemic
+FROM import_tables.non_spatial_non_spatial_endemic a
+JOIN all_species_list b ON a.internaltaxonid::bigint=b.id_no
+ORDER BY id_no;
+--SELECT 10571
+
 -------------------------------------------------------------------------------------------------
 -- OUTPUT (SPECIES LIST)
 -------------------------------------------------------------------------------------------------
 DROP TABLE IF EXISTS import_tables.all_species_list;CREATE TABLE import_tables.all_species_list AS
-SELECT id_no,class,binomial FROM all_species_list ORDER BY id_no;
+SELECT id_no,class,binomial,endemic FROM all_species_list LEFT JOIN endemic_species_list USING(id_no) ORDER BY id_no;
 --SELECT 25769
 ```
 
-For version 2021, there are 25772 non-redundant species coming from spatial tables (IUCN+Birdlife), 26434 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25769 species: there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges.
+For version 2021, there are 25772 non-redundant species coming from spatial tables (IUCN+Birdlife), 26434 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25769 species (there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges). Of the 11098 endemic species, 10571 intersect the spatial and non-spatial dataset.
 
 ### Ecosystems
 ```
