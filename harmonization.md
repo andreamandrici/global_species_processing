@@ -56,34 +56,30 @@ SELECT id_no,class,binomial,endemic FROM all_species_list LEFT JOIN endemic_spec
 
 For version 2021, there are 25772 non-redundant species coming from spatial tables (IUCN+Birdlife), 26434 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25769 species (there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges). Of the 11098 endemic species, 10571 intersect the spatial and non-spatial dataset.
 
-### Ecosystems
-```
---ECOSYSTEMS FOR ALL SPECIES
-DROP TABLE IF EXISTS ecosystems;
-CREATE TEMPORARY TABLE ecosystems AS
-WITH
-a AS (SELECT DISTINCT internaltaxonid::bigint id_no,LOWER(systems)::text systems
-	  FROM import_tables.non_spatial_assessments
-	  WHERE internaltaxonid::bigint IN (SELECT id_no FROM import_tables.all_species_list)
-	  ORDER BY id_no),
-b AS (SELECT id_no,UNNEST(STRING_TO_ARRAY(systems::text,'|')) systems FROM a ORDER BY id_no),
-c AS (SELECT id_no,CASE WHEN systems = 'freshwater (=inland waters)' THEN 'freshwater' ELSE systems END systems FROM b ORDER BY id_no),
-d AS (SELECT *,CASE systems WHEN 'marine' THEN 1 WHEN 'terrestrial' THEN 2 WHEN 'freshwater' THEN 3 END system_order FROM c ORDER BY id_no,system_order)
-SELECT id_no,ARRAY_AGG (systems) systems FROM d GROUP BY id_no ORDER BY id_no;
-```
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 ### non-spatial
 
-Non-spatial data are normalized **directly in the final, output schema (species)**:
-+  creating tables where fields are filtered and normalized (eg: for each table extract the unique id=`code` and the category=`name`)
-+  splitting data in:
-   +  main tables (mt_): tables which contains static lists of categories **existing in the current dataset** (they are derived from input tables).
-   +  lookup tables (lt_): intermediate tables which put in relation species (through `id_no`) with category tables (through `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These tables are propaedeutic for the next category (derived tables; dt_), and exist only to facilitate the filtering of the input tables. In the next future, they could be deleted, moving the related code in the derived tables sections.
-   +  derived tables (dt_): final tables which put in relation species (through `id_no`) with category tables (through arrays of `code`). **Only `id_no` present in both datasets (spatial and non spatial) are included in the final selection**. These tables are derived from the previous intermediate category (lookup tables; lt_), which exist only to facilitate the filtering of the input tables. In the next future, lookup tables could be deleted, moving the related code in this section.
-	 
-   Code is: [creates_output_schema.sql](./species_2020/creates_output_schema.sql).
+An _output_schema_ is created.
+Temporary tables are created, selecting id_no according to existance in previously created table: `import_tables.all_species_list`
 
++ **Taxonomy** information is taken from _import_tables.non_spatial_taxonomy_
++ **Ecosystems** information is taken from _import_tables.non_spatial_assessments_, field _systems_
++ **Category** information is taken from _import_tables.non_spatial_assessments_, field _redlistcategory_
++ **Threatened** information is derived from _import_tables.non_spatial_assessments_, field _redlistcategory_, selecting _'Critically Endangered','Endangered' and 'Vulnerable'_ species.
++ **Country** information is derived from _import_tables.non_spatial_countries, field _code_ (ISO2 country code), selecting in the fields
+	+  `presence`: **Extant**
+	+  `origin`:  **Native**, **Reintroduced**, **Assisted Colonisation**
+	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this is a weakness, we wait for clairfication from IUCN)
++  
+
+
+
+
+```
+
+```
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	 
 Output schema contains
 
 +  main tables (mt_):
@@ -106,12 +102,7 @@ Output schema contains
    +  lt_species_threats
    +  lt_species_usetrade
 
-	Options for **country** filters are (**bold**=used; _italic_=to be reviewed):
-	+  `presence`: **Extant**, Extinct Post-1500, **Possibly Extant**, _**Possibly Extinct**_, _**Presence Uncertain**_
-	+  `origin`: Assisted Colonisation, Introduced, **Native**, Origin Uncertain, **Reintroduced**, Vagrant
-	+  `seasonality`: _**NULL**_, **Non-Breeding Season**, **Breeding Season**, **Resident**, Passage, Seasonal Occurrence Uncertain
-	Above impacts the calculation of endemicity [check_countries.sql](./species_2020/check_countries.sql)!
-
+	
 +  derived tables (dt_):
    +  dt_species_conservation_needed
    +  dt_species_country_endemics
