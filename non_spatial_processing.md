@@ -4,7 +4,7 @@ An _output_schema_ is created.
 
 After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
-+  **dopa_species**
++  **dopa_species** (main table)
    + `id_no` bigint, derived from _non_spatial_taxonomy_, selected if existing in previously created table _all_species_list_
    + `phylum` text, derived from _non_spatial_taxonomy_
    + `class` text, derived from _non_spatial_taxonomy_
@@ -33,10 +33,9 @@ After processing (scripted in [non_spatial_processing.sql](./non_spatial_process
 +  **class_species_research_needed**
 +  **class_species_stresses**
 +  **class_species_threats**
-+  **class_species_usetrade**
-+  
++  **class_species_usetrade**.
 
-### Outputs
+### Outputs (TO BE REVIEWED)
 
 The final step creates:
 +  mt_species_output: this table rebuild relations within `mt_attributes` table and all  `dt_` tables.
@@ -52,30 +51,14 @@ The final step creates:
    +  get_list_threats
    +  get_list_usetrade
 
-
    Code is: [creates_output_table_function.sql](./species_2020/creates_output_table_function.sql).
 
-
-
-3.  Birdlife **geometric** data are processed, and **selected attributes** are extracted, in the way to get the **same structure** of processed IUCN data. Species flagged as **sensitive** are removed to avoid to disseminate their distribution (directly, or as intersection with protected areas). For Birdlife 2019-1 they are: *Thalasseus bernsteini* and *Garrulax courtoisi* (id_no: 22694585,22732350).
-
-    Code is: [creates_attributes_sp_birdlife.sql](./species_2020/creates_attributes_sp_birdlife.sql).
-    Output table is: **species_202001.attributes_sp_birdlife**.
-
-4.  IUCN and Birdlife **selected attributes from geometric** data are appended each other.
-
-    Code is: [creates_attributes_sp.sql](./species_2020/creates_attributes_sp.sql).
-    Output table is: **species_202001.attributes_sp**.
- 
-	
-	Code is: [creates_attributes.sql](./species_2020/creates_attributes.sql).
-    Output table is: **species_202001.attributes**.
+### spatial
 
 6.  Spatial tables present other differences which need harmonization, which will be solved with a specific flattening workflow: 
     +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
     +  IDs (id_no and sisrecid) are redundant (by presence, origin, seasonality).
 
-### spatial
 
 "Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently using the flattening workflow (fully described in another section).
 
