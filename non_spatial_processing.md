@@ -1,45 +1,34 @@
 ### non-spatial
 
 An _output_schema_ is created.
-Temporary tables are created, selecting id_no according to existance in previously created table: `import_tables.all_species_list`
 
-+ **Taxonomy** information is taken from _import_tables.non_spatial_taxonomy_
-+ **Ecosystems** information is taken from _import_tables.non_spatial_assessments_, field _systems_
-+ **Category** information is taken from _import_tables.non_spatial_assessments_, field _redlistcategory_
-+ **Threatened** information is derived from _import_tables.non_spatial_assessments_, field _redlistcategory_, selecting _'Critically Endangered','Endangered' and 'Vulnerable'_ species.
-+ **Country** information is derived from _import_tables.non_spatial_countries, field _code_ (ISO2 country code), selecting in the fields
-	+  `presence`: **Extant**
-	+  `origin`:  **Native**, **Reintroduced**, **Assisted Colonisation**
-	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this is a weakness, we wait for clairfication from IUCN).
-+ **conservation_needed** information is derived from _import_tables.non_spatial_conservation_needed_
-+ **habitats** information is derived from _import_tables.non_spatial_habitats_
-+ **research_needed** information is derived from _import_tables.non_spatial_research_needed_
-+ **stress** information is derived from _import_tables.non_spatial_threats_, fields _stresscode_,_stressname_ 
-+ **threats** information is derived from _import_tables.non_spatial_threats_
-+ **usetrade** information is derived from _import_tables.non_spatial_usetrade_
-	 
 After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
 +  **dopa_species**
-   + id_no bigint
-   + phylum text
-   + class text
-   + order_ text
-   + family text
-   + genus text
-   + binomial text
+   + id_no bigint derived from _non_spatial_taxonomy_, selected if existing in previously created table _all_species_list_
+   + phylum text derived from _non_spatial_taxonomy_
+   + class text derived from _non_spatial_taxonomy_
+   + order_ text derived from _non_spatial_taxonomy_
+   + family text derived from _non_spatial_taxonomy_
+   + genus text derived from _non_spatial_taxonomy_
+   + binomial text derived from _non_spatial_taxonomy_
    + endemic boolean
-   + ecosystems text[]
-   + category text
-   + threatened boolean
-   + country text[]
+   + ecosystems text[] derived from _non_spatial_assessments_, field _systems_
+   + category text derived from _non_spatial_assessments_, field _redlistcategory_
+   + threatened boolean derived from _non_spatial_assessments_, field _redlistcategory_, selecting _'Critically Endangered','Endangered' and 'Vulnerable'_ species
+   + country text[] derived from _non_spatial_countries, field _code_ (ISO2 country code), selecting in the fields
+	+  `presence`: **Extant**
+	+  `origin`:  **Native**, **Reintroduced**, **Assisted Colonisation**
+	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this last is a weakness, we wait for clairfication from IUCN).
    + country_n integer
-   + conservation_needed text[]
-   + habitats text[]
-   + research_needed text[]
-   + stresses text[]
-   + threats text[]
-   + usetrade integer[]
+   + conservation_needed text[] derived from _non_spatial_conservation_needed_
+   + habitats text[] derived from _non_spatial_habitats_
+   + research_needed text[] derived from _non_spatial_research_needed_
+   + stresses text[] derived from _non_spatial_threats_, fields _stresscode_,_stressname_ 
+   + threats text[] derived from _non_spatial_threats_
+   + usetrade integer[] derived from _non_spatial_usetrade_
+
+
 
 +  **class_species_category**
 +  **class_species_conservation_needed**
