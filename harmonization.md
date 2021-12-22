@@ -3,58 +3,8 @@
 The atomic taxonomic unit is the species (information related to subspecies, subpopulations, island populations is included in the main species ranges).
 In general, spatial tables (both from IUCN and Birdlife) contribute only with the geometry, while all the attributes are provided by IUCN non-spatial tables.
 
-```
---SPECIES LIST FROM SPATIAL TABLES
-DROP TABLE IF EXISTS spatial_list;
-CREATE TEMPORARY TABLE spatial_list AS
-SELECT DISTINCT id_no,binomial FROM import_tables.spatial_corals
-UNION
-SELECT DISTINCT id_no,binomial FROM import_tables.spatial_sharks_rays_chimaeras
-UNION
-SELECT DISTINCT id_no,binomial FROM import_tables.spatial_amphibians
-UNION
-SELECT DISTINCT id_no,binomial FROM import_tables.spatial_mammals
-UNION
-SELECT DISTINCT sisid id_no,binomial FROM import_tables.spatial_birds
-ORDER BY id_no;
---SELECT 25772
-
---SPECIES LIST FROM NON SPATIAL TABLES
-DROP TABLE IF EXISTS non_spatial_list;
-CREATE TEMPORARY TABLE non_spatial_list AS
-SELECT DISTINCT
-internaltaxonid::bigint id_no,
-scientificname::text AS binomial,
-classname::text AS class
-FROM import_tables.non_spatial_taxonomy
-ORDER BY id_no;
---SELECT 26434
-
---SPECIES LIST EXISTING IN BOTH SPATIAL AND NON SPATIAL TABLES
-DROP TABLE IF EXISTS all_species_list;
-CREATE TEMPORARY TABLE all_species_list AS
-SELECT a.* FROM non_spatial_list a JOIN spatial_list USING(id_no) ORDER BY id_no;
---SELECT 25769
-
---ENDEMIC SPECIES LIST EXISTING IN BOTH SPATIAL AND NON SPATIAL TABLES
-DROP TABLE IF EXISTS endemic_species_list;
-CREATE TEMPORARY TABLE endemic_species_list AS
-SELECT DISTINCT
-a.internaltaxonid::bigint id_no,TRUE endemic
-FROM import_tables.non_spatial_non_spatial_endemic a
-JOIN all_species_list b ON a.internaltaxonid::bigint=b.id_no
-ORDER BY id_no;
---SELECT 10571
-
--------------------------------------------------------------------------------------------------
--- OUTPUT (SPECIES LIST)
--------------------------------------------------------------------------------------------------
-DROP TABLE IF EXISTS import_tables.all_species_list;CREATE TABLE import_tables.all_species_list AS
-SELECT id_no,class,binomial,endemic FROM all_species_list LEFT JOIN endemic_species_list USING(id_no) ORDER BY id_no;
---SELECT 25769
-```
-
-For version 2021, there are 25772 non-redundant species coming from spatial tables (IUCN+Birdlife), 26434 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25769 species (there are therefore 3 spatial objects discarded: _Ziphius cavirostris_, _Delphinus delphis_ and _Dugong dugon_ subpopulations, however included in the main species ranges). Of the 11098 endemic species, 10571 intersect the spatial and non-spatial dataset.
+For version 2021, there are 25879 non-redundant species coming from spatial tables (IUCN+Birdlife), 26533 coming from non-spatial tables (IUCN), and the intersection of the two groups returns 25867 species (there are 12 spatial objects discarded: 16208224, 16369383, 16370739, 16378423, 16381144, 16674437, 156206333, 157011948, 181208820, 189865869, 198785664, 198787290. All subpopulations of cetaceans, included in the main species ranges).
+Of the 11195  endemic species, 10663 intersect the spatial and non-spatial dataset.
 
 ### non-spatial
 
@@ -68,8 +18,7 @@ Temporary tables are created, selecting id_no according to existance in previous
 + **Country** information is derived from _import_tables.non_spatial_countries, field _code_ (ISO2 country code), selecting in the fields
 	+  `presence`: **Extant**
 	+  `origin`:  **Native**, **Reintroduced**, **Assisted Colonisation**
-	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this is a weakness, we wait for clairfication from IUCN)
-+  
+	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this is a weakness, we wait for clairfication from IUCN).
 
 
 
