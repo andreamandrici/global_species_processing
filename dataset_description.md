@@ -308,21 +308,26 @@ Spatial and non-spatial data for **birds** are available in the schema **`import
 
 The available fields (by table) are (relevants in **bold**):
 
-+  spatial_birds.binomial
 +  spatial_birds.citation
 +  spatial_birds.compiler
++  spatial_birds.data_sens
 +  spatial_birds.dist_comm
 +  spatial_birds.fid
++  spatial_birds.generalisd
++  **spatial_birds.id_no**
 +  **spatial_birds.origin**
 +  **spatial_birds.presence**
++  spatial_birds.sci_name
 +  **spatial_birds.seasonal**
++  spatial_birds.sens_comm
 +  **spatial_birds.shape**
 +  spatial_birds.shape_area
 +  spatial_birds.shape_length
-+  **spatial_birds.sisid**
 +  spatial_birds.source
++  spatial_birds.tax_comm
 +  spatial_birds.version
 +  spatial_birds.yrcompiled
++  spatial_birds.yrmodified
 +  non_spatial_birds.common_name
 +  non_spatial_birds.f2021_iucn_red_list_category
 +  non_spatial_birds.family_name
