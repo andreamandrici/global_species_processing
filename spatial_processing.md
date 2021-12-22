@@ -1,11 +1,10 @@
 ### spatial
 
-6.  Spatial tables present other differences which need harmonization, which will be solved with a specific flattening workflow: 
-    +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
-    +  IDs (id_no and sisrecid) are redundant (by presence, origin, seasonality).
+Spatial tables present other differences which need harmonization, which are be solved with a specific [flattening](https://github.com/andreamandrici/dopa_workflow) workflow: 
+  +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
+  +  IDs (id_no) are redundant (by presence, origin, seasonality).
 
-
-"Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently using the flattening workflow (fully described in another section).
+"Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently.
 
 #### input dataset
 
