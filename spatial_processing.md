@@ -1,4 +1,4 @@
-### spatial
+## spatial
 
 Spatial tables present other differences which need harmonization, which are be solved with a specific [flattening](https://github.com/andreamandrici/dopa_workflow) workflow: 
   +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
@@ -6,7 +6,7 @@ Spatial tables present other differences which need harmonization, which are be 
 
 "Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently.
 
-#### input dataset
+## input dataset
 
 Geometries of all groups are filtered to include only species (selected in the previous "harmonization - step 5").
 
@@ -19,7 +19,7 @@ Output tables are:
 +  **species_202001.geom_mammals**
 +  **species_202001.geom_birds**
 
-#### groups flattening
+## groups flattening
 
 [Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
 
