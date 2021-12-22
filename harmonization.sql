@@ -1,3 +1,6 @@
+-------------------------------------------------------------------------------------------------
+-- SPECIES LIST
+-------------------------------------------------------------------------------------------------
 --SPECIES LIST FROM SPATIAL TABLES
 DROP TABLE IF EXISTS spatial_list;
 CREATE TEMPORARY TABLE spatial_list AS
