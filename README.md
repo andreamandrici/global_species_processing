@@ -10,3 +10,5 @@
 ## [Harmonization](./harmonization.md)
 
 ## [Non-spatial processing](./non_spatial_processing.md)
+
+## [Spatial processing](./spatial_processing.md)
