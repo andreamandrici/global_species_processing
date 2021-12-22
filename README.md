@@ -8,3 +8,5 @@
 ## [Dataset description](./dataset_description.md)
 
 ## [Harmonization](./harmonization.md)
+
+## [Non-spatial processing](./non_spatial_processing.md)
