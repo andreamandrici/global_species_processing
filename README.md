@@ -12,3 +12,5 @@
 ## [Non-spatial processing](./non_spatial_processing.md)
 
 ## [Spatial processing](./spatial_processing.md)
+
+## [Output functions](./output_functions.md)
