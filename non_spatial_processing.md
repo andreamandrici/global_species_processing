@@ -21,25 +21,25 @@ Temporary tables are created, selecting id_no according to existance in previous
 After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
 +  output_schema.dopa_species
-  + id_no bigint
-  + phylum text
-  + class text
-  + order_ text
-  + family text
-  + genus text
-  + binomial text
-  + endemic boolean
-  + ecosystems text[]
-  + category text
-  + threatened boolean
-  + country text[]
-  + country_n integer
-  + conservation_needed text[]
-  + habitats text[]
-  + research_needed text[]
-  + stresses text[]
-  + threats text[]
-  + usetrade integer[]
+   +  id_no bigint
+   +  phylum text
+   + class text
+   + order_ text
+   + family text
+   + genus text
+   + binomial text
+   + endemic boolean
+   + ecosystems text[]
+   + category text
+   + threatened boolean
+   + country text[]
+   + country_n integer
+   + conservation_needed text[]
+   + habitats text[]
+   + research_needed text[]
+   + stresses text[]
+   + threats text[]
+   + usetrade integer[]
 
 +  mt_attributes
    +  mt_categories
