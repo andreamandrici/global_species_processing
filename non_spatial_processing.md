@@ -20,9 +20,9 @@ Temporary tables are created, selecting id_no according to existance in previous
 	 
 After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
-+  output_schema.dopa_species
-   +  id_no bigint
-   +  phylum text
++  **dopa_species**
+   + id_no bigint
+   + phylum text
    + class text
    + order_ text
    + family text
@@ -41,36 +41,14 @@ After processing (scripted in [non_spatial_processing.sql](./non_spatial_process
    + threats text[]
    + usetrade integer[]
 
-+  mt_attributes
-   +  mt_categories
-   +  mt_conservation_needed
-   +  mt_countries
-   +  mt_habitats
-   +  mt_research_needed
-   +  mt_stresses
-   +  mt_threats
-   +  mt_usetrade
-
-+  lookup tables (lt_):
-   +  lt_species_conservation_needed
-   +  lt_species_countries;
-   +  lt_species_habitats
-   +  lt_species_research_needed
-   +  lt_species_stresses
-   +  lt_species_threats
-   +  lt_species_usetrade
-
-	
-+  derived tables (dt_):
-   +  dt_species_conservation_needed
-   +  dt_species_country_endemics
-   +  dt_species_ecosystems
-   +  dt_species_habitats
-   +  dt_species_research_needed
-   +  dt_species_stresses
-   +  dt_species_threatened
-   +  dt_species_threats
-   +  dt_species_usetrade
++  **class_species_category**
++  **class_species_conservation_needed**
++  class_species_habitats
++  class_species_research_needed
++  class_species_stresses
++  class_species_threats
++  class_species_usetrade
++  
 
 ### Outputs
 
