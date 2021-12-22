@@ -11,9 +11,12 @@ Temporary tables are created, selecting id_no according to existance in previous
 	+  `presence`: **Extant**
 	+  `origin`:  **Native**, **Reintroduced**, **Assisted Colonisation**
 	+  `seasonality`:**Non-Breeding Season**, **Breeding Season**, **Resident**, _**NULL**_ (this is a weakness, we wait for clairfication from IUCN).
-
-
-
++ **conservation_needed** information is derived from _import_tables.non_spatial_conservation_needed_
++ **habitats** information is derived from _import_tables.non_spatial_habitats_
++ **research_needed** information is derived from _import_tables.non_spatial_research_needed_
++ **stress** information is derived from _import_tables.non_spatial_threats_, fields _stresscode_,_stressname_ 
++ **threats** information is derived from _import_tables.non_spatial_threats_
++ **usetrade** information is derived from _import_tables.non_spatial_usetrade_
 
 ```
 
