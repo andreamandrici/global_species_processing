@@ -38,12 +38,12 @@ All the import process is scripted in [import.sql](./import.sql).
 
 Query returned successfully in **15 min 18 secs**
 
-+  DB 247p - PostgreSQL 10.5 - postgis 2.4 - GDAL 2.2.2 - import from SSD (/data/swap/inputdata/birdlife/BOTW.gdb)
++  DB 247p - PostgreSQL 10.5 - postgis 2.4 - GDAL 2.2.2 - import from SSD (/data/swap/inputdata/birdlife/BOTW.gdb); previous dataset version (2020-v1).
 
-Query returned successfully in **6 min 42 secs**
+Query returned successfully in **6 min 42 secs** (this is most probably due to previous gdal version, most probably discarding complex/broken geometries).
 
 There is actually a failure: `SELECT * FROM import_tables.spatial_birds WHERE ST_NPoints(shape) < 4 --> sisid:105965570,binomial:Amaurospiza moesta)`
 
-+  JEODPP-GCAD - PostgreSQL 13.0- postgis 3.0 - GDAL 3.2.1 - import from network (/eos/jeodpp/home/users/mandand/data/inputdata/birdlife/BOTW.gdb)
++  JEODPP-GCAD - PostgreSQL 13.0- postgis 3.0 - GDAL 3.2.1 - import from network (/eos/jeodpp/home/users/mandand/data/inputdata/birdlife/BOTW.gdb); previous dataset version (2020-v1).
 
-Query returned successfully in **76 min 27 secs**
+Query returned successfully in **76 min 27 secs** (this is most probably due to importing from network share, and not from dedicated SSD).
