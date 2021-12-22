@@ -17,14 +17,8 @@ Temporary tables are created, selecting id_no according to existance in previous
 + **stress** information is derived from _import_tables.non_spatial_threats_, fields _stresscode_,_stressname_ 
 + **threats** information is derived from _import_tables.non_spatial_threats_
 + **usetrade** information is derived from _import_tables.non_spatial_usetrade_
-
-```
-
-```
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	 
-Output schema contains
+After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
 +  main tables (mt_):
    +  mt_attributes
