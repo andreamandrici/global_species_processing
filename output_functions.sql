@@ -1,42 +1,11 @@
--- CREATES FINAL OUTPUT TABLE ------------------------------------------------
-DROP TABLE IF EXISTS species.mt_species_output CASCADE;
-CREATE TABLE species.mt_species_output AS
-SELECT
-a.id_no,
-a.class,
-a.order_,
-a.family,
-a.genus,
-a.binomial,
-a.category,
-c.threatened,
-h.ecosystems,
-e.habitats,
-b.country,
-b.n_country,
-b.endemic,
-j.stresses,
-d.threats,
-g.research_needed,
-f.conservation_needed,
-i.usetrade
-FROM species.mt_attributes a
-LEFT JOIN species.dt_species_country_endemics b USING(id_no)
-LEFT JOIN species.dt_species_threatened c USING(id_no)
-LEFT JOIN species.dt_species_threats d USING(id_no)
-LEFT JOIN species.dt_species_habitats e USING(id_no)
-LEFT JOIN species.dt_species_conservation_needed f USING(id_no)
-LEFT JOIN species.dt_species_research_needed g USING(id_no)
-JOIN species.dt_species_ecosystems h USING(id_no)
-LEFT JOIN species.dt_species_usetrade i USING(id_no)
-LEFT JOIN species.dt_species_stresses j USING(id_no)
-ORDER BY a.id_no;
-
 -- CREATES FINAL FUNCTIONS ---------------------------------------------
+DROP MATERIALIZED VIEW IF EXISTS output_schema.dopa_species_list_template CASCADE;
+CREATE MATERIALIZED VIEW output_schema.dopa_species_list_template AS
+SELECT * FROM output_schema.dopa_species LIMIT 0;
 
 -------FN_GET_LIST_SPECIES_OUTPUT---------------------------------------
-DROP FUNCTION IF EXISTS species.get_list_species_output(bigint, text, text, text, text, text, text, boolean, text, text, text, boolean, text, text, text, text, text);
-CREATE OR REPLACE FUNCTION species.get_list_species_output(
+DROP FUNCTION IF EXISTS output_schema.get_dopa_species_list(bigint, text, text, text, text, text, text, boolean, text, text, text, boolean, text, text, text, text, text);
+CREATE OR REPLACE FUNCTION output_schema.dopa_species.get_list_species_output(
 a_id_no bigint DEFAULT NULL::bigint,
 b_class text DEFAULT NULL::text,
 c_order text DEFAULT NULL::text,
@@ -92,8 +61,6 @@ IF n_threats IS NOT NULL THEN sql := sql || ' AND ARRAY['||mn_threats||'] && thr
 IF o_research_needed IS NOT NULL THEN sql := sql || ' AND ARRAY['||mo_research_needed||'] && research_needed  '; END IF;
 IF p_conservation_needed IS NOT NULL THEN sql := sql || ' AND ARRAY['||mp_conservation_needed||'] && conservation_needed  '; END IF;
 IF q_usetrade IS NOT NULL THEN sql := sql || ' AND ARRAY['||mq_usetrade||']::integer[] && usetrade  '; END IF;
-
-
 sql := sql || ' ORDER BY id_no;';
 RETURN QUERY EXECUTE sql;
 END;
