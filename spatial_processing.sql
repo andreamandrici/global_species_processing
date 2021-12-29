@@ -70,3 +70,5 @@ FROM (
 		WHERE id_no IN (SELECT DISTINCT id_no FROM import_tables.all_species_list)
 ) a
 ORDER BY id_no;
+--SELECT 2709531
+--Query returned successfully in 12 min 3 secs.
