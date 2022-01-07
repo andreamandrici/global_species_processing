@@ -25,7 +25,7 @@ Output tables are:
 
 ## groups flattening
 
-[Flattening](../../flattening/) at 30 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
+[Flattening](https://andreamandrici.github.io/dopa_workflow/flattening/) at 10 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
 
 If needed, geometry fix is applied after step `a_`.
 
@@ -38,6 +38,8 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 +  richness (number of species) by pixel
 +  endemic_threatened = array of species which are endemic and threatened. **This information is derived from non-spatial processing**.    
 +  richness_endemic_threatened = richness of endemic and threatened species by pixel.
+
+xxxxxxxx edit from here
 
 [Environment](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/confs) and [log](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/logs) files are reported.
 [SQL](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/sql) files are also reported, when geometry fix was needed (after step `a_` of flattening).
