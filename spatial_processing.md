@@ -39,9 +39,8 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 +  endemic_threatened = array of species which are endemic and threatened. **This information is derived from non-spatial processing**.    
 +  richness_endemic_threatened = richness of endemic and threatened species by pixel.
 
-xxxxxxxx edit from here
+[Environment and log files](./flattening/) are reported. SQL files are also reported, when geometry fix was needed (after step `a_` of flattening).
 
-[Environment](./flattening/) and [log](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/logs) files are reported.
-[SQL](https://github.com/andreamandrici/dopa_workflow/tree/master/processing/species/species_2020/sql) files are also reported, when geometry fix was needed (after step `a_` of flattening).
+xxxxxxxx edit from here
 
 **Some of the species distribution ranges are too small to be (psuedo)rasterised at 1 Km (EG: 8 amphibians are left out, of which 3 are Data Deficient, 4 are Critically Endangered). They can be recovered assigning an artificial minimum range of 1 sqkm (the single pixel intersecting the centroid), then calculating the "boost" applied as ratio artificial/original. This goes in the todo-list**
