@@ -1,23 +1,27 @@
 ## spatial
 
-Spatial tables present other differences which need harmonization, which are be solved with a specific [flattening](https://github.com/andreamandrici/dopa_workflow) workflow: 
-  +  Geometric objects are polygons for IUCN source, and MultiPolygons for Birdlife source
-  +  IDs (id_no) are redundant (by presence, origin, seasonality).
+Spatial tables present differences which need harmonization, solved with a specific [flattening](https://github.com/andreamandrici/dopa_workflow) workflow: 
+  +  Geometric objects are
+    +  polygons for IUCN source
+    +  MultiPolygons for Birdlife source
+  +  IDs (id_no) are redundant (by presence, origin, seasonality)
+  +  often need geometry fix.
 
 "Sytematic" groups (_corals, sharks_rays_chimaeras, amphibians, birds, mammals_) are processed independently.
 
 ## input dataset
 
-Geometries of all groups are filtered to include only species (selected in the previous "harmonization - step 5").
+Geometries of all groups are filtered to include only species common to both datasewt (spatial and non-spatial; selected in the previous "Species selection" step).
 
-Code is: [creates_geoms.sql](./species_2020/creates_geoms.sql).
+Code is: [spatial_processing.sql](./spatial_processing.sql).
+
 Output tables are:
 
-+  **species_202001.geom_corals**
-+  **species_202001.geom_sharks_rays_chimaeras**
-+  **species_202001.geom_amphibians**
-+  **species_202001.geom_mammals**
-+  **species_202001.geom_birds**
++  **spatial_tables.geom_corals**
++  **spatial_tables.geom_amphibians**
++  **spatial_tables.geom_sharks**
++  **spatial_tables.geom_mammals**
++  **spatial_tables.geom_birds**
 
 ## groups flattening
 
