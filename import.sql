@@ -70,7 +70,7 @@ ORDER BY id_no,fid;
 ---------------------------------------------------------------
 DROP SERVER IF EXISTS fdw_birdlife CASCADE;
 CREATE SERVER fdw_birdlife FOREIGN DATA WRAPPER ogr_fdw
-OPTIONS (datasource '/data/swap/inputdata/birdlife/BOTW.gdb', format 'OpenFileGDB');
+OPTIONS (datasource '/data/swap/inputdata/birdlife/botw_2021.gpkg', format 'GPKG');
 --------------------------------------------------------------
 -- CREATE FDW SCHEMA AND TABLES (temporary)
 ---------------------------------------------------------------
@@ -85,7 +85,7 @@ SELECT * INTO import_tables.spatial_birds
 FROM birdlife.all_species
 WHERE PRESENCE IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3);
 --SELECT 14765
---Query returned successfully in 15 min 18 secs.
+--Query returned successfully in 3 min 14 secs.
 ---------------------------------------------------------------
 -- non-spatial
 DROP TABLE IF EXISTS import_tables.non_spatial_birds;
