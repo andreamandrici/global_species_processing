@@ -15,6 +15,12 @@ All data sources are extracted in `/data/swap/inputdata/` subfolders according t
 
 `/data/swap/inputdata/xlsx/input.xlsx` accepts a single file named exactly _input.xlsx_.
 
+Spatial birds data are stored in a format (ESRI FileGeoDB) which would introduce MultiSurface objects (ST_CircularString and ST_LineString instead of expected ST_Polygons) within Postigis. To avoid this, \*.gdb is converted before being imported, with the following:  
+
+`ogr2ogr -f GPKG -nlt CONVERT_TO_LINEAR botw_2021.gpkg BOTW.gdb All_Species`
+
+which will produce an 8GB gpkg in about 15m.
+
 ### foreign data wrapper
 Foreign data servers are created in bulk; foreign data tables are imported in bulk in specific, temporary schemes.
 Each foreign table is converted to real table (geometric or non-geometric).
