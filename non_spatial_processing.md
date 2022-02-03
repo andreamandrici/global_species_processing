@@ -1,6 +1,6 @@
 ### non-spatial
 
-An _output_schema_ (currently: *dopa*) is created.
+An _output_schema_ (currently: **dopa**) is created.
 
 After processing (scripted in [non_spatial_processing.sql](./non_spatial_processing.sql)), the output schema contains:
 
