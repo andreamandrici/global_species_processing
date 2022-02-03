@@ -1,8 +1,8 @@
 -------------------------------------------------------------------
 -- OUTPUT SCHEMA --------------------------------------------------
 -------------------------------------------------------------------
-DROP SCHEMA IF EXISTS output_schema CASCADE;
-CREATE SCHEMA output_schema;
+DROP SCHEMA IF EXISTS dopa CASCADE;
+CREATE SCHEMA dopa;
 -------------------------------------------------------------------
 -- TAXONOMY -------------------------------------------------------
 -------------------------------------------------------------------
@@ -483,8 +483,8 @@ ORDER BY code,name;
 -- OUTPUTS --------------------------------------------------------
 -------------------------------------------------------------------
 -- main output table ----------------------------------------------
-DROP TABLE IF EXISTS output_schema.dopa_species CASCADE;
-CREATE TABLE output_schema.dopa_species AS
+DROP TABLE IF EXISTS dopa.dopa_species CASCADE;
+CREATE TABLE dopa.dopa_species AS
 SELECT 
 a.*,
 b.ecosystems,
@@ -510,30 +510,30 @@ LEFT JOIN lt_threats j USING(id_no)
 LEFT JOIN lt_usetrade k USING(id_no)
 ORDER BY id_no;
 -- ancillary tables -----------------------------------------------
-DROP TABLE IF EXISTS output_schema.class_species_category CASCADE;
-CREATE TABLE output_schema.class_species_category AS
+DROP TABLE IF EXISTS dopa.class_species_category CASCADE;
+CREATE TABLE dopa.class_species_category AS
 SELECT * FROM category2 ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_conservation_needed CASCADE;
-CREATE TABLE output_schema.class_species_conservation_needed AS
+DROP TABLE IF EXISTS dopa.class_species_conservation_needed CASCADE;
+CREATE TABLE dopa.class_species_conservation_needed AS
 SELECT * FROM mt_conservation_needed ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_habitats CASCADE;
-CREATE TABLE output_schema.class_species_habitats AS
+DROP TABLE IF EXISTS dopa.class_species_habitats CASCADE;
+CREATE TABLE dopa.class_species_habitats AS
 SELECT * FROM mt_habitats ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_research_needed CASCADE;
-CREATE TABLE output_schema.class_species_research_needed AS
+DROP TABLE IF EXISTS dopa.class_species_research_needed CASCADE;
+CREATE TABLE dopa.class_species_research_needed AS
 SELECT * FROM mt_research_needed ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_stresses CASCADE;
-CREATE TABLE output_schema.class_species_stresses AS
+DROP TABLE IF EXISTS dopa.class_species_stresses CASCADE;
+CREATE TABLE dopa.class_species_stresses AS
 SELECT * FROM mt_stresses ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_threats CASCADE;
-CREATE TABLE output_schema.class_species_threats AS
+DROP TABLE IF EXISTS dopa.class_species_threats CASCADE;
+CREATE TABLE dopa.class_species_threats AS
 SELECT * FROM mt_threats ORDER BY code;
 
-DROP TABLE IF EXISTS output_schema.class_species_usetrade CASCADE;
-CREATE TABLE output_schema.class_species_usetrade AS
+DROP TABLE IF EXISTS dopa.class_species_usetrade CASCADE;
+CREATE TABLE dopa.class_species_usetrade AS
 SELECT * FROM mt_usetrade ORDER BY code;
