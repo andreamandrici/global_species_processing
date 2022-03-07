@@ -13,7 +13,7 @@ Spatial tables present differences which need harmonization, solved with a speci
 
 Geometries of all groups are filtered to include only species common to both dataset (spatial and non-spatial; selected in the previous "Species selection" step).
 
-Code is: [spatial_processing.sql](./spatial_processing.sql).
+Code is: [spatial_processing.sql](./spatial/spatial_processing.sql).
 
 Output tables are:
 
