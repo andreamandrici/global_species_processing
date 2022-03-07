@@ -1,0 +1,80 @@
+#!/bin/bash
+### PLEASE CHECK THE CHANGEME LINES!
+
+####################################################################################################################################################
+
+# TIMER START
+START_T1=$(date +%s)
+
+####################################################################################################################################################
+
+# PARAMETERS
+source workflow_parameters.conf
+threads=$1
+####################################################################################################################################################
+
+# INSTRUCTIONS
+Usage () {
+    echo "
+This script will parallelize postgis processing. Execute it as:
+time ./command_name.sh 72 > logs/command_name_log.txt 2>&1
+"
+}
+
+####################################################################################################################################################
+## CLIP INPUTS
+####################################################################################################################################################
+REUNIONS_F="REUNIONS_T"
+
+# CLEAN OUTPUT TABLES
+psql ${dbpar2} -t -c "TRUNCATE TABLE ${SCH}.db_tiled_temp RESTART IDENTITY;"
+
+
+# PROCESSING
+## SELECT
+sql_select=$(cat<<EOF
+DROP TABLE IF EXISTS ${SCH}.tiled_all_onprocess;
+CREATE TABLE ${SCH}.tiled_all_onprocess AS
+SELECT qid FROM ${SCH}.z_grid
+JOIN
+(SELECT qid,nid,complex FROM
+(SELECT ROW_NUMBER () OVER () nid,* FROM
+(SELECT *,MOD(id,${threads})+1 s FROM
+(SELECT ROW_NUMBER () OVER (ORDER BY complex DESC) id,* FROM
+(SELECT qid,(COUNT(geom)*SUM(ST_NPoints(geom))) complex FROM
+(${REUNIONS_F}) a
+GROUP BY qid) b) c
+ORDER BY s,complex DESC) d) e
+ORDER BY nid) f USING (qid);
+
+SELECT qid FROM ${SCH}.tiled_all_onprocess;
+EOF
+)
+
+## LIST
+list=`psql ${dbpar2} -t -c "$sql_select"`
+arr=(${list})
+elements="${#arr[@]}"
+objects=$((elements/threads))
+if (( ${objects} == 0))
+then
+objects=1
+fi
+
+echo "number of elements: "${elements}
+echo "number of objects in each step: "${objects}
+echo "number of dedicated threads: "${threads}
+
+## EXECUTE
+sql_execute=$(cat<<EOF
+SELECT qid FROM ${SCH}.tiled_all_onprocess
+EOF
+)
+
+for ((OFF=0 ; OFF<=${elements}; OFF+=${objects}))
+	do
+		OBJS=`psql ${dbpar2} -t -c "$sql_execute OFFSET ${OFF} LIMIT ${objects};"`
+		for OBJ in ${OBJS}
+		do
+			echo "start processing tile "${OBJ}
+			START_TT1=$(date +%s)
