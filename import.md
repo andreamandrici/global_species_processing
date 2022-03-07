@@ -36,7 +36,7 @@ Download of non spatial data for birds from [IUCN Red List of Threatened Species
 
 At the end of the import all foreign objects and temporary schemes are dropped.
 
-All the import process is scripted in [import.sql](./import.sql).
+All the import process is scripted in [import.sql](./harmonization/import.sql).
 
 **NOTE** The most expensive of the above operations is import/coversion to real table of birds geographic dataset. This operation is tested on different servers (dedicated exclusive D6 VS shared JEODPP), with different versions of gdal-ogr, postgres-postgis, data disk:
 
