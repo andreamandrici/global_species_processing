@@ -43,7 +43,7 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 +  endemic_threatened = array of species which are endemic and threatened. **This information is derived from non-spatial processing**.    
 +  richness_endemic_threatened = richness of endemic and threatened species by pixel.
 
-[Environment and log files](./flattening/) are reported. SQL files are also reported, when geometry fix was needed (after step `a_` of flattening).
+[Environment and log files](./spatial/flattening/) are reported. SQL files are also reported, when geometry fix was needed (after step `a_` of flattening).
 
 xxxxxxxx edit from here
 
