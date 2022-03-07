@@ -1,0 +1,120 @@
+NOTICE:  schema "species_2022_sharks" does not exist, skipping
+CREATE SCHEMA
+NUMBER OF TOPICS 1
+processing topic 1
+Topic 1 is sharks
+rm: cannot remove 'a_input_sharks.sh': No such file or directory
+rm: cannot remove 'b_clip_sharks.sh': No such file or directory
+rm: cannot remove 'c_rast_sharks.sh': No such file or directory
+rm: cannot remove 'da_tiled_sharks.sh': No such file or directory
+NOTICE:  table "a_input_sharks" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "b_clip_sharks" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "c_raster_sharks" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "da_tiled_sharks" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_raster" does not exist, skipping
+CREATE INDEX
+creating function using variables defined in the topic loop
+NOTICE:  function species_2022_sharks.st_createfishnet(pg_catalog.int4,pg_catalog.int4,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8) does not exist, skipping
+CREATE FUNCTION
+NOTICE:  function species_2022_sharks.f_pop_z_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_o_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_input(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_clip(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_raster(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_tiled(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_tiled_temp(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_flatter(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_atts_tile(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_flat_recode(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_sharks.f_pop_o_raster(pg_catalog.int4,text) does not exist, skipping
+COMMENT
+creating tables using variables defined in the topic loop
+NOTICE:  table "z_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "db_tiled_temp" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "dc_tiled_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "e_flat_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "fa_atts_tile" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "fb_atts_all" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "g_flat_temp" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "h_flat" does not exist, skipping
+CREATE INDEX
+ 
+
+ 
+
+UPDATE 64800
+UPDATE 64800
+
+FIELDS WAS
+,sharks  integer[];
+REFIELDS IS
+sharks  integer[];
+
+ORDERS WAS
+,sharks;
+REORDERS IS
+sharks;
+
+INDEX_FLAT IS
+CREATE INDEX ON species_2022_sharks.h_flat USING GIN(sharks);
+;
+
+L_ATTS_AGG_JOINS IS
+LEFT JOIN (SELECT qid,tid,ARRAY_AGG(DISTINCT fid ORDER BY fid) sharks FROM atts_tile WHERE source='sharks' GROUP BY qid,tid) sharks USING(qid,tid)
+;
+
+L_ATTS_AGG_UPD IS
+UPDATE atts_tile_agg SET sharks = ARRAY[0] WHERE sharks IS NULL;
+;
+
+UNIONS WAS
+ UNION ALL SELECT qid,geom FROM species_2022_sharks.da_tiled_sharks;
+REUNIONS IS
+SELECT qid,geom FROM species_2022_sharks.da_tiled_sharks;
+
+POPS WAS
+wait\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','sharks');"\n;
+REPOPS IS
+\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','sharks');"\n;
+
+FLAT WAS
+,''sharks'';
+REFLAT IS
+''sharks'';
+
+REPOPS IS ALSO 
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','sharks');"
+
+
+1 # GRID SIZE IN DEGREES
+10 # CELL SIZE IN ARCSEC
+180 # NUMBER OF ROWS IN THE GRID
+360 # NUMBER OF COLUMNS IN THE GRID
+360 # NUMBER OF ROWS/COLUMNS FOR CELL
+360 # NUMBER OF ROWS/COLUMNS FOR TILE
+
+analysis done
+TOTAL SCRIPT TIME: 9
