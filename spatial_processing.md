@@ -29,9 +29,7 @@ Geometries are [checked (and, when needed, fixed)](./geometry_fix/) for validity
 
 ## groups flattening
 
-[Flattening](https://andreamandrici.github.io/dopa_workflow/flattening/) at 10 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
-
-If needed, geometry fix is applied after step `a_`.
+[Flattening](https://andreamandrici.github.io/dopa_workflow/flattening/) at 10 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently. If needed, geometry fix is applied after step `a_`.
 
 All the other steps are executed inside `z_do_it_all.sh` script.
 
