@@ -1,0 +1,127 @@
+NOTICE:  drop cascades to 7 other objects
+DETAIL:  drop cascades to table export_raster.flat
+drop cascades to table export_raster.flat_attributes
+drop cascades to table export_raster.z_grid
+drop cascades to table export_raster.step1
+drop cascades to table export_raster.h_flat
+drop cascades to table export_raster.o_raster
+drop cascades to function export_raster.f_pop_o_raster(integer,text)
+CREATE SCHEMA
+NUMBER OF TOPICS 1
+processing topic 1
+Topic 1 is general
+rm: cannot remove 'a_input_general.sh': No such file or directory
+rm: cannot remove 'b_clip_general.sh': No such file or directory
+rm: cannot remove 'c_rast_general.sh': No such file or directory
+rm: cannot remove 'da_tiled_general.sh': No such file or directory
+NOTICE:  table "a_input_general" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "b_clip_general" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "c_raster_general" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "da_tiled_general" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_raster" does not exist, skipping
+CREATE INDEX
+creating function using variables defined in the topic loop
+NOTICE:  function export_raster.st_createfishnet(pg_catalog.int4,pg_catalog.int4,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8) does not exist, skipping
+CREATE FUNCTION
+NOTICE:  function export_raster.f_pop_z_grid() does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_o_grid() does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_input(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_clip(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_raster(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_tiled(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_tiled_temp(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_flatter(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_atts_tile(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_flat_recode(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function export_raster.f_pop_o_raster(pg_catalog.int4,text) does not exist, skipping
+COMMENT
+creating tables using variables defined in the topic loop
+NOTICE:  table "z_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "db_tiled_temp" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "dc_tiled_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "e_flat_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "fa_atts_tile" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "fb_atts_all" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "g_flat_temp" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "h_flat" does not exist, skipping
+CREATE INDEX
+ 
+
+ 
+
+UPDATE 64800
+UPDATE 64800
+
+FIELDS WAS
+,general  integer[];
+REFIELDS IS
+general  integer[];
+
+ORDERS WAS
+,general;
+REORDERS IS
+general;
+
+INDEX_FLAT IS
+CREATE INDEX ON export_raster.h_flat USING GIN(general);
+;
+
+L_ATTS_AGG_JOINS IS
+LEFT JOIN (SELECT qid,tid,ARRAY_AGG(DISTINCT fid ORDER BY fid) general FROM atts_tile WHERE source='general' GROUP BY qid,tid) general USING(qid,tid)
+;
+
+L_ATTS_AGG_UPD IS
+UPDATE atts_tile_agg SET general = ARRAY[0] WHERE general IS NULL;
+;
+
+UNIONS WAS
+ UNION ALL SELECT qid,geom FROM export_raster.da_tiled_general;
+REUNIONS IS
+SELECT qid,geom FROM export_raster.da_tiled_general;
+
+POPS WAS
+wait\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','general');"\n;
+REPOPS IS
+\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','general');"\n;
+
+FLAT WAS
+,''general'';
+REFLAT IS
+''general'';
+
+REPOPS IS ALSO 
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','general');"
+
+
+1 # GRID SIZE IN DEGREES
+10 # CELL SIZE IN ARCSEC
+180 # NUMBER OF ROWS IN THE GRID
+360 # NUMBER OF COLUMNS IN THE GRID
+360 # NUMBER OF ROWS/COLUMNS FOR CELL
+360 # NUMBER OF ROWS/COLUMNS FOR TILE
+
+analysis done
+TOTAL SCRIPT TIME: 8

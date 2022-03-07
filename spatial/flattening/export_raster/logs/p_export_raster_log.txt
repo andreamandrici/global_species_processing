@@ -1,0 +1,344 @@
+/data/swap/export_raster/raster_output
+removing /data/swap/export_raster/raster_output
+creating /data/swap/export_raster/raster_output
+NOTICE:  table "export_raster_onprocess" does not exist, skipping
+number of elements: 59
+number of objects in each step: 1
+number of dedicated threads: 46
+processing 119
+processing 120
+processing 155
+processing 177
+processing 190
+processing 191
+processing 193
+Input file size is 2227, 2191
+0Input file size is 146, 358
+0...10...20...30...40...50Input file size is 1192, 3600
+0processing 194
+...10...20...30...40...50...60...70...80...90...100 - done.
+...10...20...30...40...50processing of 120 ended
+...60...70...80...90...100 - done.
+processing of 119 ended
+Input file size is 2794, 1919
+0processing 200
+...60...70...80...90...100 - done.
+processing of 155 ended
+Input file size is 64, 38
+0...10...20..processing 201
+...10...20...30...40...50...60...70...80...90...100 - done.
+.30...40...50processing of 190 ended
+processing 202
+...60...70..Input file size is 2735, 3314
+0Input file size is 631, 1140
+0...10...20...30...40...50...10...20...30...40...50.80...90...100 - done.
+processing 210
+processing of 177 ended
+...60...70...80...90...100 - done.
+processing of 193 ended
+...60...70...80...90...100 - done.
+processing 211
+Input file size is 825, 1499
+0processing of 191 ended
+Input file size is 852, 666
+0...10...20...30...40...50...10...20...30...40...50processing 212
+...60...70...80...90...100 - done.
+...60...70...80...90...100 - done.
+processing of 194 ended
+processing of 200 ended
+Input file size is 3600, 1873
+0processing 213
+...10...20...30...40...50processing 214
+Input file size is 1022, 536
+0Input file size is 382, 490
+0...60...70.....10...20...30...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 202 ended
+processing 230
+...60...70...80...90...100 - done.
+processing of 210 ended
+.80...90...100 - done.
+Input file size is 3600, 1097
+0processing of 201 ended
+...10...20...30.processing 231
+..40...50...60..processing 238
+Input file size is 3600, 1203
+0.70...80...90...100 - done.
+Input file size is 3600, 2792
+0processing of 211 ended
+...10...20...30.processing 239
+..40...50...60..processing 249
+.70...80...90...100 - done.
+processing of 213 ended
+...10...20...30...40...50processing 250
+Input file size is 1659, 3324
+0Input file size is 3202, 3600
+0...60...70...80...90...100 - done.
+processing of 212 ended
+Input file size is 1946, 843
+0processing 266
+...10...20...30...40...50...10...20...30...40...50Input file size is 708, 1142
+0...10...20...30...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+processing 267
+processing of 231 ended
+...60...70...80...90...100 - done.
+processing of 238 ended
+Input file size is 312, 454
+0...60...70...80...90...100 - done.
+...60...70...80...90...100 - done.
+processing of 214 ended
+processing of 230 ended
+Input file size is 313, 911
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 239 ended
+processing 275
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 249 ended
+processing 283
+Input file size is 2438, 3600
+0Input file size is 64, 109
+0processing 284
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 266 ended
+Input file size is 1529, 3600
+0processing 285
+...10...20...30...40...50...10...20...30...40...50processing 286
+...60...70...80...90...100 - done.
+processing of 267 ended
+...60...70...80...90...100 - done.
+Input file size is 66, 196
+0processing of 250 ended
+processing 298
+Input file size is 117, 403
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 283 ended
+processing 299
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 275 ended
+Input file size is 147, 212
+0processing 302
+Input file size is 1337, 3387
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 284 ended
+...10...20...30...40...50Input file size is 1721, 3591
+0processing 303
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 285 ended
+processing 317
+Input file size is 260, 537
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 286 ended
+processing 318
+...60...70...80...90...100 - done.
+processing of 298 ended
+Input file size is 160, 160
+0processing 320
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 299 ended
+Input file size is 3057, 1142
+0processing 321
+...10...20...30...40...50...60..Input file size is 2760, 3091
+0processing 322
+.70...80...90...100 - done.
+processing of 302 ended
+Input file size is 1274, 380
+0...10...20...30...40...50processing 334
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 317 ended
+Input file size is 2407, 399
+0...60...70...80...90...100 - done.
+processing of 303 ended
+processing 335
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 318 ended
+Input file size is 1197, 1140
+0processing 338
+Input file size is 2800, 985
+0...10...20...30...40...50...10...20...30...40...50processing 347
+...60...70...80...90...100 - done.
+processing of 320 ended
+...60...70...80...90...100 - done.
+processing of 321 ended
+Input file size is 146, 327
+0processing 348
+Input file size is 425, 625
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 334 ended
+processing 355
+Input file size is 1605, 900
+0...10...20...30...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 322 ended
+Input file size is 1357, 716
+0processing 371
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 335 ended
+...60...70...80...90...100 - done.
+processing of 338 ended
+processing 377
+Input file size is 591, 1236
+0processing 384
+Input file size is 793, 1343
+0...10...20...30...40...50...10...20...30...40...50processing 388
+Input file size is 1940, 1881
+0...60...70...80...90...100 - done.
+processing of 348 ended
+...60...70...80...90...100 - done.
+processing of 347 ended
+...10...20...30...40...50Input file size is 1687, 901
+0...60...70...80...90...100 - done.
+processing 390
+processing of 355 ended
+...10...20...30...40...50processing 391
+...60...70...80...90...100 - done.
+processing of 371 ended
+processing 403
+Input file size is 96, 158
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 377 ended
+processing 404
+Input file size is 870, 2024
+0Input file size is 599, 654
+0...10...20...30...40...50...10...20...30...40...50processing 426
+...60...70...80...90...100 - done.
+processing of 388 ended
+...60...70...80...90...100 - done.
+Input file size is 50, 240
+0processing of 384 ended
+processing 427
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 390 ended
+Input file size is 2203, 3408
+0processing 439
+Input file size is 1605, 1541
+0...10...20...30...40...50Input file size is 9, 34
+0...10...20...30...40...50processing 449
+...60...70...80...90...100 - done.
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 404 ended
+processing of 403 ended
+processing 463
+...60...70...80...90...100 - done.
+processing of 391 ended
+Input file size is 353, 1025
+0...10...20...30...40...50processing 464
+Input file size is 877, 1966
+0...60...70...80...90...100 - done.
+processing of 426 ended
+...10...20...30...40...50processing 465
+...60...70...80...90...100 - done.
+processing of 427 ended
+Input file size is 713, 657
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 439 ended
+Input file size is 1005, 907
+0...10...20...30...40...50Input file size is 475, 1399
+0...60...70...80...90...100 - done.
+...10...20...30...40...50processing of 449 ended
+...60...70...80...90...100 - done.
+processing of 463 ended
+Input file size is 3600, 2048
+0Input file size is 335, 277
+0...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 465 ended
+...10...20...30...40...50...60...70...80...90...100 - done.
+processing of 464 ended
+DROP TABLE
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Driver: VRT/Virtual Raster
+Files: raster_output.vrt
+       ./tiles/119.tiff
+       ./tiles/120.tiff
+       ./tiles/155.tiff
+       ./tiles/177.tiff
+       ./tiles/190.tiff
+       ./tiles/191.tiff
+       ./tiles/193.tiff
+       ./tiles/194.tiff
+       ./tiles/200.tiff
+       ./tiles/201.tiff
+       ./tiles/202.tiff
+       ./tiles/210.tiff
+       ./tiles/211.tiff
+       ./tiles/212.tiff
+       ./tiles/213.tiff
+       ./tiles/214.tiff
+       ./tiles/230.tiff
+       ./tiles/231.tiff
+       ./tiles/238.tiff
+       ./tiles/239.tiff
+       ./tiles/249.tiff
+       ./tiles/250.tiff
+       ./tiles/266.tiff
+       ./tiles/267.tiff
+       ./tiles/275.tiff
+       ./tiles/283.tiff
+       ./tiles/284.tiff
+       ./tiles/285.tiff
+       ./tiles/286.tiff
+       ./tiles/298.tiff
+       ./tiles/299.tiff
+       ./tiles/302.tiff
+       ./tiles/303.tiff
+       ./tiles/317.tiff
+       ./tiles/318.tiff
+       ./tiles/320.tiff
+       ./tiles/321.tiff
+       ./tiles/322.tiff
+       ./tiles/334.tiff
+       ./tiles/335.tiff
+       ./tiles/338.tiff
+       ./tiles/347.tiff
+       ./tiles/348.tiff
+       ./tiles/355.tiff
+       ./tiles/371.tiff
+       ./tiles/377.tiff
+       ./tiles/384.tiff
+       ./tiles/388.tiff
+       ./tiles/390.tiff
+       ./tiles/391.tiff
+       ./tiles/403.tiff
+       ./tiles/404.tiff
+       ./tiles/426.tiff
+       ./tiles/427.tiff
+       ./tiles/439.tiff
+       ./tiles/449.tiff
+       ./tiles/463.tiff
+       ./tiles/464.tiff
+       ./tiles/465.tiff
+Size is 97792, 33130
+Coordinate System is:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["geodetic latitude (Lat)",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["geodetic longitude (Lon)",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4326]]
+Data axis to CRS axis mapping: 2,1
+Origin = (-114.872222222222220,35.725000000000001)
+Pixel Size = (0.002777777777778,-0.002777777777778)
+Corner Coordinates:
+Upper Left  (-114.8722222,  35.7250000) (114d52'20.00"W, 35d43'30.00"N)
+Lower Left  (-114.8722222, -56.3027778) (114d52'20.00"W, 56d18'10.00"S)
+Upper Right ( 156.7722222,  35.7250000) (156d46'20.00"E, 35d43'30.00"N)
+Lower Right ( 156.7722222, -56.3027778) (156d46'20.00"E, 56d18'10.00"S)
+Center      (  20.9500000, -10.2888889) ( 20d57' 0.00"E, 10d17'20.00"S)
+Band 1 Block=128x128 Type=Byte, ColorInterp=Gray
+  Minimum=1.000, Maximum=4.000, Mean=1.891, StdDev=0.806
+  NoData Value=0
+  Metadata:
+    STATISTICS_APPROXIMATE=YES
+    STATISTICS_MAXIMUM=4
+    STATISTICS_MEAN=1.8914352578555
+    STATISTICS_MINIMUM=1
+    STATISTICS_STDDEV=0.80581273415715
+    STATISTICS_VALID_PERCENT=0.9598
+COPY 0
+analysis done
+TOTAL SCRIPT TIME: 6

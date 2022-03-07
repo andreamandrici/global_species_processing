@@ -1,0 +1,3093 @@
+8BUI
+TRUNCATE TABLE
+NOTICE:  table "o_raster_onprocess" does not exist, skipping
+number of elements: 771
+number of objects in each step: 5
+number of dedicated threads: 140
+start processing tile 24454
+start processing tile 19771
+start processing tile 26253
+start processing tile 18678
+start processing tile 32533
+ 
+
+end processing tile 24454 in 1
+start processing tile 29810
+start processing tile 30384
+ 
+
+end processing tile 26253 in 0
+start processing tile 19411
+ 
+
+end processing tile 18678 in 0
+start processing tile 26254
+start processing tile 30385
+start processing tile 16889
+ 
+
+end processing tile 29810 in 0
+start processing tile 43627
+ 
+
+ 
+
+end processing tile 32533 in 0
+start processing tile 38100
+end processing tile 19771 in 0
+start processing tile 23174
+start processing tile 43870
+ 
+
+end processing tile 30384 in 0
+start processing tile 36639
+ 
+
+end processing tile 26254 in 0
+start processing tile 20132
+start processing tile 26608
+start processing tile 26609
+ 
+
+ 
+
+end processing tile 19411 in 0
+start processing tile 17244
+end processing tile 30385 in 0
+start processing tile 29305
+ 
+
+end processing tile 38100 in 0
+start processing tile 18331
+ 
+
+end processing tile 43627 in 0
+start processing tile 21452
+start processing tile 14145
+ 
+
+ 
+
+end processing tile 43870 in 0
+start processing tile 16888
+end processing tile 36639 in 0
+start processing tile 43724
+ 
+
+end processing tile 23174 in 0
+start processing tile 29811
+start processing tile 14504
+ 
+
+end processing tile 26608 in 0
+start processing tile 17388
+ 
+
+start processing tile 17969
+end processing tile 18331 in 1
+start processing tile 19051
+ 
+
+ 
+
+ 
+
+end processing tile 26609 in 1
+start processing tile 21813
+end processing tile 21452 in 1
+start processing tile 26252
+end processing tile 16889 in 1
+start processing tile 13426
+ 
+
+ 
+
+end processing tile 29305 in 1
+start processing tile 18320
+end processing tile 20132 in 1
+start processing tile 23899
+ 
+
+end processing tile 17244 in 1
+start processing tile 30025
+start processing tile 36661
+ 
+
+end processing tile 29811 in 1
+start processing tile 43723
+ 
+
+end processing tile 43724 in 1
+start processing tile 38101
+ 
+
+end processing tile 14504 in 1
+start processing tile 30745
+start processing tile 34429
+ 
+
+end processing tile 14145 in 1
+start processing tile 34069
+ 
+
+end processing tile 17388 in 1
+start processing tile 18324
+start processing tile 34430
+ 
+
+end processing tile 21813 in 0
+start processing tile 32894
+ 
+
+end processing tile 36661 in 0
+start processing tile 17965
+ 
+
+end processing tile 18320 in 0
+start processing tile 43725
+ 
+
+ 
+
+ 
+
+end processing tile 13426 in 0
+start processing tile 30386
+end processing tile 30025 in 0
+start processing tile 32532
+end processing tile 16888 in 1
+start processing tile 13785
+ 
+
+ 
+
+end processing tile 38101 in 0
+start processing tile 19050
+end processing tile 43723 in 0
+start processing tile 21573
+start processing tile 15225
+ 
+
+ 
+
+end processing tile 23899 in 0
+start processing tile 30026
+end processing tile 26252 in 0
+start processing tile 31457
+ 
+
+end processing tile 34069 in 0
+start processing tile 17028
+ 
+
+end processing tile 34429 in 0
+start processing tile 26613
+ 
+
+end processing tile 17969 in 0
+start processing tile 14505
+ 
+
+end processing tile 30745 in 0
+start processing tile 34070
+ 
+
+end processing tile 19051 in 0
+start processing tile 21935
+start processing tile 16887
+ 
+
+end processing tile 21573 in 0
+ 
+
+ 
+
+end processing tile 32894 in 0
+start processing tile 18329
+end processing tile 32532 in 0
+ 
+
+end processing tile 43725 in 0
+start processing tile 26423
+ 
+
+end processing tile 30386 in 0
+start processing tile 26607
+ 
+
+ 
+
+end processing tile 15225 in 0
+start processing tile 38102
+end processing tile 34430 in 0
+start processing tile 16307
+start processing tile 34790
+ 
+
+end processing tile 13785 in 0
+start processing tile 30742
+ 
+
+ 
+
+end processing tile 18324 in 0
+start processing tile 30743
+end processing tile 19050 in 0
+ 
+
+ 
+
+end processing tile 26613 in 0
+start processing tile 17246
+start processing tile 34791
+end processing tile 30026 in 0
+ 
+
+end processing tile 17028 in 0
+start processing tile 26610
+ 
+
+end processing tile 34070 in 0
+start processing tile 26611
+ 
+
+ 
+
+end processing tile 14505 in 0
+start processing tile 31101
+end processing tile 31457 in 0
+start processing tile 15585
+start processing tile 16167
+ 
+
+end processing tile 17965 in 0
+start processing tile 14864
+ 
+
+end processing tile 21935 in 0
+ 
+
+start processing tile 31461
+end processing tile 26423 in 0
+ 
+
+ 
+
+end processing tile 26607 in 0
+start processing tile 17608
+end processing tile 30742 in 0
+start processing tile 32893
+ 
+
+end processing tile 38102 in 0
+start processing tile 34506
+ 
+
+ 
+
+end processing tile 16307 in 1
+start processing tile 26614
+ 
+
+end processing tile 34791 in 1
+start processing tile 16168
+end processing tile 18329 in 1
+start processing tile 30744
+ 
+
+start processing tile 31814
+end processing tile 34790 in 1
+start processing tile 17249
+ 
+
+end processing tile 16167 in 1
+start processing tile 34862
+ 
+
+ 
+
+start processing tile 20131
+end processing tile 17246 in 1
+start processing tile 14865
+end processing tile 16887 in 1
+start processing tile 15945
+ 
+
+ 
+
+end processing tile 30743 in 1
+start processing tile 14144
+end processing tile 15585 in 1
+start processing tile 34789
+ 
+
+ 
+
+end processing tile 31101 in 1
+start processing tile 34146
+end processing tile 26611 in 1
+start processing tile 17027
+ 
+
+end processing tile 14864 in 1
+start processing tile 31102
+ 
+
+end processing tile 26610 in 1
+start processing tile 16886
+start processing tile 15947
+ 
+
+end processing tile 17608 in 1
+ 
+
+end processing tile 31461 in 1
+start processing tile 26970
+start processing tile 15946
+ 
+
+end processing tile 26614 in 0
+start processing tile 17964
+ 
+
+end processing tile 34506 in 1
+start processing tile 44234
+ 
+
+end processing tile 16168 in 0
+start processing tile 20492
+ 
+
+ 
+
+end processing tile 32893 in 1
+end processing tile 31814 in 0
+start processing tile 16665
+ 
+
+end processing tile 30744 in 0
+ 
+
+end processing tile 34146 in 0
+start processing tile 26612
+ 
+
+end processing tile 14144 in 0
+ 
+
+start processing tile 35020
+end processing tile 17027 in 0
+ 
+
+ 
+
+end processing tile 34862 in 0
+start processing tile 26969
+end processing tile 15945 in 0
+start processing tile 31458
+ 
+
+end processing tile 20131 in 0
+start processing tile 31815
+ 
+
+end processing tile 34789 in 0
+start processing tile 44442
+start processing tile 17387
+ 
+
+end processing tile 14865 in 0
+start processing tile 31103
+ 
+
+end processing tile 15947 in 0
+start processing tile 20133
+ 
+
+end processing tile 15946 in 0
+start processing tile 38460
+ 
+
+ 
+
+end processing tile 44234 in 0
+start processing tile 17609
+start processing tile 32172
+end processing tile 26970 in 0
+start processing tile 16166
+ 
+
+end processing tile 31102 in 0
+start processing tile 17025
+ 
+
+end processing tile 16665 in 0
+start processing tile 34864
+ 
+
+ 
+
+end processing tile 17249 in 0
+start processing tile 16305
+end processing tile 26612 in 0
+start processing tile 17605
+ 
+
+end processing tile 35020 in 0
+start processing tile 15586
+ 
+
+end processing tile 16886 in 0
+start processing tile 27331
+ 
+
+end processing tile 31103 in 0
+ 
+
+ 
+
+end processing tile 31458 in 0
+start processing tile 26783
+end processing tile 44442 in 0
+start processing tile 38103
+ 
+
+ 
+
+end processing tile 26969 in 0
+start processing tile 19772
+end processing tile 16166 in 0
+start processing tile 34863
+ 
+
+end processing tile 31815 in 0
+start processing tile 16666
+start processing tile 27501
+ 
+
+end processing tile 17025 in 0
+ 
+
+ 
+
+ 
+
+end processing tile 17964 in 0
+start processing tile 31456
+end processing tile 38460 in 0
+start processing tile 22453
+ 
+
+end processing tile 32172 in 0
+start processing tile 17603
+end processing tile 17387 in 0
+start processing tile 35021
+ 
+
+ 
+
+end processing tile 15586 in 0
+start processing tile 38461
+end processing tile 34864 in 0
+start processing tile 26971
+ 
+
+end processing tile 20133 in 0
+start processing tile 31816
+start processing tile 44444
+ 
+
+end processing tile 20492 in 0
+start processing tile 16306
+ 
+
+ 
+
+ 
+
+end processing tile 16305 in 0
+start processing tile 31459
+end processing tile 27331 in 0
+start processing tile 22093
+end processing tile 17609 in 0
+start processing tile 32176
+ 
+
+end processing tile 26783 in 0
+start processing tile 16169
+ 
+
+end processing tile 34863 in 1
+start processing tile 17245
+ 
+
+end processing tile 38103 in 1
+ 
+
+end processing tile 16666 in 1
+start processing tile 26972
+ 
+
+start processing tile 18326
+end processing tile 27501 in 1
+start processing tile 14146
+ 
+
+ 
+
+end processing tile 17603 in 1
+end processing tile 35021 in 1
+start processing tile 27330
+start processing tile 27329
+ 
+
+ 
+
+end processing tile 26971 in 1
+start processing tile 44443
+end processing tile 16306 in 1
+start processing tile 31460
+ 
+
+end processing tile 38461 in 1
+start processing tile 18323
+start processing tile 18690
+ 
+
+end processing tile 19772 in 1
+start processing tile 16525
+ 
+
+ 
+
+end processing tile 31456 in 1
+end processing tile 17605 in 1
+start processing tile 32173
+ 
+
+end processing tile 31816 in 1
+start processing tile 17026
+ 
+
+end processing tile 44444 in 1
+start processing tile 38462
+start processing tile 38823
+ 
+
+end processing tile 16169 in 1
+ 
+
+end processing tile 22453 in 1
+start processing tile 17386
+ 
+
+ 
+
+end processing tile 14146 in 0
+start processing tile 22094
+end processing tile 31459 in 1
+start processing tile 26968
+start processing tile 35226
+ 
+
+ 
+
+end processing tile 26972 in 0
+start processing tile 34866
+end processing tile 27330 in 0
+start processing tile 35024
+ 
+
+end processing tile 32176 in 1
+start processing tile 13787
+ 
+
+end processing tile 27329 in 0
+start processing tile 14866
+start processing tile 44445
+ 
+
+ 
+
+end processing tile 22093 in 1
+start processing tile 32174
+end processing tile 18326 in 0
+start processing tile 32177
+ 
+
+end processing tile 17245 in 0
+ 
+
+end processing tile 38823 in 0
+start processing tile 18689
+ 
+
+ 
+
+end processing tile 31460 in 0
+ 
+
+end processing tile 38462 in 0
+start processing tile 35152
+end processing tile 44443 in 0
+ 
+
+end processing tile 16525 in 0
+start processing tile 18684
+ 
+
+end processing tile 32173 in 0
+start processing tile 17746
+ 
+
+end processing tile 18323 in 0
+start processing tile 31818
+ 
+
+start processing tile 35584
+end processing tile 13787 in 0
+start processing tile 35223
+ 
+
+ 
+
+end processing tile 35226 in 0
+start processing tile 39181
+ 
+
+end processing tile 17026 in 0
+start processing tile 34867
+end processing tile 26968 in 0
+ 
+
+ 
+
+end processing tile 22094 in 0
+start processing tile 18106
+end processing tile 14866 in 0
+start processing tile 17606
+ 
+
+end processing tile 34866 in 0
+ 
+
+end processing tile 17386 in 0
+start processing tile 31817
+ 
+
+end processing tile 44445 in 0
+start processing tile 35227
+ 
+
+start processing tile 22814
+end processing tile 35024 in 0
+start processing tile 14506
+ 
+
+end processing tile 18690 in 0
+start processing tile 32534
+ 
+
+end processing tile 35152 in 0
+start processing tile 22454
+ 
+
+end processing tile 32177 in 0
+start processing tile 35224
+start processing tile 35382
+ 
+
+ 
+
+end processing tile 31818 in 0
+end processing tile 32174 in 0
+start processing tile 17747
+ 
+
+end processing tile 34867 in 0
+ 
+
+start processing tile 28410
+end processing tile 17746 in 0
+start processing tile 35150
+ 
+
+end processing tile 18684 in 0
+start processing tile 28391
+ 
+
+end processing tile 35223 in 0
+start processing tile 38463
+ 
+
+end processing tile 17606 in 0
+ 
+
+end processing tile 18106 in 0
+start processing tile 32175
+ 
+
+ 
+
+end processing tile 39181 in 0
+start processing tile 18683
+end processing tile 14506 in 0
+start processing tile 35384
+ 
+
+end processing tile 35227 in 0
+start processing tile 28390
+ 
+
+end processing tile 35584 in 1
+start processing tile 18692
+ 
+
+end processing tile 18689 in 1
+start processing tile 18467
+ 
+
+start processing tile 35945
+end processing tile 35382 in 1
+start processing tile 16528
+ 
+
+end processing tile 35224 in 1
+start processing tile 38821
+ 
+
+end processing tile 31817 in 1
+ 
+
+end processing tile 17747 in 1
+start processing tile 35151
+ 
+
+end processing tile 32534 in 1
+start processing tile 18466
+ 
+
+start processing tile 35946
+ 
+
+end processing tile 35150 in 1
+start processing tile 22893
+end processing tile 28391 in 1
+start processing tile 35380
+ 
+
+ 
+
+end processing tile 28410 in 1
+start processing tile 13067
+end processing tile 22454 in 1
+start processing tile 18107
+ 
+
+ 
+
+end processing tile 38463 in 1
+end processing tile 35384 in 1
+start processing tile 18691
+start processing tile 13066
+ 
+
+end processing tile 18692 in 0
+start processing tile 28408
+ 
+
+start processing tile 16885
+end processing tile 28390 in 1
+start processing tile 16527
+ 
+
+end processing tile 22814 in 1
+start processing tile 18827
+ 
+
+end processing tile 38821 in 0
+start processing tile 13786
+ 
+
+end processing tile 18467 in 0
+start processing tile 32535
+start processing tile 39404
+ 
+
+end processing tile 32175 in 1
+ 
+
+ 
+
+end processing tile 18466 in 0
+start processing tile 35225
+end processing tile 18683 in 1
+start processing tile 32536
+start processing tile 44954
+ 
+
+end processing tile 35945 in 0
+start processing tile 35510
+ 
+
+end processing tile 13067 in 0
+start processing tile 21733
+ 
+
+ 
+
+end processing tile 35380 in 0
+start processing tile 36828
+ 
+
+end processing tile 22893 in 0
+ 
+
+end processing tile 35151 in 0
+end processing tile 28408 in 0
+start processing tile 23534
+ 
+
+end processing tile 18107 in 0
+start processing tile 28750
+ 
+
+end processing tile 16528 in 0
+start processing tile 19036
+ 
+
+end processing tile 35946 in 0
+start processing tile 19187
+ 
+
+end processing tile 13066 in 0
+start processing tile 28411
+ 
+
+end processing tile 13786 in 0
+start processing tile 19395
+ 
+
+end processing tile 18827 in 0
+start processing tile 35585
+ 
+
+ 
+
+end processing tile 39404 in 0
+start processing tile 21214
+end processing tile 16885 in 0
+start processing tile 19188
+ 
+
+end processing tile 32535 in 0
+start processing tile 23373
+ 
+
+end processing tile 35225 in 0
+start processing tile 13425
+ 
+
+start processing tile 36662
+end processing tile 35510 in 0
+start processing tile 13065
+ 
+
+end processing tile 23534 in 0
+start processing tile 35381
+ 
+
+ 
+
+end processing tile 18691 in 0
+end processing tile 44954 in 0
+start processing tile 39542
+ 
+
+end processing tile 32536 in 0
+start processing tile 18679
+ 
+
+end processing tile 19036 in 0
+start processing tile 35586
+ 
+
+end processing tile 28750 in 0
+start processing tile 36952
+ 
+
+start processing tile 20853
+end processing tile 36828 in 0
+start processing tile 18682
+ 
+
+end processing tile 16527 in 0
+start processing tile 35583
+ 
+
+ 
+
+end processing tile 21733 in 0
+start processing tile 19037
+end processing tile 28411 in 0
+start processing tile 18681
+ 
+
+start processing tile 35587
+end processing tile 19395 in 0
+start processing tile 23736
+ 
+
+end processing tile 19188 in 0
+start processing tile 36303
+ 
+
+end processing tile 19187 in 0
+start processing tile 35511
+ 
+
+ 
+
+end processing tile 13425 in 0
+end processing tile 13065 in 0
+start processing tile 39182
+ 
+
+start processing tile 35741
+end processing tile 23373 in 0
+ 
+
+end processing tile 35585 in 0
+start processing tile 23535
+ 
+
+end processing tile 35381 in 0
+ 
+
+ 
+
+end processing tile 35586 in 0
+start processing tile 35383
+end processing tile 36662 in 0
+start processing tile 19400
+ 
+
+end processing tile 39542 in 1
+start processing tile 19412
+start processing tile 28770
+ 
+
+ 
+
+end processing tile 36952 in 1
+start processing tile 44961
+ 
+
+end processing tile 35583 in 1
+end processing tile 18679 in 1
+start processing tile 36666
+ 
+
+ 
+
+end processing tile 23736 in 1
+start processing tile 44082
+end processing tile 35587 in 1
+start processing tile 20367
+ 
+
+end processing tile 21214 in 1
+start processing tile 36304
+ 
+
+end processing tile 20853 in 1
+start processing tile 36663
+ 
+
+ 
+
+end processing tile 18682 in 1
+end processing tile 35741 in 1
+start processing tile 28769
+ 
+
+end processing tile 19037 in 1
+start processing tile 35944
+ 
+
+end processing tile 23535 in 1
+start processing tile 28409
+ 
+
+start processing tile 19642
+end processing tile 39182 in 1
+start processing tile 20493
+ 
+
+end processing tile 35383 in 1
+ 
+
+end processing tile 18681 in 1
+start processing tile 19046
+ 
+
+end processing tile 35511 in 1
+start processing tile 39183
+ 
+
+ 
+
+end processing tile 44961 in 0
+start processing tile 16526
+end processing tile 36303 in 1
+start processing tile 35512
+start processing tile 16529
+ 
+
+end processing tile 28770 in 0
+start processing tile 12709
+ 
+
+end processing tile 19412 in 0
+start processing tile 36305
+ 
+
+end processing tile 19400 in 1
+start processing tile 23737
+start processing tile 28944
+ 
+
+end processing tile 28409 in 0
+ 
+
+end processing tile 44082 in 0
+start processing tile 28751
+ 
+
+ 
+
+end processing tile 28769 in 0
+start processing tile 18330
+ 
+
+end processing tile 20367 in 0
+start processing tile 19548
+end processing tile 19046 in 0
+ 
+
+end processing tile 36666 in 0
+start processing tile 39543
+ 
+
+start processing tile 24091
+end processing tile 36663 in 0
+start processing tile 19547
+ 
+
+end processing tile 36304 in 0
+start processing tile 19281
+ 
+
+end processing tile 35944 in 0
+ 
+
+end processing tile 19642 in 0
+start processing tile 37022
+ 
+
+end processing tile 39183 in 0
+start processing tile 23732
+start processing tile 35942
+ 
+
+end processing tile 35512 in 0
+start processing tile 36829
+ 
+
+ 
+
+ 
+
+end processing tile 16529 in 0
+start processing tile 37023
+ 
+
+end processing tile 20493 in 0
+end processing tile 28944 in 0
+start processing tile 19755
+end processing tile 12709 in 0
+start processing tile 35744
+ 
+
+end processing tile 23737 in 0
+start processing tile 44083
+start processing tile 19758
+ 
+
+end processing tile 36305 in 0
+start processing tile 19282
+ 
+
+end processing tile 16526 in 0
+start processing tile 36306
+ 
+
+end processing tile 39543 in 0
+start processing tile 35745
+ 
+
+end processing tile 28751 in 0
+start processing tile 20854
+ 
+
+end processing tile 19547 in 0
+start processing tile 36998
+ 
+
+start processing tile 40620
+end processing tile 24091 in 0
+start processing tile 35873
+ 
+
+end processing tile 19548 in 0
+start processing tile 36664
+ 
+
+ 
+
+end processing tile 37022 in 0
+start processing tile 35871
+end processing tile 18330 in 0
+start processing tile 36665
+ 
+
+start processing tile 21090
+end processing tile 35942 in 0
+start processing tile 28946
+ 
+
+ 
+
+end processing tile 36829 in 0
+end processing tile 35744 in 0
+start processing tile 20729
+ 
+
+end processing tile 19281 in 0
+start processing tile 36951
+ 
+
+ 
+
+end processing tile 23732 in 0
+end processing tile 37023 in 0
+start processing tile 19643
+ 
+
+end processing tile 35745 in 0
+start processing tile 44589
+start processing tile 44591
+ 
+
+ 
+
+ 
+
+end processing tile 35873 in 0
+start processing tile 19756
+end processing tile 19282 in 0
+end processing tile 44083 in 0
+start processing tile 28767
+ 
+
+end processing tile 36306 in 0
+start processing tile 29127
+ 
+
+end processing tile 36998 in 1
+start processing tile 28768
+ 
+
+end processing tile 19758 in 1
+start processing tile 29124
+ 
+
+end processing tile 40620 in 1
+start processing tile 19759
+ 
+
+end processing tile 19755 in 1
+start processing tile 19753
+ 
+
+end processing tile 35871 in 1
+start processing tile 39902
+start processing tile 24097
+ 
+
+end processing tile 28946 in 1
+start processing tile 44590
+ 
+
+ 
+
+end processing tile 44589 in 1
+start processing tile 21373
+end processing tile 20854 in 1
+start processing tile 41343
+ 
+
+ 
+
+end processing tile 19643 in 1
+start processing tile 35872
+end processing tile 44591 in 1
+start processing tile 23175
+ 
+
+ 
+
+end processing tile 36951 in 1
+end processing tile 21090 in 1
+start processing tile 40621
+ 
+
+end processing tile 36664 in 1
+start processing tile 12710
+ 
+
+end processing tile 36665 in 1
+start processing tile 19640
+start processing tile 41702
+ 
+
+ 
+
+end processing tile 20729 in 1
+start processing tile 19641
+end processing tile 28767 in 1
+ 
+
+end processing tile 28768 in 0
+ 
+
+end processing tile 29124 in 0
+start processing tile 35943
+ 
+
+start processing tile 20113
+end processing tile 39902 in 0
+start processing tile 12708
+ 
+
+end processing tile 29127 in 0
+start processing tile 24096
+ 
+
+ 
+
+end processing tile 44590 in 0
+start processing tile 19757
+end processing tile 19753 in 0
+start processing tile 37024
+ 
+
+ 
+
+end processing tile 24097 in 0
+start processing tile 29128
+end processing tile 19759 in 0
+start processing tile 29125
+ 
+
+end processing tile 19756 in 1
+start processing tile 37025
+start processing tile 24258
+ 
+
+end processing tile 21373 in 0
+ 
+
+end processing tile 41343 in 0
+start processing tile 24256
+ 
+
+end processing tile 12710 in 0
+start processing tile 36232
+ 
+
+end processing tile 35872 in 0
+start processing tile 12707
+ 
+
+end processing tile 19640 in 0
+ 
+
+ 
+
+end processing tile 40621 in 0
+start processing tile 19760
+start processing tile 11991
+end processing tile 41702 in 0
+start processing tile 20000
+ 
+
+end processing tile 35943 in 0
+start processing tile 12706
+ 
+
+ 
+
+ 
+
+end processing tile 19641 in 0
+end processing tile 24096 in 0
+start processing tile 21934
+end processing tile 12708 in 0
+ 
+
+end processing tile 24258 in 0
+start processing tile 20114
+ 
+
+end processing tile 23175 in 0
+start processing tile 41341
+start processing tile 43872
+ 
+
+ 
+
+ 
+
+end processing tile 37024 in 0
+start processing tile 39903
+end processing tile 20113 in 0
+start processing tile 20001
+end processing tile 24256 in 0
+start processing tile 29130
+ 
+
+ 
+
+end processing tile 29128 in 0
+start processing tile 35947
+end processing tile 29125 in 0
+start processing tile 12351
+ 
+
+end processing tile 19757 in 0
+start processing tile 40261
+ 
+
+start processing tile 44233
+end processing tile 37025 in 0
+start processing tile 19754
+ 
+
+end processing tile 11991 in 0
+start processing tile 36233
+ 
+
+end processing tile 36232 in 0
+start processing tile 24259
+start processing tile 20473
+ 
+
+end processing tile 19760 in 0
+start processing tile 44085
+ 
+
+end processing tile 12706 in 0
+start processing tile 21091
+ 
+
+ 
+
+ 
+
+start processing tile 36301
+end processing tile 12707 in 0
+end processing tile 39903 in 0
+ 
+
+end processing tile 35947 in 0
+start processing tile 20005
+end processing tile 20000 in 0
+start processing tile 24257
+ 
+
+ 
+
+end processing tile 41341 in 0
+start processing tile 19773
+end processing tile 20001 in 0
+start processing tile 41703
+ 
+
+end processing tile 29130 in 0
+start processing tile 36105
+ 
+
+end processing tile 40261 in 0
+start processing tile 24451
+ 
+
+ 
+
+end processing tile 12351 in 1
+start processing tile 44084
+end processing tile 43872 in 1
+start processing tile 45317
+ 
+
+end processing tile 21934 in 1
+start processing tile 19908
+ 
+
+end processing tile 44233 in 1
+start processing tile 20111
+ 
+
+start processing tile 29453
+end processing tile 19754 in 1
+ 
+
+end processing tile 36233 in 1
+start processing tile 24260
+ 
+
+end processing tile 24259 in 1
+start processing tile 20115
+ 
+
+ 
+
+end processing tile 20114 in 1
+start processing tile 20002
+end processing tile 21091 in 1
+ 
+
+start processing tile 44597
+end processing tile 44085 in 1
+start processing tile 29126
+ 
+
+end processing tile 36301 in 1
+start processing tile 20472
+ 
+
+end processing tile 19773 in 1
+start processing tile 44229
+ 
+
+end processing tile 36105 in 1
+start processing tile 23176
+ 
+
+end processing tile 24257 in 1
+start processing tile 36106
+ 
+
+end processing tile 20473 in 1
+start processing tile 20112
+ 
+
+end processing tile 41703 in 1
+start processing tile 36231
+start processing tile 20269
+ 
+
+end processing tile 20005 in 1
+start processing tile 19999
+ 
+
+end processing tile 45317 in 0
+start processing tile 24261
+ 
+
+end processing tile 29453 in 0
+start processing tile 44592
+ 
+
+end processing tile 24451 in 0
+start processing tile 36302
+ 
+
+end processing tile 19908 in 0
+start processing tile 41342
+start processing tile 17610
+ 
+
+ 
+
+end processing tile 44084 in 0
+end processing tile 20111 in 0
+start processing tile 36279
+ 
+
+end processing tile 44597 in 0
+start processing tile 20359
+ 
+
+ 
+
+end processing tile 24260 in 0
+start processing tile 20116
+end processing tile 29126 in 0
+ 
+
+start processing tile 20290
+end processing tile 36106 in 0
+start processing tile 29131
+ 
+
+end processing tile 44229 in 0
+ 
+
+end processing tile 20002 in 0
+start processing tile 43512
+ 
+
+ 
+
+end processing tile 36231 in 0
+start processing tile 29132
+end processing tile 20472 in 0
+start processing tile 20118
+ 
+
+end processing tile 24261 in 0
+start processing tile 36278
+start processing tile 20460
+ 
+
+ 
+
+ 
+
+end processing tile 20112 in 0
+start processing tile 44593
+end processing tile 23176 in 0
+end processing tile 20269 in 0
+start processing tile 44955
+ 
+
+ 
+
+end processing tile 20115 in 0
+start processing tile 43871
+end processing tile 19999 in 0
+ 
+
+end processing tile 44592 in 0
+start processing tile 20364
+ 
+
+ 
+
+end processing tile 41342 in 0
+end processing tile 36302 in 0
+start processing tile 20471
+start processing tile 20461
+ 
+
+end processing tile 36279 in 0
+start processing tile 24263
+ 
+
+end processing tile 20359 in 0
+start processing tile 29454
+start processing tile 29484
+ 
+
+end processing tile 17610 in 0
+start processing tile 44958
+ 
+
+end processing tile 43512 in 0
+start processing tile 11990
+ 
+
+end processing tile 29132 in 0
+ 
+
+end processing tile 20116 in 0
+start processing tile 20109
+ 
+
+end processing tile 20460 in 0
+start processing tile 17963
+ 
+
+end processing tile 20290 in 0
+start processing tile 23014
+ 
+
+end processing tile 29131 in 0
+start processing tile 29485
+ 
+
+end processing tile 36278 in 0
+start processing tile 17250
+ 
+
+end processing tile 20364 in 0
+start processing tile 20470
+ 
+
+end processing tile 44593 in 0
+start processing tile 44595
+ 
+
+end processing tile 44955 in 0
+start processing tile 12349
+ 
+
+end processing tile 20461 in 0
+start processing tile 17966
+start processing tile 24457
+ 
+
+end processing tile 24263 in 0
+start processing tile 29450
+ 
+
+ 
+
+end processing tile 29454 in 0
+start processing tile 12350
+end processing tile 43871 in 0
+start processing tile 20003
+ 
+
+end processing tile 20118 in 0
+start processing tile 44594
+ 
+
+end processing tile 11990 in 0
+start processing tile 24619
+ 
+
+ 
+
+end processing tile 20471 in 0
+start processing tile 20119
+end processing tile 29484 in 0
+start processing tile 17968
+ 
+
+end processing tile 44958 in 0
+start processing tile 20474
+ 
+
+ 
+
+ 
+
+ 
+
+end processing tile 17963 in 1
+start processing tile 45320
+end processing tile 12349 in 1
+start processing tile 20358
+end processing tile 20109 in 1
+end processing tile 44595 in 1
+start processing tile 24450
+start processing tile 37026
+ 
+
+end processing tile 29485 in 1
+start processing tile 17970
+ 
+
+end processing tile 24457 in 1
+start processing tile 22815
+ 
+
+end processing tile 29450 in 1
+ 
+
+ 
+
+end processing tile 17250 in 1
+end processing tile 23014 in 1
+start processing tile 20475
+start processing tile 29491
+ 
+
+ 
+
+end processing tile 44594 in 1
+start processing tile 29452
+end processing tile 12350 in 1
+start processing tile 17604
+ 
+
+ 
+
+start processing tile 24704
+end processing tile 20470 in 1
+start processing tile 20268
+end processing tile 24619 in 1
+start processing tile 18322
+ 
+
+end processing tile 17966 in 1
+start processing tile 45321
+ 
+
+ 
+
+end processing tile 20119 in 1
+start processing tile 44596
+end processing tile 20358 in 0
+start processing tile 29455
+ 
+
+ 
+
+end processing tile 20474 in 1
+start processing tile 24455
+ 
+
+end processing tile 24450 in 0
+end processing tile 20003 in 1
+ 
+
+end processing tile 37026 in 0
+start processing tile 18325
+start processing tile 40622
+ 
+
+ 
+
+end processing tile 45320 in 0
+start processing tile 20476
+end processing tile 22815 in 0
+start processing tile 20833
+start processing tile 20263
+ 
+
+ 
+
+end processing tile 17970 in 0
+start processing tile 20491
+end processing tile 29491 in 0
+start processing tile 18327
+ 
+
+end processing tile 17968 in 1
+start processing tile 20478
+ 
+
+end processing tile 24704 in 0
+start processing tile 18328
+ 
+
+start processing tile 20262
+end processing tile 29452 in 0
+ 
+
+ 
+
+end processing tile 20475 in 0
+start processing tile 44959
+end processing tile 20268 in 0
+ 
+
+end processing tile 29455 in 0
+ 
+
+end processing tile 44596 in 0
+ 
+
+start processing tile 37382
+end processing tile 18322 in 0
+start processing tile 20834
+ 
+
+ 
+
+end processing tile 45321 in 0
+start processing tile 20477
+end processing tile 40622 in 0
+start processing tile 23898
+ 
+
+end processing tile 24455 in 0
+start processing tile 29456
+start processing tile 37383
+ 
+
+end processing tile 20476 in 0
+start processing tile 29483
+ 
+
+ 
+
+ 
+
+end processing tile 20263 in 0
+start processing tile 21574
+end processing tile 20833 in 0
+start processing tile 29487
+end processing tile 17604 in 0
+ 
+
+ 
+
+end processing tile 18325 in 0
+start processing tile 20835
+end processing tile 20491 in 0
+start processing tile 20464
+ 
+
+end processing tile 20262 in 0
+start processing tile 18687
+start processing tile 41340
+ 
+
+end processing tile 44959 in 0
+start processing tile 29457
+ 
+
+end processing tile 18328 in 0
+start processing tile 21011
+ 
+
+end processing tile 20478 in 0
+start processing tile 20463
+start processing tile 44231
+ 
+
+ 
+
+ 
+
+end processing tile 37382 in 0
+start processing tile 18688
+end processing tile 18327 in 0
+start processing tile 20852
+end processing tile 29456 in 0
+ 
+
+end processing tile 20477 in 0
+start processing tile 20462
+start processing tile 24817
+ 
+
+ 
+
+end processing tile 29487 in 0
+start processing tile 20465
+end processing tile 20464 in 0
+start processing tile 29486
+ 
+
+ 
+
+end processing tile 20835 in 0
+start processing tile 20467
+end processing tile 29483 in 0
+ 
+
+ 
+
+end processing tile 20834 in 0
+start processing tile 20466
+end processing tile 41340 in 0
+start processing tile 19039
+ 
+
+end processing tile 37383 in 1
+start processing tile 22654
+ 
+
+end processing tile 18687 in 1
+start processing tile 21371
+ 
+
+start processing tile 37384
+end processing tile 29457 in 1
+ 
+
+end processing tile 23898 in 1
+start processing tile 21213
+ 
+
+end processing tile 21574 in 1
+start processing tile 21215
+start processing tile 37385
+ 
+
+ 
+
+end processing tile 20463 in 1
+start processing tile 24456
+end processing tile 21011 in 1
+start processing tile 24810
+ 
+
+end processing tile 44231 in 1
+start processing tile 19040
+ 
+
+end processing tile 20852 in 1
+start processing tile 29492
+ 
+
+ 
+
+end processing tile 20462 in 1
+end processing tile 18688 in 1
+start processing tile 21732
+start processing tile 44960
+ 
+
+end processing tile 20467 in 1
+start processing tile 24621
+ 
+
+ 
+
+end processing tile 20465 in 1
+end processing tile 29486 in 1
+ 
+
+end processing tile 24817 in 1
+start processing tile 19041
+ 
+
+start processing tile 36465
+end processing tile 19039 in 1
+start processing tile 22172
+ 
+
+ 
+
+ 
+
+end processing tile 20466 in 1
+start processing tile 29490
+end processing tile 37384 in 0
+start processing tile 22295
+end processing tile 21213 in 0
+start processing tile 24811
+ 
+
+end processing tile 21371 in 0
+start processing tile 40981
+ 
+
+end processing tile 21215 in 0
+start processing tile 37381
+start processing tile 24984
+ 
+
+ 
+
+end processing tile 22654 in 0
+start processing tile 22092
+end processing tile 24456 in 0
+ 
+
+ 
+
+end processing tile 37385 in 0
+start processing tile 22294
+ 
+
+end processing tile 24621 in 0
+end processing tile 29492 in 0
+start processing tile 20468
+ 
+
+end processing tile 24810 in 0
+start processing tile 20289
+ 
+
+start processing tile 20105
+end processing tile 44960 in 0
+start processing tile 23537
+ 
+
+end processing tile 19041 in 0
+start processing tile 22533
+ 
+
+end processing tile 21732 in 0
+start processing tile 40982
+start processing tile 30707
+ 
+
+end processing tile 29490 in 0
+ 
+
+ 
+
+end processing tile 36465 in 0
+start processing tile 23536
+end processing tile 22172 in 0
+start processing tile 24816
+ 
+
+end processing tile 37381 in 0
+start processing tile 29808
+ 
+
+end processing tile 40981 in 0
+start processing tile 20261
+ 
+
+end processing tile 19040 in 0
+start processing tile 22173
+start processing tile 41701
+ 
+
+end processing tile 22295 in 0
+start processing tile 23015
+ 
+
+ 
+
+end processing tile 24984 in 0
+start processing tile 19397
+end processing tile 24811 in 0
+start processing tile 40980
+ 
+
+ 
+
+end processing tile 20105 in 0
+start processing tile 19398
+end processing tile 20289 in 0
+ 
+
+end processing tile 20468 in 0
+ 
+
+end processing tile 22092 in 0
+start processing tile 44230
+start processing tile 44951
+ 
+
+end processing tile 23537 in 0
+start processing tile 23375
+ 
+
+ 
+
+end processing tile 40982 in 0
+end processing tile 22533 in 0
+start processing tile 20260
+start processing tile 29846
+ 
+
+end processing tile 22294 in 0
+start processing tile 23374
+ 
+
+end processing tile 30707 in 0
+start processing tile 19052
+start processing tile 20718
+ 
+
+end processing tile 24816 in 0
+start processing tile 29844
+ 
+
+ 
+
+end processing tile 20261 in 0
+end processing tile 29808 in 0
+start processing tile 41829
+ 
+
+end processing tile 44230 in 0
+start processing tile 24815
+ 
+
+end processing tile 40980 in 0
+ 
+
+ 
+
+end processing tile 41701 in 0
+start processing tile 20117
+end processing tile 22173 in 0
+start processing tile 29845
+start processing tile 20103
+ 
+
+end processing tile 29846 in 1
+start processing tile 44956
+ 
+
+end processing tile 20260 in 1
+ 
+
+ 
+
+end processing tile 23536 in 1
+start processing tile 23733
+end processing tile 44951 in 1
+start processing tile 17248
+ 
+
+end processing tile 23015 in 1
+start processing tile 36307
+ 
+
+end processing tile 20718 in 1
+start processing tile 21575
+ 
+
+start processing tile 20102
+end processing tile 19052 in 1
+start processing tile 23894
+ 
+
+ 
+
+end processing tile 19397 in 1
+start processing tile 23734
+end processing tile 19398 in 1
+start processing tile 23735
+ 
+
+end processing tile 23375 in 1
+start processing tile 44804
+ 
+
+ 
+
+end processing tile 29844 in 1
+end processing tile 23374 in 1
+start processing tile 24982
+start processing tile 20101
+ 
+
+end processing tile 41829 in 1
+start processing tile 16890
+ 
+
+end processing tile 24815 in 1
+ 
+
+end processing tile 29845 in 1
+start processing tile 12348
+start processing tile 20825
+ 
+
+end processing tile 20103 in 1
+start processing tile 20110
+ 
+
+end processing tile 44956 in 0
+ 
+
+end processing tile 23733 in 0
+start processing tile 20106
+ 
+
+ 
+
+end processing tile 23894 in 0
+start processing tile 20629
+end processing tile 36307 in 0
+start processing tile 45319
+ 
+
+end processing tile 44804 in 0
+start processing tile 24983
+ 
+
+end processing tile 20102 in 0
+start processing tile 44957
+ 
+
+end processing tile 17248 in 0
+start processing tile 24092
+start processing tile 20826
+ 
+
+ 
+
+end processing tile 21575 in 0
+start processing tile 24095
+end processing tile 24982 in 0
+start processing tile 20479
+ 
+
+end processing tile 20117 in 1
+start processing tile 23897
+ 
+
+end processing tile 20101 in 0
+start processing tile 23896
+ 
+
+ 
+
+start processing tile 25177
+end processing tile 23735 in 0
+start processing tile 20104
+end processing tile 16890 in 0
+start processing tile 24452
+ 
+
+end processing tile 12348 in 0
+ 
+
+end processing tile 23734 in 0
+start processing tile 24985
+start processing tile 25340
+ 
+
+end processing tile 20825 in 0
+start processing tile 18680
+ 
+
+end processing tile 20629 in 0
+start processing tile 25064
+ 
+
+end processing tile 20106 in 0
+start processing tile 41469
+ 
+
+ 
+
+end processing tile 24983 in 0
+end processing tile 20110 in 0
+start processing tile 24620
+start processing tile 31107
+ 
+
+end processing tile 45319 in 0
+ 
+
+ 
+
+ 
+
+end processing tile 24095 in 0
+start processing tile 20719
+end processing tile 20479 in 0
+end processing tile 44957 in 0
+start processing tile 24812
+ 
+
+end processing tile 24092 in 0
+start processing tile 25170
+ 
+
+end processing tile 20826 in 0
+start processing tile 20494
+start processing tile 37744
+ 
+
+end processing tile 20104 in 0
+start processing tile 24986
+ 
+
+end processing tile 23896 in 0
+start processing tile 24813
+ 
+
+ 
+
+ 
+
+end processing tile 25177 in 0
+start processing tile 20728
+end processing tile 23897 in 0
+start processing tile 25065
+end processing tile 24985 in 0
+start processing tile 41700
+start processing tile 31273
+ 
+
+ 
+
+end processing tile 24452 in 0
+start processing tile 30914
+end processing tile 25340 in 0
+start processing tile 20730
+ 
+
+end processing tile 25064 in 0
+ 
+
+ 
+
+start processing tile 20832
+end processing tile 41469 in 0
+end processing tile 24620 in 0
+ 
+
+start processing tile 30915
+end processing tile 20719 in 0
+start processing tile 37672
+ 
+
+end processing tile 18680 in 0
+start processing tile 24814
+ 
+
+end processing tile 31107 in 0
+start processing tile 23895
+start processing tile 25425
+ 
+
+ 
+
+ 
+
+end processing tile 24986 in 0
+end processing tile 41700 in 0
+end processing tile 37744 in 0
+start processing tile 18685
+ 
+
+ 
+
+end processing tile 25065 in 0
+start processing tile 20650
+end processing tile 25170 in 0
+start processing tile 44952
+ 
+
+ 
+
+end processing tile 30914 in 1
+end processing tile 20494 in 1
+start processing tile 37673
+start processing tile 24980
+ 
+
+end processing tile 24812 in 1
+start processing tile 37742
+ 
+
+end processing tile 20730 in 1
+start processing tile 25171
+start processing tile 36467
+ 
+
+end processing tile 20728 in 1
+start processing tile 24981
+ 
+
+end processing tile 31273 in 1
+start processing tile 18686
+ 
+
+end processing tile 37672 in 1
+ 
+
+start processing tile 36468
+end processing tile 30915 in 1
+start processing tile 37741
+ 
+
+end processing tile 24813 in 1
+start processing tile 31096
+ 
+
+end processing tile 20832 in 1
+start processing tile 19399
+ 
+
+ 
+
+end processing tile 25425 in 1
+start processing tile 44232
+start processing tile 25532
+end processing tile 20650 in 1
+ 
+
+end processing tile 24814 in 1
+start processing tile 41830
+ 
+
+end processing tile 44952 in 1
+ 
+
+ 
+
+end processing tile 24980 in 0
+start processing tile 42188
+ 
+
+end processing tile 23895 in 1
+start processing tile 25172
+end processing tile 25171 in 0
+start processing tile 20829
+ 
+
+ 
+
+end processing tile 37742 in 0
+start processing tile 31067
+end processing tile 37673 in 0
+start processing tile 20839
+ 
+
+end processing tile 18685 in 1
+start processing tile 25173
+ 
+
+end processing tile 36467 in 0
+start processing tile 20855
+ 
+
+end processing tile 24981 in 0
+start processing tile 20828
+ 
+
+ 
+
+end processing tile 36468 in 0
+start processing tile 20007
+end processing tile 31096 in 0
+start processing tile 25175
+start processing tile 42548
+ 
+
+end processing tile 37741 in 0
+ 
+
+ 
+
+end processing tile 41830 in 0
+start processing tile 25176
+end processing tile 18686 in 0
+start processing tile 25174
+ 
+
+ 
+
+end processing tile 44232 in 0
+start processing tile 25342
+end processing tile 25532 in 0
+start processing tile 20006
+start processing tile 20100
+ 
+
+end processing tile 31067 in 0
+ 
+
+end processing tile 19399 in 0
+start processing tile 25341
+ 
+
+ 
+
+end processing tile 20839 in 0
+start processing tile 22813
+end processing tile 20855 in 0
+start processing tile 25531
+start processing tile 25701
+ 
+
+end processing tile 42188 in 0
+start processing tile 20827
+ 
+
+end processing tile 20829 in 0
+start processing tile 37743
+ 
+
+end processing tile 25172 in 0
+start processing tile 20830
+start processing tile 31462
+ 
+
+ 
+
+end processing tile 20828 in 0
+start processing tile 42189
+end processing tile 25173 in 0
+start processing tile 25343
+ 
+
+ 
+
+end processing tile 42548 in 0
+start processing tile 23538
+ 
+
+end processing tile 20007 in 0
+start processing tile 26061
+end processing tile 25175 in 0
+ 
+
+end processing tile 20006 in 0
+start processing tile 26062
+ 
+
+ 
+
+end processing tile 25176 in 0
+end processing tile 20100 in 0
+start processing tile 22655
+start processing tile 20989
+ 
+
+end processing tile 25342 in 0
+start processing tile 31276
+ 
+
+end processing tile 25174 in 0
+start processing tile 31274
+ 
+
+end processing tile 25341 in 0
+start processing tile 36466
+start processing tile 25784
+ 
+
+end processing tile 22813 in 0
+start processing tile 26421
+ 
+
+ 
+
+end processing tile 25531 in 0
+start processing tile 42190
+end processing tile 20827 in 0
+ 
+
+end processing tile 25701 in 0
+start processing tile 21451
+ 
+
+ 
+
+end processing tile 37743 in 0
+end processing tile 42189 in 0
+start processing tile 25785
+ 
+
+ 
+
+end processing tile 31462 in 0
+start processing tile 24453
+end processing tile 26061 in 0
+start processing tile 42191
+ 
+
+end processing tile 20830 in 1
+start processing tile 31108
+ 
+
+end processing tile 31276 in 1
+start processing tile 25530
+ 
+
+start processing tile 21078
+end processing tile 23538 in 1
+start processing tile 26422
+ 
+
+end processing tile 36466 in 1
+start processing tile 31275
+ 
+
+end processing tile 25343 in 1
+start processing tile 20831
+ 
+
+ 
+
+end processing tile 20989 in 1
+start processing tile 17607
+end processing tile 31274 in 1
+start processing tile 25424
+ 
+
+end processing tile 26421 in 1
+start processing tile 36591
+ 
+
+end processing tile 22655 in 1
+start processing tile 26781
+start processing tile 21079
+ 
+
+end processing tile 26062 in 1
+start processing tile 25533
+ 
+
+end processing tile 42190 in 1
+start processing tile 37745
+ 
+
+end processing tile 25784 in 1
+start processing tile 21811
+ 
+
+end processing tile 25785 in 1
+start processing tile 21812
+start processing tile 19929
+ 
+
+ 
+
+end processing tile 21078 in 0
+start processing tile 19038
+end processing tile 42191 in 0
+start processing tile 20838
+ 
+
+end processing tile 31108 in 0
+ 
+
+end processing tile 25424 in 0
+start processing tile 31812
+ 
+
+end processing tile 21451 in 1
+start processing tile 26782
+ 
+
+end processing tile 25530 in 0
+ 
+
+end processing tile 31275 in 0
+ 
+
+end processing tile 17607 in 0
+start processing tile 27142
+ 
+
+end processing tile 36591 in 0
+start processing tile 25534
+ 
+
+ 
+
+end processing tile 21079 in 0
+start processing tile 19410
+end processing tile 20831 in 0
+start processing tile 21189
+ 
+
+ 
+
+end processing tile 37745 in 0
+end processing tile 26781 in 0
+start processing tile 42906
+ 
+
+end processing tile 24453 in 0
+start processing tile 27141
+ 
+
+end processing tile 21811 in 0
+start processing tile 27502
+ 
+
+end processing tile 19929 in 0
+start processing tile 24094
+ 
+
+end processing tile 25533 in 0
+start processing tile 42547
+start processing tile 42908
+ 
+
+end processing tile 26422 in 0
+start processing tile 42549
+ 
+
+end processing tile 31812 in 0
+start processing tile 19396
+ 
+
+end processing tile 20838 in 0
+start processing tile 43266
+ 
+
+end processing tile 19038 in 0
+start processing tile 27863
+ 
+
+end processing tile 25534 in 0
+ 
+
+end processing tile 26782 in 0
+start processing tile 25702
+ 
+
+end processing tile 21189 in 0
+start processing tile 20366
+ 
+
+end processing tile 21812 in 0
+start processing tile 27862
+ 
+
+end processing tile 19410 in 0
+start processing tile 28223
+start processing tile 43267
+ 
+
+end processing tile 27142 in 0
+start processing tile 31634
+ 
+
+end processing tile 27141 in 0
+start processing tile 25703
+ 
+
+end processing tile 42906 in 0
+start processing tile 20099
+ 
+
+end processing tile 42549 in 0
+start processing tile 25535
+ 
+
+end processing tile 42908 in 0
+start processing tile 20368
+ 
+
+start processing tile 38033
+end processing tile 42547 in 0
+ 
+
+end processing tile 27502 in 0
+start processing tile 31635
+ 
+
+end processing tile 43266 in 0
+start processing tile 21372
+start processing tile 26063
+ 
+
+end processing tile 24094 in 0
+start processing tile 28224
+ 
+
+start processing tile 19739
+ 
+
+end processing tile 27863 in 0
+start processing tile 25889
+end processing tile 19396 in 0
+start processing tile 28412
+ 
+
+ 
+
+ 
+
+end processing tile 43267 in 0
+start processing tile 17967
+end processing tile 31634 in 0
+start processing tile 21010
+end processing tile 27862 in 0
+start processing tile 25888
+ 
+
+end processing tile 20366 in 0
+start processing tile 28583
+ 
+
+ 
+
+end processing tile 25535 in 0
+end processing tile 28223 in 0
+start processing tile 31780
+ 
+
+end processing tile 38033 in 0
+start processing tile 19045
+ 
+
+end processing tile 25702 in 1
+start processing tile 20098
+start processing tile 26065
+ 
+
+ 
+
+end processing tile 25703 in 1
+start processing tile 31633
+end processing tile 20099 in 1
+ 
+
+end processing tile 31635 in 1
+start processing tile 36592
+ 
+
+end processing tile 26063 in 1
+start processing tile 20369
+ 
+
+end processing tile 20368 in 1
+start processing tile 28584
+ 
+
+ 
+
+start processing tile 21349
+end processing tile 21372 in 1
+start processing tile 28585
+end processing tile 28224 in 1
+start processing tile 19909
+ 
+
+end processing tile 19739 in 1
+start processing tile 20004
+ 
+
+end processing tile 28412 in 1
+start processing tile 42907
+ 
+
+end processing tile 28583 in 1
+start processing tile 25893
+start processing tile 43510
+ 
+
+ 
+
+end processing tile 25888 in 1
+start processing tile 31636
+end processing tile 31780 in 1
+start processing tile 25890
+ 
+
+ 
+
+end processing tile 21010 in 1
+ 
+
+end processing tile 25889 in 1
+start processing tile 31779
+end processing tile 26065 in 0
+start processing tile 24093
+ 
+
+end processing tile 19045 in 1
+start processing tile 28772
+ 
+
+start processing tile 43511
+ 
+
+end processing tile 17967 in 1
+start processing tile 28771
+end processing tile 20098 in 0
+ 
+
+end processing tile 31633 in 0
+ 
+
+end processing tile 21349 in 0
+start processing tile 19048
+ 
+
+end processing tile 36592 in 0
+ 
+
+end processing tile 28585 in 0
+start processing tile 21192
+ 
+
+start processing tile 19639
+end processing tile 20369 in 0
+start processing tile 28945
+ 
+
+end processing tile 19909 in 0
+start processing tile 25891
+ 
+
+end processing tile 43510 in 0
+start processing tile 20469
+ 
+
+end processing tile 42907 in 0
+start processing tile 25892
+ 
+
+end processing tile 25893 in 0
+start processing tile 21190
+start processing tile 43626
+ 
+
+end processing tile 31779 in 0
+ 
+
+end processing tile 28584 in 0
+start processing tile 25894
+ 
+
+end processing tile 20004 in 0
+start processing tile 29306
+ 
+
+end processing tile 25890 in 0
+ 
+
+end processing tile 31636 in 0
+ 
+
+end processing tile 43511 in 0
+start processing tile 18321
+ 
+
+end processing tile 28771 in 0
+start processing tile 43268
+ 
+
+ 
+
+end processing tile 28772 in 0
+start processing tile 36593
+end processing tile 19048 in 0
+start processing tile 29451
+ 
+
+ 
+
+end processing tile 19639 in 0
+start processing tile 19049
+end processing tile 24093 in 0
+start processing tile 29449
+ 
+
+end processing tile 21192 in 0
+start processing tile 38032
+ 
+
+end processing tile 43626 in 0
+ 
+
+end processing tile 25891 in 0
+ 
+
+ 
+
+end processing tile 21190 in 0
+end processing tile 29306 in 0
+start processing tile 36637
+ 
+
+ 
+
+end processing tile 25892 in 0
+end processing tile 28945 in 0
+start processing tile 26064
+ 
+
+end processing tile 25894 in 0
+start processing tile 21191
+ 
+
+ 
+
+ 
+
+end processing tile 43268 in 0
+start processing tile 21193
+end processing tile 36593 in 0
+start processing tile 31822
+end processing tile 20469 in 0
+start processing tile 29666
+ 
+
+ 
+
+end processing tile 29449 in 0
+start processing tile 26247
+end processing tile 18321 in 0
+start processing tile 29807
+ 
+
+end processing tile 38032 in 0
+ 
+
+end processing tile 29451 in 0
+start processing tile 36638
+ 
+
+end processing tile 19049 in 0
+start processing tile 29809
+ 
+
+end processing tile 36637 in 1
+start processing tile 31996
+ 
+
+end processing tile 21191 in 1
+ 
+
+end processing tile 26064 in 1
+start processing tile 31995
+ 
+
+end processing tile 31822 in 1
+ 
+
+end processing tile 21193 in 1
+ 
+
+end processing tile 29807 in 1
+start processing tile 44953
+ 
+
+end processing tile 29666 in 1
+start processing tile 26249
+ 
+
+end processing tile 26247 in 1
+start processing tile 32140
+ 
+
+end processing tile 36638 in 1
+start processing tile 26248
+ 
+
+end processing tile 31996 in 0
+ 
+
+ 
+
+end processing tile 31995 in 0
+end processing tile 29809 in 0
+start processing tile 19394
+ 
+
+end processing tile 44953 in 0
+start processing tile 26250
+ 
+
+end processing tile 26249 in 0
+start processing tile 19738
+ 
+
+end processing tile 26248 in 0
+ 
+
+end processing tile 32140 in 0
+ 
+
+end processing tile 19394 in 0
+start processing tile 26251
+ 
+
+ 
+
+end processing tile 19738 in 0
+end processing tile 26250 in 0
+ 
+
+end processing tile 26251 in 0
+DROP TABLE
+analysis done
+TOTAL SCRIPT TIME: 16
