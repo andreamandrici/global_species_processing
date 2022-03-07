@@ -23,6 +23,10 @@ Output tables are:
 +  **spatial_tables.geom_mammals**
 +  **spatial_tables.geom_birds**
 
+## geometry fix
+
+Geometries are [checked (and, when needed, fixed)](./geometry_fix/) for validity and type.
+
 ## groups flattening
 
 [Flattening](https://andreamandrici.github.io/dopa_workflow/flattening/) at 10 arcsec (~900 meters at equator) is applied to each group. Steps `00_create infrastructure`) and `a_import input` tables) are executed independently.
