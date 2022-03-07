@@ -1,0 +1,143 @@
+NOTICE:  drop cascades to 27 other objects
+DETAIL:  drop cascades to table species_2022_corals.a_input_corals
+drop cascades to table species_2022_corals.b_clip_corals
+drop cascades to table species_2022_corals.c_raster_corals
+drop cascades to table species_2022_corals.da_tiled_corals
+drop cascades to table species_2022_corals.o_raster
+drop cascades to function species_2022_corals.st_createfishnet(integer,integer,double precision,double precision,double precision,double precision)
+drop cascades to function species_2022_corals.f_pop_z_grid()
+drop cascades to function species_2022_corals.f_pop_o_grid()
+drop cascades to function species_2022_corals.f_pop_input(text,text,text,integer)
+drop cascades to function species_2022_corals.f_clip(text,text,integer)
+drop cascades to function species_2022_corals.f_raster(integer,text,text)
+drop cascades to function species_2022_corals.f_pop_tiled(text,text,integer)
+drop cascades to function species_2022_corals.f_pop_tiled_temp(integer,text,text)
+drop cascades to function species_2022_corals.f_flatter(text,text,text,integer)
+drop cascades to function species_2022_corals.f_pop_atts_tile(integer)
+drop cascades to function species_2022_corals.f_flat_recode(integer)
+drop cascades to function species_2022_corals.f_pop_o_raster(integer,text)
+drop cascades to table species_2022_corals.z_grid
+drop cascades to table species_2022_corals.o_grid
+drop cascades to table species_2022_corals.db_tiled_temp
+drop cascades to table species_2022_corals.dc_tiled_all
+drop cascades to table species_2022_corals.e_flat_all
+drop cascades to table species_2022_corals.fa_atts_tile
+drop cascades to table species_2022_corals.fb_atts_all
+drop cascades to table species_2022_corals.g_flat_temp
+drop cascades to table species_2022_corals.h_flat
+drop cascades to table species_2022_corals.clip_corals_onprocess
+CREATE SCHEMA
+NUMBER OF TOPICS 1
+processing topic 1
+Topic 1 is corals
+NOTICE:  table "a_input_corals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "b_clip_corals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "c_raster_corals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "da_tiled_corals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_raster" does not exist, skipping
+CREATE INDEX
+creating function using variables defined in the topic loop
+NOTICE:  function species_2022_corals.st_createfishnet(pg_catalog.int4,pg_catalog.int4,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8) does not exist, skipping
+CREATE FUNCTION
+NOTICE:  function species_2022_corals.f_pop_z_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_o_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_input(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_clip(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_raster(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_tiled(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_tiled_temp(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_flatter(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_atts_tile(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_flat_recode(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_corals.f_pop_o_raster(pg_catalog.int4,text) does not exist, skipping
+COMMENT
+creating tables using variables defined in the topic loop
+NOTICE:  table "z_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "db_tiled_temp" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "dc_tiled_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "e_flat_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "fa_atts_tile" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "fb_atts_all" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "g_flat_temp" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "h_flat" does not exist, skipping
+CREATE INDEX
+ 
+
+ 
+
+UPDATE 64800
+UPDATE 64800
+
+FIELDS WAS
+,corals  integer[];
+REFIELDS IS
+corals  integer[];
+
+ORDERS WAS
+,corals;
+REORDERS IS
+corals;
+
+INDEX_FLAT IS
+CREATE INDEX ON species_2022_corals.h_flat USING GIN(corals);
+;
+
+L_ATTS_AGG_JOINS IS
+LEFT JOIN (SELECT qid,tid,ARRAY_AGG(DISTINCT fid ORDER BY fid) corals FROM atts_tile WHERE source='corals' GROUP BY qid,tid) corals USING(qid,tid)
+;
+
+L_ATTS_AGG_UPD IS
+UPDATE atts_tile_agg SET corals = ARRAY[0] WHERE corals IS NULL;
+;
+
+UNIONS WAS
+ UNION ALL SELECT qid,geom FROM species_2022_corals.da_tiled_corals;
+REUNIONS IS
+SELECT qid,geom FROM species_2022_corals.da_tiled_corals;
+
+POPS WAS
+wait\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','corals');"\n;
+REPOPS IS
+\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','corals');"\n;
+
+FLAT WAS
+,''corals'';
+REFLAT IS
+''corals'';
+
+REPOPS IS ALSO 
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','corals');"
+
+
+1 # GRID SIZE IN DEGREES
+10 # CELL SIZE IN ARCSEC
+180 # NUMBER OF ROWS IN THE GRID
+360 # NUMBER OF COLUMNS IN THE GRID
+360 # NUMBER OF ROWS/COLUMNS FOR CELL
+360 # NUMBER OF ROWS/COLUMNS FOR TILE
+
+analysis done
+TOTAL SCRIPT TIME: 9
