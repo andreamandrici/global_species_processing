@@ -33,6 +33,8 @@ Geometries are [checked (and, when needed, fixed)](./geometry_fix/) for validity
 
 All the other steps are executed inside `z_do_it_all.sh` script.
 
+xxxxxxxx edit from here
+
 Outputs are exported as raster vrt, with attribute table (to be used for reclass) containing:
 "cid"|"species"|"richness"|"endemic_threatened"|"richness_endemic_threatened"
 +  cid = pixel_value
@@ -43,7 +45,7 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 
 [Environment and log files](./spatial/flattening/) are reported. SQL files are also reported, when geometry fix was needed (after step `a_` of flattening).
 
-xxxxxxxx edit from here
+
 
 each taxon has configuration parameters and generating script.
 template folder is needed INSIDE taxon folder
