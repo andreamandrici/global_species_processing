@@ -45,6 +45,18 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 
 xxxxxxxx edit from here
 
+each taxon has configuration parameters and generating script.
+template folder is needed INSIDE taxon folder
+
+additional steps:
+`taxon/sql/attributes_taxon.sql` --> generates additional attribute table
+`taxon/p_export_raster.sh` --> export attribute table as CSV
+
+`export_raster/sql/export_raster_taxon.sql` --> change cid in eport_raster.h_flat
+`export_raster/z_do_it_all.sh' (steps o,p,q) ---> export raster export_raster.h_flat
+
+final_species_schema.sql --> collects all taxa in schema species_year_all_taxa
+
 flatter sequence
 
 --db_tiled_all.sh
