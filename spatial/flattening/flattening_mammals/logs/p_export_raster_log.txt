@@ -1,0 +1,3139 @@
+/data/swap/flattening_mammals/raster_output
+removing /data/swap/flattening_mammals/raster_output
+creating /data/swap/flattening_mammals/raster_output
+NOTICE:  table "export_raster_onprocess" does not exist, skipping
+number of elements: 618
+number of objects in each step: 13
+number of dedicated threads: 46
+processing 1
+processing 35
+processing 48
+Input file size is 3600, 1672
+0processing 70
+Input file size is 3600, 1270
+0processing 83
+...10...20..Input file size is 3600, 3600
+0processing 96
+.30...40...50...10....10...20...30.processing 109
+Input file size is 324, 94
+0..20....40...50...60..processing 122
+...10...20...30...40...50...60...70...80...90...100 - done.
+.30...processing of 70 ended
+processing 71
+...60...70..Input file size is 3600, 3600
+040...50processing 135
+.70...80...90...100 - done.
+processing of 35 ended
+processing 36
+Input file size is 3600, 2684
+0.80...90...100 - done.
+processing of 1 ended
+processing 2
+processing 148
+Input file size is 3600, 3600
+0processing 161
+...60....10....10..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0processing 174
+Input file size is 3600, 1593
+0..70..Input file size is 3600, 3600
+0..20.....10.Input file size is 3600, 1983
+0.20...30....10.processing 187
+..20..Input file size is 3600, 3600
+0.80...processing 200
+..20.....10.Input file size is 3600, 3600
+0.30......10...20..90...100 - done.
+..40...50...10.processing 213
+.30...processing of 48 ended
+processing 49
+Input file size is 3600, 3600
+0...10...20..40...50..20..processing 226
+...10....60...30.....20..Input file size is 3600, 3600
+040...50.30...40...50.30...40...50...10.processing 239
+...60..70...80.Input file size is 3600, 3600
+040...50...10...20..processing 252
+...60...70....90...100 - done.
+..20....70..processing of 96 ended
+processing 97
+Input file size is 3600, 3600
+0.30......60..30......60...70..Input file size is 3600, 3600
+0.80...90...100 - done.
+processing 265
+processing of 36 ended
+processing 37
+..20.....10....60..80...40...50processing 278
+Input file size is 3600, 3600
+0.30...40...50.80...90...100 - done.
+..70..Input file size is 3600, 3600
+0.30...processing of 2 ended
+processing 3
+...10.90...100 - done.
+..20..processing 291
+processing of 71 ended
+processing 72
+...10..30.....70..Input file size is 3600, 3600
+040...50.80...40...50Input file size is 3600, 3600
+0..20.....10....60.processing 304
+...60.Input file size is 3600, 3600
+040...50.80...Input file size is 3600, 3600
+0..20..90...100 - done.
+...10.processing of 83 ended
+processing 84
+...10..30...processing 317
+..70..Input file size is 3600, 3600
+0..20..90...100 - done.
+Input file size is 3600, 2010
+0processing of 109 ended
+processing 110
+..70.....60....60..30......10.processing 330
+..20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10...20...80...40...50...60..30...processing 343
+.80......10...70....70..40...50...10.Input file size is 3600, 3600
+090...100 - done.
+..20..processing 356
+...10.processing of 122 ended
+processing 123
+...10...20....20..90...100 - done.
+.30.....70..processing of 135 ended
+processing 136
+Input file size is 3600, 3600
+040...50.30...Input file size is 3600, 3600
+0.80...processing 369
+.80.....20.....10...20...30...Input file size is 3600, 3600
+0...10....60..30...40...50..20..processing 382
+...60.40...5090...100 - done.
+Input file size is 3600, 3600
+0.80...processing of 148 ended
+processing 149
+90...100 - done.
+40...50Input file size is 3600, 3600
+0.30......10.processing of 161 ended
+processing 162
+..20...30...processing 395
+40...50..20....70..90...100 - done.
+...60....60...70..processing of 174 ended
+processing 175
+.30......10.Input file size is 3600, 3600
+0.30...processing 408
+...10...70...30.....20..40...5040...50...60.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.80......10.processing 421
+...60....10..30.....70....20..40...50...60....10..30...40...50..20...80...90...100 - done.
+.80...Input file size is 3600, 3600
+0processing 434
+40...5090...100 - done.
+processing of 3 ended
+processing 4
+Input file size is 3600, 3600
+0..70..processing of 187 ended
+processing 188
+...60...20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.80....30...90...100 - done.
+40...50...10.processing 447
+..70....70..processing of 200 ended
+processing 201
+..20.....60...20..40...50..70..Input file size is 3600, 3600
+0.80...processing 460
+...10..30....80...Input file size is 3600, 3600
+090...100 - done.
+...10....10....60.processing of 49 ended
+processing 50
+...60..30......60.40...5090...100 - done.
+..20..processing 473
+processing of 97 ended
+processing 98
+.80.....70...80...90...100 - done.
+...10.40...50...60.processing of 213 ended
+processing 214
+.30.....20.....10.Input file size is 3600, 1963
+0..20....70...30...Input file size is 3600, 3600
+0processing 486
+..70....20..Input file size is 3600, 3600
+0..70.....10....10..30...Input file size is 3600, 3600
+090...100 - done.
+40...5090...100 - done.
+...60.processing of 226 ended
+processing 227
+Input file size is 3600, 3600
+0..20.....10.processing of 239 ended
+processing 240
+.80......10...20...30...40...50...60...70..processing 499
+..70..Input file size is 3600, 3600
+0.80...40...50Input file size is 3600, 3600
+0...10....60....60...20..40...50Input file size is 3600, 3600
+0.80....30...processing 512
+.80...90...100 - done.
+.30.....20....20..40...50processing of 252 ended
+processing 253
+..70....20...30....80...90...100 - done.
+Input file size is 3600, 3600
+0.30...90...100 - done.
+processing of 4 ended
+processing 5
+processing 525
+..70..Input file size is 3600, 3600
+0processing of 265 ended
+processing 266
+.80......60.90...100 - done.
+..70..90...100 - done.
+...10..30...Input file size is 3600, 3600
+0processing of 37 ended
+processing 38
+...10.processing of 278 ended
+processing 279
+...10...20.....10....60.processing 538
+Input file size is 3600, 3600
+040...5040...50.80....80....30...90...100 - done.
+40...50Input file size is 3600, 3600
+0...60....10.processing of 72 ended
+processing 73
+40...50...10.processing 551
+.80....30.....70...30....30...40...50..20....20.....10.Input file size is 3600, 3600
+0...60...20....70..90...100 - done.
+Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0processing of 84 ended
+processing 85
+..20..processing 564
+processing of 291 ended
+processing 292
+...10.40...5090...100 - done.
+processing of 304 ended
+processing 305
+...10...20....70.....60..30...Input file size is 3600, 3600
+0Input file size is 925, 141
+0...60.40...50..20...80...Input file size is 3600, 3600
+0...10.40...50Input file size is 3600, 3600
+0processing 577
+..20.....60.40...50..70...80...Input file size is 3600, 3600
+0...60....10....10...20...30...40...50...60...70...80...90...100 - done.
+Input file size is 3600, 3600
+0processing of 5 ended
+processing 9
+Input file size is 3600, 3600
+0..20...30......10..30.....20.....60.processing 590
+.30....80...90...100 - done.
+..70..40...50..20..90...100 - done.
+Input file size is 3600, 3600
+0...10....10.Input file size is 3600, 3600
+0.30...processing of 317 ended
+processing 318
+processing 603
+..70.....60.processing of 343 ended
+processing 344
+.80.....70.....10....60...70...30.....20...30...40...5090...100 - done.
+40...50...60.Input file size is 3600, 3600
+0..70....20..processing of 110 ended
+processing 111
+processing 616
+...10....10.40...50Input file size is 3600, 3600
+090...100 - done.
+..20.....60..80....30......10....10....10.40...50.80...Input file size is 3600, 3600
+0processing of 330 ended
+processing 331
+..20..Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+0Input file size is 4, 15
+0..20..processing 629
+40...50.30.....70.....10..80....80.....70....70...30....80......60....10...20...30...40...50...60...70...80...90...100 - done.
+Input file size is 3600, 3600
+0...10.processing of 9 ended
+processing 11
+..20..40...50processing 642
+..20....20.....60.90...100 - done.
+..70....20..90...100 - done.
+..20.....60..30...processing of 136 ended
+processing 137
+Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+0.80....30...processing of 369 ended
+processing 370
+...10.40...5090...100 - done.
+40...5040...50Input file size is 3600, 3600
+0...60.processing of 123 ended
+processing 124
+90...100 - done.
+90...100 - done.
+40...50..20..Input file size is 3600, 3600
+0..20.....10.processing of 382 ended
+.80...processing 383
+.80...processing of 356 ended
+processing 357
+.30......60....60...70.....10..30.....70.....10.90...100 - done.
+Input file size is 3600, 3564
+0.80....30.....70.....10.processing of 162 ended
+processing 163
+..20..40...5040...50...10....60.40...50Input file size is 3600, 3600
+0Input file size is 3600, 3564
+0...10.90...100 - done.
+.30...90...100 - done.
+.30.....20....70..processing of 395 ended
+processing 396
+.30...processing of 175 ended
+processing 176
+90...100 - done.
+.30.....20..Input file size is 3600, 3564
+0...60....10.processing of 149 ended
+processing 150
+..70....20.....10.40...50.30....80...40...50Input file size is 3539, 786
+040...50...60..80......60...70...80......60..30......10.Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+0...10...20....20....70..40...5040...5040...50.80...90...100 - done.
+Input file size is 3600, 3600
+0...10.40...50...60..30.....70..processing of 408 ended
+processing 409
+..20..Input file size is 3600, 3600
+040...50...60.90...100 - done.
+...10...20.....10...20...30...40...50...60..80....30...Input file size is 3600, 3600
+0...10.processing of 447 ended
+processing 448
+90...100 - done.
+..70..Input file size is 3600, 3600
+0..20....70...30...40...50processing of 188 ended
+processing 189
+.30...90...100 - done.
+..70.....10..80....80......60...20.....60...70...80...90...100 - done.
+processing of 460 ended
+processing 461
+processing of 11 ended
+processing 12
+.80...Input file size is 3600, 3600
+0..20...40...50.80......60...70..90...100 - done.
+.30...Input file size is 3600, 3600
+0.30.....70.....60...70.....60...20......10...20..Input file size is 3600, 3600
+0processing of 421 ended
+processing 422
+...10....60.40...5090...100 - done.
+...60..30...40...50.80.....20...40...50...60..80....30...90...100 - done.
+90...100 - done.
+..70..processing of 434 ended
+processing 435
+...60.90...100 - done.
+...10.processing of 50 ended
+processing 51
+processing of 201 ended
+processing 202
+.30......10..80...40...50processing of 473 ended
+processing 474
+...10..30...Input file size is 3600, 3600
+090...100 - done.
+..70...80.....20..90...100 - done.
+..70....70.....60.40...50processing of 98 ended
+processing 99
+..70.....60...20..Input file size is 3600, 3600
+0..70...30....80...30...40.processing of 486 ended
+processing 487
+..70..40...50...10.90...100 - done.
+30...40.Input file size is 3600, 3600
+0..20..40...50processing of 240 ended
+processing 241
+..20..Input file size is 3600, 904
+0..20.....60..80...90...100 - done.
+...10....10....10....60...70..40...50...60.processing of 512 ended
+processing 513
+.30...30...40..80......60..80....80.....70....50..40...5090...100 - done.
+40...50Input file size is 3600, 3600
+0.80.....70..90...100 - done.
+..20..Input file size is 3600, 3600
+0processing of 214 ended
+processing 215
+.80.....70..Input file size is 3600, 3600
+0..20....50.....10.processing of 525 ended
+processing 526
+.30....80.....20....70....20...80...90...100 - done.
+90...100 - done.
+Input file size is 3600, 3600
+0...10..30.....70...30...processing of 38 ended
+processing 39
+.80......60...70..processing of 499 ended
+processing 500
+90...100 - done.
+..50..Input file size is 3600, 3600
+090...100 - done.
+...10...20...30...40...50...60.Input file size is 3600, 3600
+040...50processing of 551 ended
+processing 552
+processing of 538 ended
+processing 539
+...60....60..80.....20..90...100 - done.
+.60...70...10.90...100 - done.
+Input file size is 3600, 3600
+0.80...processing of 227 ended
+processing 228
+.80...processing of 253 ended
+processing 254
+.30...Input file size is 3600, 3600
+040...5090...100 - done.
+..20..Input file size is 3600, 2893
+0...10.40...5040...50processing of 73 ended
+processing 74
+Input file size is 3600, 3600
+0...60..30....80......60.90...100 - done.
+.30....30...90...100 - done.
+.30.....70.....60...70...80...90...100 - done.
+..70..processing of 279 ended
+processing 280
+processing of 12 ended
+processing 13
+processing of 266 ended
+processing 267
+...80...80...90...100 - done.
+.60...70..70....70...60...7090...100 - done.
+.30...processing of 305 ended
+processing 306
+..20.....10.processing of 577 ended
+processing 578
+..20.....10.Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0...10....60.Input file size is 3600, 3600
+0processing of 590 ended
+processing 591
+40...5040...5040...50...60..30...Input file size is 3600, 3600
+0..70...30.....70..40...5090...100 - done.
+...60....10.Input file size is 3600, 3600
+040...50...10....10.40...50...80..processing of 292 ended
+processing 293
+Input file size is 3600, 3600
+0...10....10..80....80...Input file size is 3600, 3600
+0.80.....20.....80...80.....20.....60..90...100 - done.
+..70.....10..40...50.30.....20..Input file size is 3600, 3600
+0..70..processing of 616 ended
+processing 617
+Input file size is 3600, 1095
+0Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+040...50...10...70....20.....10...20..90...100 - done.
+Input file size is 3600, 3600
+090...100 - done.
+.80...Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+090...100 - done.
+...60...20....20..processing of 603 ended
+processing 604
+processing of 564 ended
+processing 565
+.80......60.processing of 85 ended
+processing 86
+..20..40...50...60.Input file size is 3600, 3600
+090...100 - done.
+..70.....10....60....10....60....10....10...20..processing of 344 ended
+processing 345
+90...100 - done.
+..20...20...30..80....80...40...5090...100 - done.
+processing of 111 ended
+processing 112
+...60..90...100 - done.
+...10..30......60..30...90...100 - done.
+..70...30...processing of 318 ended
+processing 319
+Input file size is 3600, 3600
+0processing of 642 ended
+processing 643
+processing of 383 ended
+processing 384
+...10...20...30..30......10....60..90...100 - done.
+90...100 - done.
+...10...20....70...80...90...100 - done.
+..70..Input file size is 3600, 3564
+0..20....70..processing of 357 ended
+processing 358
+..70..processing of 629 ended
+processing 630
+...10..30......10....10.processing of 331 ended
+processing 332
+..20....20.....10..30.....70....20..40...5040...50.30...40...50..40...50...60....70..Input file size is 3600, 3600
+0.80....30......60.Input file size is 3600, 3600
+040...50.30...Input file size is 3600, 3600
+0..70...30......10...40...50..20...80.....20...80.....20...80...90...100 - done.
+..20.....60.40...50..20..processing of 370 ended
+processing 371
+..20...80......10..70...80...90...100 - done.
+processing of 13 ended
+processing 14
+.80...Input file size is 3600, 3600
+040...5040...50Input file size is 3600, 3600
+090...100 - done.
+40...50.30...90...100 - done.
+.30....30....30....80...40...5040...50..70...80...90...100 - done.
+processing of 163 ended
+processing 164
+Input file size is 3600, 3600
+0processing of 176 ended
+processing 177
+90...100 - done.
+..20.....60.Input file size is 3600, 3564
+0...60.processing of 124 ended
+processing 125
+processing of 396 ended
+processing 397
+...60.90...100 - done.
+Input file size is 3600, 3600
+0...60.Input file size is 3600, 3600
+0.30......10....10...20.....60..processing of 189 ended
+...10.processing 190
+Input file size is 3600, 3564
+0.30......10.40...5090...100 - done.
+40...50..70..90...100 - done.
+90...100 - done.
+Input file size is 3600, 3600
+0processing of 150 ended
+processing 151
+...60..30...processing of 137 ended
+...60.processing 138
+40...50..70..processing of 448 ended
+processing 449
+40...50..70...30.....70...30....30.....20..40...50Input file size is 3600, 688
+0..20...80......60.Input file size is 3600, 3600
+0...10...70...30......10....60...70....20..40...50...60..30....70...80.Input file size is 3600, 3600
+0...60....10...20......10..30.....70...80...Input file size is 3600, 3600
+040...50...10..80....80......60.40...5090...100 - done.
+...60.40...50processing of 435 ended
+processing 436
+.80....80.....20....70.....10...20..40...50.80......10.Input file size is 3600, 3600
+0...60.Input file size is 3600, 3600
+0..90...100 - done.
+40...50..70.....60..30......10.processing of 99 ended
+processing 100
+90...100 - done.
+...60.Input file size is 3600, 3600
+0.30...90...100 - done.
+..20...90...100 - done.
+40...5040...50.80......10...20...30...40...50processing of 51 ended
+processing 52
+...60.processing of 409 ended
+processing 410
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20....20.....10...70..90...100 - done.
+Input file size is 3600, 3600
+0..70..processing of 513 ended
+processing 514
+..70....70...30...90...100 - done.
+.80...processing of 461 ended
+processing 462
+..70.....60...20..processing of 39 ended
+processing 40
+..20...40...50..70..30...40...20...30...90...100 - done.
+..70.....60....60...70...80...90...100 - done.
+...10.40...50processing of 14 ended
+processing 15
+.30....80...processing of 422 ended
+processing 423
+..20.....10....60..80.....70.....10...70..40...5090...100 - done.
+90...100 - done.
+.80....80....80....80......10..30...processing of 474 ended
+processing 475
+...60.30...40.processing of 241 ended
+processing 242
+...60....60....10.40...50Input file size is 3600, 3600
+0.30......60.90...100 - done.
+.80....80......10...20..90...100 - done.
+...60.processing of 202 ended
+processing 203
+..70..30...40..30...processing of 552 ended
+processing 553
+40...50..50..Input file size is 3600, 2477
+0Input file size is 3600, 3600
+090...100 - done.
+...60...70..Input file size is 3600, 3600
+0.80.....20..90...100 - done.
+...10..80....30......10.processing of 215 ended
+processing 216
+..20..processing of 228 ended
+processing 229
+..70..Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+0..50..40...50.30...Input file size is 3600, 3600
+0...60.90...100 - done.
+..70....20....70..90...100 - done.
+..70....20....50....70..processing of 74 ended
+processing 75
+40...50processing of 539 ended
+processing 540
+90...100 - done.
+90...100 - done.
+90...100 - done.
+.80...Input file size is 3600, 3600
+040...50processing of 306 ended
+processing 307
+90...100 - done.
+processing of 487 ended
+processing 488
+..70.....60.processing of 526 ended
+processing 527
+..20..processing of 280 ended
+processing 281
+.30....80......60.Input file size is 3600, 452
+0..70....20...80....80...40...5040...50.30......10...20.80...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10..30....80....80...Input file size is 3600, 3600
+0...10..60...70...10..80......10..30...90...100 - done.
+...10...70..Input file size is 3600, 3600
+0...60.90...100 - done.
+.60...70...10....60.processing of 267 ended
+processing 268
+.30...40...50processing of 293 ended
+processing 294
+...60.Input file size is 3600, 3600
+0..70..90...100 - done.
+.80...40...50.30....60...7040...50Input file size is 3600, 3600
+090...100 - done.
+...30...4090...100 - done.
+...10.90...100 - done.
+..20..processing of 500 ended
+processing 501
+Input file size is 3600, 3600
+090...100 - done.
+processing of 254 ended
+processing 255
+..20..90...100 - done.
+...60.processing of 578 ended
+processing 579
+...80..Input file size is 3600, 3600
+0processing of 591 ended
+processing 592
+..20..processing of 86 ended
+processing 87
+...10...20...30...40...50...60...70...80...90...100 - done.
+..20..Input file size is 3600, 3600
+0processing of 565 ended
+processing 566
+.30...40...50processing of 15 ended
+processing 16
+.80.....70....20.....60....80...30......10....10....80..40...50.80.....70....70..40...50Input file size is 3600, 3600
+0..20.....10....60.Input file size is 3600, 3600
+0..20.....10..30...90...100 - done.
+40...50...10....50...60..70.....60....60.90...100 - done.
+.80.....20.....10.processing of 345 ended
+processing 346
+..20...30...Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0processing of 604 ended
+processing 605
+40...50...10...70.....10.processing of 112 ended
+processing 113
+.30....30.....20.....60....10..30.....70...80...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.80...40...50.80...Input file size is 3600, 3600
+0..20..90...100 - done.
+...70...80..20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 706, 156
+0...60...70..Input file size is 3600, 3600
+0...60...70...30......10.processing of 384 ended
+processing 385
+.30.....20....20.....60...70..40...5040...50.80...40...50...10...20...30...40...50...60...70...80...90...100 - done.
+.80...processing of 16 ended
+processing 34
+..20...80....30....90...100 - done.
+..20.....10....10..90...100 - done.
+..70..40...50...60.90...100 - done.
+processing of 630 ended
+processing 631
+..70...30....80...processing of 617 ended
+processing 618
+40...50.90...100 - done.
+processing of 332 ended
+processing 333
+..70..40...50.30......60.Input file size is 3600, 3600
+0...10..80...processing of 643 ended
+processing 644
+...10..30...90...100 - done.
+90...100 - done.
+90...100 - done.
+...10.Input file size is 3600, 3600
+0...10....90...100 - done.
+processing of 52 ended
+processing 53
+...10...20..processing of 371 ended
+processing 372
+processing of 358 ended
+processing 359
+Input file size is 3600, 3600
+0...10..30....80...processing of 100 ended
+processing 101
+.80...90...100 - done.
+40...5090...100 - done.
+...10...20.....60.40...50...60...70...30....80...90...100 - done.
+..70...30....30....30.....20..Input file size is 3600, 3600
+0...60.processing of 164 ended
+processing 165
+processing of 319 ended
+processing 320
+...10.processing of 125 ended
+processing 126
+40...50.80......60....60...20.....60...20....20....70....20..40...50..20....20..90...100 - done.
+Input file size is 695, 215
+040...5090...100 - done.
+Input file size is 3600, 3564
+0.80...processing of 138 ended
+processing 139
+..20.....10.90...100 - done.
+40...50processing of 177 ended
+processing 178
+..70..40...5040...5090...100 - done.
+processing of 397 ended
+processing 398
+Input file size is 3600, 3564
+090...100 - done.
+Input file size is 3600, 3600
+0processing of 151 ended
+processing 152
+...10...20...30...40...50...60...70...80...90...100 - done.
+40...50..70..processing of 34 ended
+..20..processing of 40 ended
+processing 41
+..70.....10..30...90...100 - done.
+..70...80.....70.....60.Input file size is 3600, 2093
+0Input file size is 3600, 3564
+0.30......60.processing of 449 ended
+processing 450
+Input file size is 3600, 2492
+0Input file size is 3600, 3600
+0.80.....20...30....30......10.Input file size is 3600, 3600
+0...60....10..30....30......60..30......60..30....30....80...Input file size is 3600, 3600
+0...60.Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+0...60..80....30...40...50..70..40...5090...100 - done.
+...60..80....30...processing of 514 ended
+processing 515
+..70.....10.40...50...60....10..80.....70..Input file size is 3600, 3600
+0..20..90...100 - done.
+40...5040...50..20.....10...20...10.processing of 190 ended
+processing 191
+..70..90...100 - done.
+Input file size is 3600, 3600
+040...50..70..40...5040...5040...50Input file size is 3600, 3600
+0..70..processing of 462 ended
+processing 463
+40...50Input file size is 3600, 1951
+0...10...20Input file size is 3600, 3600
+090...100 - done.
+..70...80.....70...30......10....10.90...100 - done.
+40...50...10.processing of 436 ended
+processing 437
+..20...Input file size is 3600, 3600
+0.30...90...100 - done.
+processing of 423 ended
+processing 424
+.80....80.....20.....70....20.....30...40processing of 410 ended
+processing 411
+.80......60....10..30......60..80...90...100 - done.
+...10....60..80......60..30...processing of 242 ended
+processing 243
+40...50..20......60...20..Input file size is 3600, 3600
+090...100 - done.
+...30...40...10..80....80......60.processing of 216 ended
+processing 217
+...10.90...100 - done.
+...60...20.....60....50...60...60..80...40...50processing of 307 ended
+processing 308
+...60...70..Input file size is 3600, 3600
+090...100 - done.
+...60...70.....70...8090...100 - done.
+...10.30...40.40...50..20.....10.40...50..70.....10...20..processing of 475 ended
+processing 476
+30...40.90...100 - done.
+..20....70..processing of 540 ended
+processing 541
+Input file size is 3600, 3600
+0..70..90...100 - done.
+...10.90...100 - done.
+...10..30...processing of 203 ended
+processing 204
+..70....20..processing of 75 ended
+processing 76
+..70..processing of 553 ended
+processing 554
+Input file size is 3600, 3600
+0...90...100 - done.
+..70....70.....50...60processing of 53 ended
+processing 54
+..20..Input file size is 3600, 3600
+030...40..30.....50...80...Input file size is 3600, 3600
+0...60...70..90...100 - done.
+..20.....10..30...40...50.80....80.....50...30.....70....20.....60.processing of 229 ended
+processing 230
+Input file size is 3600, 3600
+0.80.....20....20...80....80....80...40...50...60.Input file size is 3600, 3600
+0...70...80...60..30...90...100 - done.
+...10....10..80....80.....50...30...processing of 592 ended
+40...50processing 593
+..20...30....80...90...100 - done.
+..70..Input file size is 3600, 3600
+090...100 - done.
+40...50.60...70processing of 579 ended
+processing 580
+90...100 - done.
+Input file size is 3600, 3600
+0.80.....70..processing of 268 ended
+processing 269
+..70...30...90...100 - done.
+...10.90...100 - done.
+.30...processing of 566 ended
+processing 567
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...60...70....70.....10..30...90...100 - done.
+90...100 - done.
+processing of 488 ended
+processing 489
+processing of 281 ended
+processing 282
+...90...100 - done.
+.60...70..20.....10.40...50processing of 87 ended
+processing 88
+.30...processing of 501 ended
+processing 502
+processing of 101 ended
+processing 102
+..20..40...50...10..80...Input file size is 3600, 3600
+0...60..30...40...50Input file size is 3600, 657
+0...80.....60....10.90...100 - done.
+.80...90...100 - done.
+..20..Input file size is 3600, 3600
+0.80....80...90...100 - done.
+40...5040...50processing of 41 ended
+processing 42
+processing of 527 ended
+processing 528
+..20.....60..30....60...70processing of 294 ended
+processing 295
+.80...90...100 - done.
+Input file size is 3600, 3600
+0..70..40...50...10.processing of 346 ended
+processing 347
+..20..90...100 - done.
+...80..90...100 - done.
+40...50...10.processing of 255 ended
+processing 256
+40...50...10.Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+0..20..processing of 113 ended
+processing 114
+90...100 - done.
+...10....60.Input file size is 3600, 3600
+0..70...30...90...100 - done.
+40...50.90...100 - done.
+processing of 385 ended
+processing 386
+.30......60.Input file size is 3600, 3600
+0processing of 605 ended
+processing 606
+Input file size is 3600, 3600
+0.80.....70.....10.processing of 618 ended
+processing 619
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...60.Input file size is 3600, 2528
+0..20.....10..30.....20....20...30......10...20...30...40...50...80....70.....60...20.....60....60..30...90...100 - done.
+40...50...10.Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+0...60...70...80...90...100 - done.
+processing of 333 ended
+processing 334
+Input file size is 3600, 1752
+0..70..processing of 54 ended
+processing 55
+.30.....20...90...100 - done.
+40...50...10..80.....20....70..Input file size is 3600, 3600
+0processing of 631 ended
+processing 632
+...60..30......10....60.40...50.80...40...50...10.90...100 - done.
+..70...30......60....10...2040...50...10.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10.Input file size is 3600, 3600
+0processing of 372 ended
+processing 373
+...10..30.....70....20.....10..30......10...70..90...100 - done.
+.80.....20...80...90...100 - done.
+40...50Input file size is 3600, 3600
+0processing of 139 ended
+processing 140
+.30.....20....70..Input file size is 3600, 3564
+0..20..processing of 359 ended
+processing 360
+..70.....60....30...40.80......10..30...40...50...10...20....20..40...50..20..40...50...60.40...50..20.....10..30....90...100 - done.
+..20.....10..80.....70....20..Input file size is 3600, 3600
+0processing of 644 ended
+processing 645
+.80......60....60.90...100 - done.
+...60..30...Input file size is 3600, 3564
+0...10.90...100 - done.
+90...100 - done.
+40...50Input file size is 3600, 537
+0processing of 450 ended
+processing 451
+.80......10..30...40...50..70..40...50.80...processing of 126 ended
+processing 127
+..20....20..processing of 165 ended
+processing 166
+90...100 - done.
+.30......10.Input file size is 3600, 3600
+0.30.....20...30...40...50..70...80...processing of 178 ended
+processing 179
+...10....50...60...60...70...30...90...100 - done.
+..20.....10...70..40...50.30....30.....20.....10...20...30...40...5090...100 - done.
+..70..processing of 398 ended
+processing 399
+Input file size is 3600, 3600
+0...60....60....60....60.processing of 152 ended
+processing 153
+.80....30...90...100 - done.
+40...50...10.Input file size is 3600, 3600
+090...100 - done.
+.30......60...70...80...90...100 - done.
+processing of 320 ended
+processing 321
+..20...processing of 55 ended
+processing 56
+40...50...10....60...70..40...50.80...processing of 515 ended
+processing 516
+...60.40...50...70...80...60...20....20....70..40...50.80....30....80...90...100 - done.
+Input file size is 3600, 3564
+0.80....30...40...50..70....70...30.....70....70...80...90...100 - done.
+...60.processing of 191 ended
+processing 192
+.30.....20..90...100 - done.
+processing of 42 ended
+processing 43
+40...5040...50...10.Input file size is 3600, 3600
+0...60.processing of 243 ended
+processing 244
+Input file size is 3600, 3600
+0.30.....20...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+..70....70...80......60.processing of 411 ended
+processing 412
+40...5040...5090...100 - done.
+...90...100 - done.
+...60....10.Input file size is 3600, 3600
+0...10.Input file size is 3600, 3600
+0.30......60....60.processing of 102 ended
+processing 103
+processing of 424 ended
+processing 425
+30...40..80....80....80...40...50...60.40...5090...100 - done.
+.30.....70..90...100 - done.
+.80.....20....70..processing of 463 ended
+processing 464
+Input file size is 3600, 3600
+040...50..70...80....80...processing of 308 ended
+processing 309
+Input file size is 3600, 3600
+0Input file size is 3600, 263
+0..70..30...40....60...20.....60....10....60.90...100 - done.
+..70..90...100 - done.
+...10..30.....70.....10....10...50....20..40...5040...50..70..Input file size is 3600, 1910
+0...10.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+...60.processing of 476 ended
+processing 477
+90...100 - done.
+processing of 437 ended
+processing 438
+90...100 - done.
+.80...90...100 - done.
+...60.processing of 76 ended
+processing 77
+.80...processing of 204 ended
+processing 205
+.80...processing of 217 ended
+processing 218
+processing of 554 ended
+processing 555
+...10....10...20...30...40...50...60...70...80...90...100 - done.
+...60.processing of 56 ended
+processing 57
+Input file size is 3600, 3600
+0..50....70.....10....60..30....80....80....80.....70....20...90...100 - done.
+...60...20..40...5090...100 - done.
+processing of 593 ended
+processing 594
+..20....70...80...Input file size is 3600, 2571
+0.30...Input file size is 3600, 3600
+0..20....70..90...100 - done.
+..20..processing of 269 ended
+processing 270
+..70.....10.processing of 541 ended
+processing 542
+Input file size is 3600, 3600
+0..70...30...Input file size is 3600, 3600
+0...60..60...70...10.90...100 - done.
+..20.....10....10...20....70...80...90...100 - done.
+90...100 - done.
+90...100 - done.
+..20..processing of 580 ended
+processing 581
+...60....10..80....80.....70...60...70processing of 502 ended
+processing 503
+processing of 88 ended
+processing 89
+processing of 230 ended
+processing 231
+40...5040...50.80....30......10.Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...60...20.....80....20...30.....20....70...30....80...90...100 - done.
+40...5090...100 - done.
+Input file size is 3600, 3600
+030...40.Input file size is 3600, 3600
+090...100 - done.
+...10....80...30......10....20...80.....70..processing of 282 ended
+processing 283
+processing of 295 ended
+processing 296
+Input file size is 3106, 199
+0.30...40...50processing of 489 ended
+processing 490
+90...100 - done.
+90...100 - done.
+..20.....10..30...40...50...10.Input file size is 3600, 3600
+090...100 - done.
+processing of 567 ended
+processing 568
+.30...Input file size is 3600, 3600
+0processing of 528 ended
+processing 529
+..70..90...100 - done.
+processing of 347 ended
+processing 348
+90...100 - done.
+40...50...10...20...30...40...50...60...70...80...90...100 - done.
+...60.processing of 386 ended
+processing 387
+40...50processing of 57 ended
+processing 58
+.80...Input file size is 3600, 3600
+040...50...60.processing of 256 ended
+processing 257
+.80.....20....50...20...30....10.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+040...50.30...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.90...100 - done.
+..20....20...30......10....10....10.40...50...60...70...30...processing of 619 ended
+processing 620
+90...100 - done.
+.30....90...100 - done.
+...60.90...100 - done.
+.30...processing of 114 ended
+processing 115
+...10....10..80...processing of 606 ended
+processing 607
+...60...70...80...90...100 - done.
+processing of 632 ended
+processing 633
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0processing of 43 ended
+processing 44
+..20....70.....10.Input file size is 3600, 3600
+040...50.30......60..60...70..20.....10.40...5040...5090...100 - done.
+..20.....60.40...50Input file size is 3600, 3600
+0..20.....60.Input file size is 3600, 3600
+0..40...50...10.40...50processing of 334 ended
+processing 335
+Input file size is 3600, 3600
+0.30......60..80.....70.....60....10...20.....10.Input file size is 3600, 3600
+0..70...30...Input file size is 155, 26
+0..20..Input file size is 3600, 3600
+0...10....10...70....20..40...50.80......80.....10...20...30...40...50...60...70...80...90...100 - done.
+processing of 58 ended
+processing 61
+..20..90...100 - done.
+..70....70..Input file size is 3600, 3564
+040...50.30......60....20..Input file size is 3600, 3600
+0...10...70....70.....60.90...100 - done.
+Input file size is 3600, 3564
+0.80.....20..Input file size is 3600, 3600
+0processing of 360 ended
+processing 361
+..20.....10.40...50...10....60..80....30.....20..processing of 373 ended
+processing 374
+...60...20.....60....10..30....80......60..30......10.Input file size is 3600, 1926
+0.30....80......10..80...40...50.70...80..30...90...100 - done.
+.80......10..30...90...100 - done.
+..20...80...Input file size is 3600, 3600
+0...60...20..processing of 166 ended
+processing 167
+..70..40...50.90...100 - done.
+processing of 140 ended
+processing 141
+...10...20...30...40...50..70....70.....60.90...100 - done.
+.30.....70....20..processing of 645 ended
+processing 646
+90...100 - done.
+..70.....10...90...100 - done.
+...10...20..processing of 451 ended
+processing 452
+...10.40...50processing of 103 ended
+processing 104
+...60..30...90...100 - done.
+.30...40...50processing of 179 ended
+processing 180
+.30....30......10...20..90...100 - done.
+..20..processing of 153 ended
+processing 154
+Input file size is 3600, 3600
+040...50Input file size is 957, 874
+040...50processing of 399 ended
+processing 400
+Input file size is 3600, 3600
+0.80.....20....70.....60.40...5040...50.80.....20...80......10...20.....10...20...30...40...50.30...90...100 - done.
+.80.....70..processing of 127 ended
+processing 128
+.30...40...5040...50..70....20...80.....20...40...50..20...40...5090...100 - done.
+.30......60..30......60.Input file size is 3600, 3600
+0.30....80......60...70...80...90...100 - done.
+90...100 - done.
+processing of 516 ended
+processing 517
+processing of 61 ended
+processing 62
+...60....10...70...30...Input file size is 3600, 3600
+090...100 - done.
+...60.processing of 244 ended
+processing 245
+.30...40...5090...100 - done.
+40...50...60.Input file size is 3600, 3564
+0...60....10..30...40...50processing of 412 ended
+processing 413
+90...100 - done.
+...60..80......10.Input file size is 3600, 3600
+0processing of 192 ended
+processing 193
+.30...40...50.30...Input file size is 3600, 3600
+0.80.....70..90...100 - done.
+Input file size is 3600, 2415
+040...5040...50processing of 321 ended
+processing 322
+...60...70.....60.processing of 425 ended
+processing 426
+...60.Input file size is 3600, 3600
+0.30......60.40...50.80...30...40.90...100 - done.
+..70..Input file size is 3600, 3600
+030...40...70..40...50..70..90...100 - done.
+..20.....60...20....70..processing of 309 ended
+processing 310
+Input file size is 3600, 3600
+0..20..40...50processing of 464 ended
+processing 465
+40...50.80.....70.....60.90...100 - done.
+...10..80.....70..Input file size is 3600, 3600
+0processing of 77 ended
+processing 78
+...10.40...50..70.....10..80.....70.....60...70...80...Input file size is 1205, 754
+0..50...80.....50.....60.Input file size is 3600, 3600
+0..70.....60..80......10...70.....60....10...20...10.Input file size is 3600, 3600
+0.30......60....60.Input file size is 3600, 3600
+090...100 - done.
+...60.Input file size is 3600, 3600
+0...10...20...30...40...50.80.....20....70..Input file size is 3600, 3600
+0.80...90...100 - done.
+processing of 555 ended
+processing 556
+...10...20....20....80...90...100 - done.
+.30......60.processing of 205 ended
+processing 206
+90...100 - done.
+...10..30......10..80......60.90...100 - done.
+..70...80...90...100 - done.
+.80...processing of 594 ended
+processing 595
+90...100 - done.
+processing of 89 ended
+processing 90
+...60...70...80...90...100 - done.
+..70..40...50processing of 44 ended
+processing 45
+processing of 62 ended
+processing of 218 ended
+processing 219
+...30...40..20..processing of 477 ended
+processing 478
+Input file size is 3600, 3600
+0..20....70.....10...70..Input file size is 3600, 3600
+090...100 - done.
+.80....80.....70.....60.90...100 - done.
+..70...60...7090...100 - done.
+processing of 503 ended
+processing 504
+..70....20..90...100 - done.
+.60...70..20..processing of 438 ended
+processing 439
+processing of 231 ended
+processing 232
+40...50...10...20..40...50..70..90...100 - done.
+Input file size is 3600, 3600
+0processing of 270 ended
+processing 271
+...10..30......10.processing of 542 ended
+processing 543
+90...100 - done.
+90...100 - done.
+...10..30....80....80....80...30...40..80...processing of 283 ended
+processing 284
+processing of 581 ended
+processing 582
+...10...70.....60...20..Input file size is 3600, 3600
+0...80...80....80....80......80...30....30.....20...80......50...60Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20.....10.Input file size is 3600, 3600
+090...100 - done.
+...60.40...50Input file size is 3600, 1895
+0..20.....10...20..90...100 - done.
+40...50processing of 568 ended
+processing 569
+.30....30....80...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..50..90...100 - done.
+..70.....60.90...100 - done.
+90...100 - done.
+90...100 - done.
+.30...Input file size is 3600, 3600
+0...10.processing of 529 ended
+processing 530
+90...100 - done.
+..20..processing of 296 ended
+processing 297
+processing of 387 ended
+processing 388
+processing of 115 ended
+processing 116
+processing of 348 ended
+processing 349
+processing of 490 ended
+processing 491
+40...5090...100 - done.
+..20..90...100 - done.
+40...50Input file size is 3600, 3600
+0...70...80Input file size is 3600, 3600
+0processing of 257 ended
+processing 258
+.30...Input file size is 3600, 3600
+0..20..40...50..70..processing of 607 ended
+processing 608
+.90...100 - done.
+40...50...10..80.....20....70..processing of 633 ended
+processing 634
+Input file size is 3600, 3600
+0.30....30...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.90...100 - done.
+40...50...60....60..30......10....10.processing of 620 ended
+processing 621
+.60...70.30......10...20.....10....90...100 - done.
+.80...processing of 104 ended
+processing 105
+40...50...10..30......10.90...100 - done.
+..20.....10.Input file size is 3600, 3600
+0processing of 374 ended
+processing 375
+40...50...60.40...50.30......60..80.....70....70..90...100 - done.
+..20.....60.Input file size is 3600, 3600
+0.30......60.Input file size is 3600, 3600
+040...50Input file size is 3600, 3600
+0.30...40...50Input file size is 3600, 3600
+0..20..processing of 361 ended
+processing 362
+..20.....80...30......10...20..Input file size is 3600, 3600
+0...10.Input file size is 3600, 3600
+0...10.40...5040...50..20....20.....60...70.....10....60....10....10.Input file size is 3600, 3600
+0..70..Input file size is 3600, 3600
+0.80...Input file size is 3600, 3564
+040...50..70...80.....70.....60.40...5090...100 - done.
+..20.....60.40...50..20...80...90...100 - done.
+...10.Input file size is 3600, 3564
+0.30...processing of 335 ended
+processing 336
+processing of 45 ended
+processing 46
+..20..90...100 - done.
+..70.....60...20....70....20.....60..30....80....30.....20...30...processing of 141 ended
+processing 142
+90...100 - done.
+.30....90...100 - done.
+Input file size is 3600, 3600
+0processing of 167 ended
+processing 168
+...10....10....10..80...Input file size is 3600, 3600
+0...10.Input file size is 3600, 3048
+0processing of 646 ended
+processing 647
+...10....60...70...30....80...90...100 - done.
+.30......60...70.....60.40...50...10...20..40...50...10.processing of 452 ended
+processing 453
+...60..30...90...100 - done.
+...60.40...50..70....70...80......10.40...50processing of 400 ended
+processing 401
+.80...40...50...10...20...30....30....30...90...100 - done.
+..20....20.....10...70...30.....20..processing of 180 ended
+processing 181
+.30.....20...80...40...50..70...80...40...5090...100 - done.
+Input file size is 3600, 3594
+0..20....70....20....70....70...80......10.processing of 128 ended
+processing 129
+90...100 - done.
+40...50Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+0..20...90...100 - done.
+processing of 154 ended
+processing 155
+...60.40...5040...50...60.40...50...10.90...100 - done.
+...60....10..Input file size is 3600, 3564
+0..20...80......60.processing of 322 ended
+processing 323
+.30...Input file size is 3600, 3600
+0..20...90...100 - done.
+processing of 517 ended
+processing 518
+...60..30...40...5040...50.80...90...100 - done.
+processing of 193 ended
+processing 194
+.80....30....80....80....30...processing of 245 ended
+processing 246
+..20..90...100 - done.
+...60..30...Input file size is 3600, 3600
+0.30.....70..Input file size is 3600, 3600
+0processing of 413 ended
+processing 414
+..70....70...30.....20....70..Input file size is 3600, 3600
+0..70..40...50.20...30.90...100 - done.
+90...100 - done.
+...60..30...90...100 - done.
+40...50...60....60....10....10.30...40....10.processing of 310 ended
+processing 311
+processing of 426 ended
+processing 427
+processing of 465 ended
+processing 466
+90...100 - done.
+...60.40...50Input file size is 3600, 3600
+0..70.....60.processing of 78 ended
+processing 79
+40...50.30......10.40...50.80....80......60.40...50.80...30...40..80....80......60....10.40...50.30.....70..Input file size is 3600, 3600
+0..70..Input file size is 3600, 3600
+0..70....70....20....20....50....20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10..30...40...50..40...5090...100 - done.
+90...100 - done.
+.80......10.Input file size is 3600, 3600
+0..70....20......10.40...5090...100 - done.
+90...100 - done.
+90...100 - done.
+processing of 206 ended
+processing 207
+...60...70.....60....60.processing of 90 ended
+processing 91
+..20....50...30...40...50processing of 478 ended
+processing 479
+processing of 219 ended
+processing 220
+Input file size is 3600, 3600
+040...50processing of 556 ended
+processing 557
+...60....10..80....80....80.....70..90...100 - done.
+.80......60.Input file size is 3600, 3600
+040...50processing of 595 ended
+processing 596
+..20..Input file size is 3600, 3600
+0...60...20...80....30.....20..Input file size is 3600, 3600
+0..70.....60.....60....10...70...80......60...70..30...40..30.....70..90...100 - done.
+Input file size is 3600, 3600
+0...60...20..90...100 - done.
+.60...70..70..processing of 232 ended
+processing 233
+...10..80....30...90...100 - done.
+.80...90...100 - done.
+...60.processing of 284 ended
+processing 285
+...60.processing of 504 ended
+processing 505
+...10.processing of 439 ended
+processing 440
+90...100 - done.
+90...100 - done.
+..70.....10..60...70processing of 543 ended
+processing 544
+40...50...60..80.....70.....10.processing of 582 ended
+processing 583
+Input file size is 3600, 3600
+040...50.80....30...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..70....70....20..90...100 - done.
+90...100 - done.
+..50..Input file size is 3600, 3600
+0.70...80..80....80....30...processing of 46 ended
+processing 47
+...10.40...50...80...30...processing of 271 ended
+processing 272
+..20..Input file size is 3600, 3600
+0..70..Input file size is 3600, 3600
+0...10...20...80...90...100 - done.
+.30.....70.....10.90...100 - done.
+90...100 - done.
+40...50processing of 297 ended
+...80..processing 298
+processing of 569 ended
+processing 570
+..70..90...100 - done.
+Input file size is 3600, 3600
+0.80....80......10...20....90...100 - done.
+..20..processing of 491 ended
+processing 492
+.80...40...50processing of 105 ended
+processing 106
+processing of 530 ended
+processing 531
+..20..40...50.80......60...20...30......10.90...100 - done.
+Input file size is 3600, 3600
+0..20.....10.40...50Input file size is 3600, 3600
+0processing of 258 ended
+processing 259
+...60..80....60...70Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+Input file size is 3600, 3600
+0...10....60.90...100 - done.
+Input file size is 3600, 3600
+0...10....10.processing of 608 ended
+processing 609
+90...100 - done.
+.80...processing of 116 ended
+processing 117
+.30.....20...30......10.processing of 375 ended
+processing 376
+processing of 349 ended
+processing 350
+Input file size is 3600, 3600
+0...10....60.Input file size is 3600, 3600
+040...50.90...100 - done.
+..70....20.....60...70....20..processing of 634 ended
+processing 635
+.30......80...30...90...100 - done.
+...10..30.....20..Input file size is 3600, 3600
+090...100 - done.
+processing of 362 ended
+processing 363
+Input file size is 3600, 3600
+0...60..30.....70...90...100 - done.
+...60..30.....20....20..40...50processing of 388 ended
+processing 389
+..20..40...50processing of 621 ended
+processing 622
+Input file size is 3600, 3600
+0...10...20....70...80...Input file size is 3600, 3523
+0.80......10.Input file size is 3600, 3600
+0...10....10.40...50..70..40...50...10..30.....20..40...50Input file size is 3600, 3600
+0..70.....60.40...50.80.....70.....10.90...100 - done.
+40...50.30....30...Input file size is 3600, 3600
+0...10..90...100 - done.
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0processing of 142 ended
+processing 143
+.30...Input file size is 3600, 3600
+0.80.....20..90...100 - done.
+...10.processing of 647 ended
+processing 648
+...10...20...30......60...20...30....30.....20....20...80...processing of 336 ended
+processing 337
+90...100 - done.
+...60...70..Input file size is 3600, 3600
+040...50.30.....20..processing of 168 ended
+processing 169
+Input file size is 3600, 3564
+0.80....80......10.40...5040...5090...100 - done.
+Input file size is 3600, 3600
+0..20.....60..30...40...5090...100 - done.
+..20.....60.processing of 401 ended
+processing 402
+...60....10....60...70....20...30...40...50...10.40...50processing of 453 ended
+processing 454
+90...100 - done.
+Input file size is 3600, 3564
+040...5090...100 - done.
+.80...processing of 181 ended
+processing 182
+...60....10....10.40...50..70..processing of 129 ended
+processing 130
+40...50.30....30......10..30....30.....70....70....20....70.....10..30......10...20.....70..90...100 - done.
+...10.40...50...60.Input file size is 3600, 3600
+0..20.....60..30......60....60.processing of 323 ended
+processing 324
+.80......60...20...30.....20....70...80......10.Input file size is 3600, 3564
+0Input file size is 3600, 3600
+040...50..20..40...5040...5040...50...10..30......60..80...40...50.80.....20...80......60...20...80......10....60...20..Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+...60...70..40...50..70....70....70...30...processing of 155 ended
+processing 156
+processing of 194 ended
+processing 195
+.80...40...5030...40...70..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20....30...90...100 - done.
+90...100 - done.
+40...50.30...Input file size is 3600, 3600
+0..20.....60.processing of 518 ended
+processing 519
+processing of 427 ended
+processing 428
+90...100 - done.
+.30......60.90...100 - done.
+...10...70....70..processing of 466 ended
+processing 467
+processing of 414 ended
+processing 415
+...60...20.....70....70...80......60.90...100 - done.
+.30......60....10.40...50processing of 246 ended
+processing 247
+.80....30......60....10..80....80......60.40...50..50...80....30...40...50..70..90...100 - done.
+..70..40...50...10.processing of 479 ended
+processing 480
+..70....20..Input file size is 3600, 3600
+0.80......60.30...40....60.90...100 - done.
+40...50..70...80....30.....20.....70...80....80......10.processing of 311 ended
+processing 312
+..70..Input file size is 3600, 3600
+0...10.40...5090...100 - done.
+..70..Input file size is 3600, 3600
+0processing of 47 ended
+...10..80.....20..90...100 - done.
+.30...40...50Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+...60..80.....50....70..processing of 557 ended
+processing 558
+...10..80.....70....20..processing of 220 ended
+processing 221
+Input file size is 3600, 3600
+030...40.Input file size is 3600, 3600
+0processing of 91 ended
+processing 92
+90...100 - done.
+90...100 - done.
+...60...20...80....60...70processing of 596 ended
+processing 597
+...60....60.Input file size is 3600, 3600
+0processing of 207 ended
+processing 208
+40...50...60...20..90...100 - done.
+90...100 - done.
+.30...Input file size is 3600, 3600
+0.80...90...100 - done.
+.80...processing of 79 ended
+processing 80
+.80...processing of 233 ended
+processing 234
+..70....20..90...100 - done.
+processing of 505 ended
+processing 506
+40...5090...100 - done.
+..20...80......60.processing of 583 ended
+processing 584
+..70...80......60....80..30...40.processing of 440 ended
+processing 441
+...10....10....10.90...100 - done.
+.30...Input file size is 3600, 3600
+0..70....70...30.....50...60...7090...100 - done.
+..70..40...50processing of 272 ended
+processing 273
+90...100 - done.
+Input file size is 3600, 3600
+0.30......10.processing of 544 ended
+processing 545
+90...100 - done.
+processing of 285 ended
+processing 286
+90...100 - done.
+...10..80.....70.....10..30...processing of 298 ended
+processing 299
+processing of 570 ended
+processing 571
+...10..80.....20...90...100 - done.
+..50....20..Input file size is 3600, 3600
+0...60.Input file size is 3600, 3600
+040...50...10.processing of 106 ended
+processing 107
+..20..40...50...60.Input file size is 3600, 3600
+0..70.....80...80...Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0.80....30....80.....20..processing of 492 ended
+processing 493
+.30...40...5090...100 - done.
+.80.....20...60...70Input file size is 3600, 3600
+0..20..40...50processing of 259 ended
+processing 260
+Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0..20.....60.Input file size is 3600, 3600
+0...10....10.90...100 - done.
+..20....70..processing of 376 ended
+processing 377
+processing of 609 ended
+processing 610
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+..70...30....30....80...40...50processing of 531 ended
+processing 532
+Input file size is 3600, 3600
+0processing of 363 ended
+processing 364
+40...50Input file size is 3600, 3600
+0.90...100 - done.
+.60...70.30......80.....10.Input file size is 3600, 3600
+0...60....60...70..processing of 635 ended
+processing 636
+Input file size is 3600, 3600
+0...10....10...20...30......10..30......10.Input file size is 3600, 3600
+0.30.....20.....60....60..80...40...50.30......10....10..30....80...Input file size is 3600, 3600
+0...10....10.40...5090...100 - done.
+Input file size is 3600, 3600
+0..70..40...50processing of 117 ended
+processing 118
+..20....70..40...50...60..80......80.....10...20..Input file size is 3600, 3600
+0...10...20.....60...70....20.....10.40...5090...100 - done.
+..20..40...50..70...90...100 - done.
+..20..40...50...10...20....20..processing of 389 ended
+processing 390
+.30...processing of 622 ended
+processing 623
+...10.90...100 - done.
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...60.40...50processing of 350 ended
+processing 351
+..20.....10..80.....70...80....30....80......60....10...20..Input file size is 3600, 3564
+0..20.....10...70....20....20...80....30....30......60....60....10.40...50Input file size is 3600, 3600
+0..70...90...100 - done.
+90...100 - done.
+..20....20.....60..30...90...100 - done.
+90...100 - done.
+90...100 - done.
+.30....30......60.processing of 648 ended
+.30......60..30...processing of 143 ended
+processing 144
+.80...processing of 169 ended
+processing 170
+90...100 - done.
+processing of 337 ended
+processing 338
+processing of 402 ended
+processing 403
+40...50..70....20..processing of 454 ended
+processing 455
+...10....10...20...30...40...50..20..40...50.30....80......10.40...50..70.....60..30...Input file size is 3600, 3564
+0...10.40...5090...100 - done.
+Input file size is 3600, 3600
+0..70...80.....70..40...50..70...30...processing of 182 ended
+processing 183
+40...50.30.....70.....60..30......10.Input file size is 3600, 3600
+0..20.....10.90...100 - done.
+.30....30....80...40...5040...50processing of 130 ended
+processing 131
+..20..90...100 - done.
+40...50...60.40...50..20...80...processing of 156 ended
+processing 157
+...60..80...40...50..20...30....30.....70.....60..80...40...50Input file size is 3600, 3600
+0...60...70...80...Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0.80...40...50Input file size is 3600, 3600
+0.30...processing of 195 ended
+processing 196
+...10.Input file size is 3600, 3600
+0..20..90...100 - done.
+...10.90...100 - done.
+40...50...60....60.40...50processing of 324 ended
+processing 325
+..20...processing of 519 ended
+processing 520
+..70....70.....60..30....30...40...50Input file size is 3600, 3600
+090...100 - done.
+40...50...60....10..80.....70..processing of 415 ended
+90...100 - done.
+processing 416
+...60.90...100 - done.
+..70...80....30......60....60.processing of 428 ended
+processing 429
+processing of 467 ended
+processing 468
+..20.....60.40...50Input file size is 3600, 3600
+0.30.....70....70....20...90...100 - done.
+40...50..70.....60..80....80.....70..40...50.80......60.processing of 247 ended
+processing 248
+...10....10.90...100 - done.
+Input file size is 3600, 3600
+0...10...20.....60....10...70..30...40..30....80...40...50processing of 312 ended
+processing 313
+...60....10...70....70.....60....60.Input file size is 3600, 3600
+040...50..70.....10.Input file size is 3600, 3600
+0..70...80...90...100 - done.
+90...100 - done.
+.80...Input file size is 3600, 3600
+090...100 - done.
+.30....80.....20...80.....70..processing of 92 ended
+processing 93
+processing of 80 ended
+processing 81
+processing of 480 ended
+processing 481
+90...100 - done.
+..20..Input file size is 3600, 3600
+030...40...70.....60...50..processing of 506 ended
+processing 507
+..20.....10.40...50..20..Input file size is 3600, 3600
+0..70...80......60.Input file size is 3600, 3600
+0..70.....60...70...80...90...100 - done.
+90...100 - done.
+..20..90...100 - done.
+..20..90...100 - done.
+.80....80....80......60..80...processing of 597 ended
+processing 598
+processing of 234 ended
+processing 235
+.30...processing of 584 ended
+processing 585
+40...50processing of 558 ended
+processing 559
+...10...50..90...100 - done.
+Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0...10..80......60...20..processing of 208 ended
+processing 209
+.80......10..80.....70..processing of 273 ended
+processing 274
+90...100 - done.
+90...100 - done.
+.80.....70....70...30......10..60...70..70..processing of 286 ended
+processing 287
+processing of 571 ended
+processing 572
+Input file size is 3600, 3600
+0..20.....10.40...50Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+...60..30....30...90...100 - done.
+processing of 545 ended
+processing 546
+.30...90...100 - done.
+.30......10.90...100 - done.
+..20..processing of 441 ended
+processing 442
+...10...70..90...100 - done.
+processing of 260 ended
+processing 261
+.30.....20.....60.90...100 - done.
+Input file size is 3600, 3600
+0.80...processing of 107 ended
+processing 108
+.80....80...processing of 493 ended
+processing 494
+.60...70.30....80...processing of 221 ended
+processing 222
+...80..40...50Input file size is 3600, 3600
+0..20....20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..70.....10.40...50Input file size is 3600, 3600
+040...50...10...20...30.....20..90...100 - done.
+40...50.80......60.40...5040...50Input file size is 3600, 3600
+0processing of 377 ended
+processing 378
+90...100 - done.
+90...100 - done.
+..70.....10.90...100 - done.
+Input file size is 3600, 3600
+0.30...40...50Input file size is 3600, 3600
+0...10....80..processing of 364 ended
+processing 365
+processing of 610 ended
+processing 611
+...10...20..processing of 299 ended
+processing 300
+.80...90...100 - done.
+..20..Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+0.30....30...processing of 532 ended
+processing 533
+..70..40...50.90...100 - done.
+...60....10.Input file size is 3600, 3600
+0...60....10....10....10.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0...10.40...50processing of 636 ended
+processing 637
+.80......60....60..30.....20..processing of 118 ended
+processing 119
+...60...20..Input file size is 3600, 3600
+0...60...20...30...40...5040...50.90...100 - done.
+40...50.30......10.90...100 - done.
+processing of 623 ended
+processing 624
+...10....60...70...80......10...20....20..processing of 351 ended
+processing 352
+..70....20....20...30......10...70..40...50..20....70....70..40...50Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...60.Input file size is 3600, 3600
+0..70..Input file size is 3600, 3600
+090...100 - done.
+...10....60....10.processing of 390 ended
+processing 391
+.30......10.40...50.30.....20.....10...20....70.....10..30....80.....20.....60....60....10.Input file size is 3600, 3600
+0...60..80....80.....70....20...80...Input file size is 3600, 3600
+040...50Input file size is 3600, 3564
+0.30....80....30....30....30...90...100 - done.
+..20....70...80....30......60...20.....60.processing of 403 ended
+processing 404
+..20..90...100 - done.
+40...5040...50Input file size is 3600, 3564
+0.80.....20.....10...20..40...5090...100 - done.
+processing of 338 ended
+processing 339
+..70...80......10...20....70..90...100 - done.
+..70..90...100 - done.
+processing of 455 ended
+processing 456
+...60....10..30...Input file size is 3600, 3600
+0processing of 183 ended
+processing 184
+processing of 170 ended
+processing 171
+...10.40...50.30...90...100 - done.
+40...50.80...40...5040...50..70...30....30...processing of 131 ended
+processing 132
+40...5090...100 - done.
+..20....70.....10.processing of 157 ended
+processing 158
+.80......60...20..Input file size is 3600, 3600
+0...10..80...40...50.30....80......60...20..90...100 - done.
+.30.....70.....10..30...90...100 - done.
+40...50.30...processing of 144 ended
+processing 145
+.30......60.processing of 325 ended
+processing 326
+90...100 - done.
+40...50.80...40...50...60.90...100 - done.
+..20.....10..30....80...processing of 196 ended
+processing 197
+processing of 416 ended
+processing 417
+...60.Input file size is 3600, 3600
+0...60.90...100 - done.
+Input file size is 3600, 3600
+0..20....70.....60.40...50..20....70..processing of 520 ended
+processing 521
+Input file size is 3600, 3600
+0...10.90...100 - done.
+...60.40...50.80.....70..40...50...60.40...50..20....30...90...100 - done.
+processing of 429 ended
+processing 430
+...60.40...50Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+040...50.30...processing of 468 ended
+processing 469
+..20.....70...30......10..80.....70..90...100 - done.
+...60.Input file size is 3600, 3600
+0..70....20.....60....60..30.....70....70...80....80...processing of 313 ended
+processing 314
+..70..Input file size is 3600, 3600
+040...5090...100 - done.
+Input file size is 3600, 3600
+0.30.....70.....60.40...50...60...20..processing of 93 ended
+processing 94
+...60..80...40...50...10....10..30......10.Input file size is 3600, 3600
+0...60.90...100 - done.
+...60...70....70..40...50processing of 81 ended
+processing 82
+.80....80....80...Input file size is 3600, 3600
+0...60...70...80...30...40.30...40....10....10..80...90...100 - done.
+...10...70..90...100 - done.
+processing of 481 ended
+processing 482
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+040...50..20..Input file size is 3600, 3600
+0..70...30...processing of 248 ended
+processing 249
+..20...80.....70...80......60...20..40...50..70....70.....10.90...100 - done.
+90...100 - done.
+90...100 - done.
+.30......60.90...100 - done.
+.80....80......10.processing of 598 ended
+processing 599
+processing of 235 ended
+processing 236
+..20..processing of 507 ended
+processing 508
+..70..90...100 - done.
+..50....50.....60.Input file size is 3600, 3600
+0processing of 559 ended
+processing 560
+processing of 585 ended
+processing 586
+...10...20.....60....10..80.....20..Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+.80...90...100 - done.
+processing of 209 ended
+processing 210
+..20...80...processing of 572 ended
+processing 573
+90...100 - done.
+..70....70....20.....10....60.processing of 546 ended
+processing 547
+.80....30...processing of 274 ended
+processing 275
+40...50.80.....20..90...100 - done.
+.80...40...50...10...70..Input file size is 3600, 3600
+0.30.....70..processing of 261 ended
+processing 262
+..20...30......10....60.90...100 - done.
+90...100 - done.
+Input file size is 3600, 3600
+0.60...70processing of 442 ended
+processing 443
+processing of 222 ended
+processing 223
+.60...70.80...90...100 - done.
+Input file size is 3600, 3600
+0...10..80....30...90...100 - done.
+..70...30...90...100 - done.
+processing of 494 ended
+processing 495
+...10..30...40...50processing of 108 ended
+.30...Input file size is 3600, 3600
+0..20..processing of 287 ended
+processing 288
+...10..30...Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+040...50..20....70...80...90...100 - done.
+.30...40...50.80......80.....60.90...100 - done.
+processing of 365 ended
+processing 366
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+040...50.30......80.....60..80...40...50..20..40...50processing of 611 ended
+processing 612
+..20..Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20..Input file size is 3600, 3600
+090...100 - done.
+40...50...10.40...5040...50...60.90...100 - done.
+...10..80...processing of 378 ended
+processing 379
+Input file size is 3600, 3600
+0processing of 300 ended
+processing 301
+Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0.30.....70...30......60.processing of 533 ended
+processing 534
+...10.40...50..70.....10....10..90...100 - done.
+Input file size is 3600, 3600
+0.30......60...70.....10....60..30....90...100 - done.
+...60.Input file size is 3600, 3600
+0processing of 624 ended
+processing 625
+.30...90...100 - done.
+...10...20..processing of 637 ended
+processing 638
+...10.processing of 119 ended
+processing 120
+...10....10....60..30...40...50..20...80......60.Input file size is 3600, 3600
+0...10...20..Input file size is 3600, 3600
+040...50...60....60...20....70...80.....20....20...80...40...50..70.....10....10.40...50...10....60...70....70..40...5090...100 - done.
+..20....20..Input file size is 3600, 3600
+0...10...20....70....20..processing of 391 ended
+processing 392
+Input file size is 3600, 3600
+090...100 - done.
+..70..40...50..20..90...100 - done.
+processing of 352 ended
+processing 353
+...10..30.....70...80...processing of 339 ended
+processing 340
+Input file size is 3600, 3600
+0.80.....70.....10...20....70...80....30....30......60...20.....10..80....80......60...20....20..90...100 - done.
+...60.40...50...10.Input file size is 3600, 3564
+0...60.90...100 - done.
+.30...90...100 - done.
+processing of 456 ended
+processing 457
+Input file size is 3600, 3600
+0.30....80....80....30...Input file size is 3600, 3564
+0.30....30....30....30...processing of 132 ended
+processing 133
+90...100 - done.
+..20..90...100 - done.
+processing of 158 ended
+processing 159
+...60..80.....20..40...50processing of 326 ended
+processing 327
+...10..30...40...50processing of 184 ended
+processing 185
+...10...20....70....70...80......60...70..Input file size is 3600, 3600
+0.30....30...90...100 - done.
+Input file size is 3600, 3600
+0...10...20..40...5090...100 - done.
+90...100 - done.
+40...5040...50..70..40...50.30...Input file size is 3600, 3600
+040...50processing of 404 ended
+processing 405
+...60.processing of 417 ended
+processing 418
+40...5040...50processing of 145 ended
+processing 146
+90...100 - done.
+40...50processing of 171 ended
+processing 172
+..20....20....70...30......10..80...40...50.80.....70..40...50..20...80......10....10....60.Input file size is 3600, 3600
+0.30...40...50...60..30.....70...80....80....30...Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20......60.90...100 - done.
+90...100 - done.
+...60....10.40...50Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10....60.90...100 - done.
+processing of 430 ended
+processing 431
+...60....60..30...processing of 314 ended
+processing 315
+..20...80...processing of 197 ended
+processing 198
+...60...70....20......60....60..30...40...5040...50.80...90...100 - done.
+.30...90...100 - done.
+..70.....10..30...processing of 469 ended
+processing 470
+...60.processing of 94 ended
+processing 95
+..70..Input file size is 3600, 3600
+0..20..90...100 - done.
+40...50...60...70....20..Input file size is 3600, 3600
+0..70....70..processing of 521 ended
+processing 522
+Input file size is 3600, 3600
+040...50Input file size is 3600, 3600
+0..70.....60.90...100 - done.
+..70..40...5030...40.processing of 482 ended
+processing 483
+...10...70....20..40...5040...50..70.....10..80......10..30.....70.....10.30...40..80....80.....70.....10....60..80......60..80......60.Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+090...100 - done.
+..70..Input file size is 3600, 3600
+0.80.....50.....60..30.....20...30...processing of 82 ended
+.80....80....80.....20....20.....10..30......10..80......60...20...80...40...5090...100 - done.
+...60...20..90...100 - done.
+90...100 - done.
+..50..Input file size is 3600, 3600
+0Input file size is 3600, 3198
+0...10...70.....60.90...100 - done.
+processing of 547 ended
+processing 548
+...60.processing of 599 ended
+processing 600
+processing of 586 ended
+processing 587
+Input file size is 3600, 3600
+090...100 - done.
+..70....70.....10..80...90...100 - done.
+processing of 508 ended
+processing 509
+90...100 - done.
+..70..40...50processing of 210 ended
+processing 211
+40...50processing of 275 ended
+processing 276
+processing of 560 ended
+processing 561
+Input file size is 3600, 3600
+090...100 - done.
+90...100 - done.
+..20..90...100 - done.
+90...100 - done.
+.30...processing of 249 ended
+processing 250
+40...50...10.processing of 262 ended
+processing 263
+..70....20..90...100 - done.
+processing of 223 ended
+processing 224
+...10..60...70...10...70....70..processing of 236 ended
+processing 237
+.30.....20...80...processing of 443 ended
+processing 444
+.80.....70....20...30....80....80....60...70...60..30....30......10...20..40...5090...100 - done.
+90...100 - done.
+40...50..20...80......10....60.90...100 - done.
+...10....80..processing of 573 ended
+processing 574
+processing of 366 ended
+processing 367
+.80....80...90...100 - done.
+..20..40...50...60..30....30......60.processing of 495 ended
+processing 496
+processing of 288 ended
+processing 289
+...10....80..40...50Input file size is 3600, 3600
+0.80...Input file size is 3600, 3600
+0..70....20...40...50Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0.30...90...100 - done.
+Input file size is 3600, 3600
+0..70..processing of 612 ended
+processing 613
+..20..90...100 - done.
+processing of 379 ended
+processing 380
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+..70..40...50..20..processing of 301 ended
+processing 302
+40...50...60..30.....70..processing of 534 ended
+processing 535
+.80.....20...30...Input file size is 3600, 3600
+040...50...60..90...100 - done.
+.30...40...50.80....90...100 - done.
+...60.processing of 638 ended
+processing 639
+...60.30...40.Input file size is 3600, 3600
+0processing of 625 ended
+processing 626
+Input file size is 3600, 3600
+0...60.90...100 - done.
+.80.....70...80......10.40...50...10.Input file size is 3600, 3600
+0.30...processing of 120 ended
+processing 121
+...10....10....10....10.90...100 - done.
+Input file size is 3600, 3600
+0...10....60..30...40...50..70..40...50...10.processing of 353 ended
+processing 354
+...10.90...100 - done.
+Input file size is 3600, 3564
+090...100 - done.
+..70.....60...70....50.....60....10..30.....70.....10.processing of 392 ended
+processing 393
+processing of 340 ended
+processing 341
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20.....60..80.....20..40...50..20....20....70..Input file size is 3600, 3600
+0..20.....10...20.....60...20..40...50..20...80......10....10...20...80...40...50..70....20....70...80....80...Input file size is 3600, 3564
+0...60...20..90...100 - done.
+...60.Input file size is 3600, 3564
+0processing of 457 ended
+processing 458
+..70.....10..30......10..60...70...10.90...100 - done.
+..70..Input file size is 3600, 3600
+0..20..90...100 - done.
+.80.....20...30.....20...30...90...100 - done.
+.80......60.90...100 - done.
+processing of 185 ended
+processing 186
+processing of 133 ended
+processing 134
+...80.....10..30...processing of 327 ended
+processing 328
+.80......60.processing of 159 ended
+processing 160
+..70.....10.Input file size is 3600, 3600
+0.30...Input file size is 3600, 3600
+0..70....20......10..30...Input file size is 3600, 3600
+090...100 - done.
+..20..40...50..20...30....30....30....90...100 - done.
+.80......60.90...100 - done.
+.30...processing of 172 ended
+processing 173
+90...100 - done.
+.80...processing of 95 ended
+.30...40...50processing of 146 ended
+processing 147
+...10....10...20..processing of 418 ended
+processing 419
+..70..40...5040...50.80.....70..40...50.30...90...100 - done.
+..20...30....80....30...40...5040...50processing of 405 ended
+processing 406
+90...100 - done.
+...10.40...5040...50..20....70..processing of 198 ended
+processing 199
+40...50Input file size is 3600, 3600
+040...5090...100 - done.
+30...40..30......60..30.....20.....20....80...processing of 431 ended
+processing 432
+Input file size is 3600, 3600
+090...100 - done.
+...10....10..80...Input file size is 3600, 3600
+040...5040...50processing of 315 ended
+processing 316
+Input file size is 3600, 3600
+0...60....10.40...50Input file size is 3600, 3600
+0..20...80......60..30......60...70.....60.90...100 - done.
+40...50..50...30...90...100 - done.
+Input file size is 3600, 3600
+040...50Input file size is 3600, 3600
+0.30......60.Input file size is 3600, 3600
+0...60....60....60.processing of 522 ended
+processing 523
+processing of 470 ended
+processing 471
+..20..90...100 - done.
+...60...20....70..30...40...20.....60.processing of 483 ended
+processing 484
+30...40.Input file size is 3600, 3600
+0...10....60...70...80......60.Input file size is 3600, 3600
+0..70..40...50..70.....10.40...50...60.40...50..70....70.....10.Input file size is 3600, 3600
+0..70...30.....70.....10..80.....70....70..Input file size is 3600, 3600
+0..50.....10....60....60.90...100 - done.
+..70....70...60...70..50..processing of 509 ended
+processing 510
+.80.....20.....10..80....30.....70...30......10...20...80....80......10..30.....20..40...5090...100 - done.
+..20...80....80....80......60..80...Input file size is 3600, 3600
+090...100 - done.
+..70..processing of 561 ended
+processing 562
+...60...70.....10.90...100 - done.
+.80...Input file size is 3600, 3600
+0.80....80......60.processing of 548 ended
+processing 549
+...10...20....20..processing of 600 ended
+processing 601
+90...100 - done.
+...80....20...80...Input file size is 3600, 3600
+040...50processing of 587 ended
+processing 588
+...10.90...100 - done.
+.60...70.60...70..20..90...100 - done.
+processing of 224 ended
+processing 225
+.30...40...5040...5090...100 - done.
+...10.90...100 - done.
+.80....80...processing of 276 ended
+processing 277
+90...100 - done.
+..70..processing of 237 ended
+processing 238
+..70..90...100 - done.
+.30....30...processing of 263 ended
+processing 264
+90...100 - done.
+..70....20..90...100 - done.
+processing of 211 ended
+processing 212
+processing of 250 ended
+processing 251
+90...100 - done.
+processing of 367 ended
+processing 368
+Input file size is 3600, 3600
+0processing of 574 ended
+processing 575
+..20..processing of 444 ended
+processing 445
+...60...20.....80..90...100 - done.
+...80..90...100 - done.
+.30...processing of 289 ended
+processing 290
+40...50.30.....20..processing of 496 ended
+processing 497
+...10..90...100 - done.
+...10..80....80...40...50.30....80....30......10.processing of 613 ended
+processing 614
+...60.40...50.30...Input file size is 3600, 3600
+0...60...70...30......60.Input file size is 3600, 3600
+0Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+090...100 - done.
+40...5090...100 - done.
+processing of 380 ended
+processing 381
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0..20....20...30....30.....20..processing of 302 ended
+processing 303
+processing of 535 ended
+processing 536
+Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0Input file size is 3600, 3600
+0...10.40...5040...50..70..40...50.90...100 - done.
+40...50Input file size is 3600, 3600
+0...60..90...100 - done.
+.30...Input file size is 3600, 3600
+0.80.....70..processing of 626 ended
+processing 627
+Input file size is 3600, 3600
+0processing of 639 ended
+processing 640
+...60.40...50..70..Input file size is 3600, 3600
+0...60....10.Input file size is 3600, 3600
+040...5090...100 - done.
+40...50Input file size is 3600, 3600
+0..70...80......60...20..processing of 121 ended
+Input file size is 3600, 3564
+0...10....10...70..40...50.80....30....30......10....10....10..30....80.....70.....60....10....60....60.90...100 - done.
+...60....10....10....10....60.Input file size is 3600, 3600
+0processing of 341 ended
+processing 342
+Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0..70...80.....20.....10.90...100 - done.
+processing of 354 ended
+processing 355
+40...5040...50..20.....60...20....20.....10..80......60.processing of 393 ended
+processing 394
+Input file size is 3600, 3564
+0..70.....10...20..40...50..20..Input file size is 3600, 3564
+0..70....20...80.....70....70...30.....20..90...100 - done.
+..20.....10....60...70.....10...20...80......10.90...100 - done.
+processing of 458 ended
+processing 459
+..20..processing of 186 ended
+..70....70....20..90...100 - done.
+...10....10..80...processing of 328 ended
+processing 329
+...60...20..90...100 - done.
+...10..30....80.....20......60..80...40...50.80....30....30...processing of 147 ended
+.30.....70...80....30.....20...30......60...20...30....30....80....80......10.90...100 - done.
+Input file size is 3600, 3600
+0.30....30......10...20..Input file size is 3600, 3600
+090...100 - done.
+Input file size is 3600, 3600
+0processing of 173 ended
+.30.....70..90...100 - done.
+90...100 - done.
+90...100 - done.
+..20....70..processing of 160 ended
+90...100 - done.
+40...50processing of 419 ended
+processing 420
+..20..processing of 134 ended
+processing of 406 ended
+processing 407
+.30...40...5090...100 - done.
+40...50processing of 432 ended
+processing 433
+40...5040...5040...5040...50.80....30...processing of 199 ended
+Input file size is 3600, 3600
+030...40....60.40...50..20...40...50.80.....70..40...5040...50..20....30...Input file size is 3600, 3600
+0.80....30....30...90...100 - done.
+processing of 316 ended
+40...5090...100 - done.
+...10...50.....60.processing of 523 ended
+processing 524
+...10...70..40...50.30....80......60.90...100 - done.
+...60..30......60....60.processing of 484 ended
+processing 485
+...10....60.40...5040...50...60....60.30...40.40...50...60....10....60.Input file size is 3600, 3600
+0...60.90...100 - done.
+..20..30...40...20....70...80...Input file size is 3600, 3600
+0processing of 471 ended
+processing 472
+Input file size is 3600, 3600
+040...50..70....70....20.....60.40...50..70...60...70..70.....10...70....70....70....50....70....20.....60...70..90...100 - done.
+...60...70..processing of 510 ended
+processing 511
+..50...80......60....60..80....80.....70..Input file size is 3600, 3600
+0.30....80.....20...80......80...80....80....30....80....80...Input file size is 3600, 3600
+0...60...70...30.....70.....10.90...100 - done.
+...60....10..80...90...100 - done.
+.80....60...70..70.....10.processing of 562 ended
+processing 563
+.30.....70..processing of 588 ended
+processing 589
+90...100 - done.
+.80...90...100 - done.
+40...50Input file size is 3600, 3600
+0processing of 212 ended
+40...5090...100 - done.
+90...100 - done.
+90...100 - done.
+.60...7090...100 - done.
+processing of 368 ended
+90...100 - done.
+..70...80...processing of 549 ended
+processing 550
+40...50processing of 225 ended
+processing of 277 ended
+processing of 238 ended
+..20...80...processing of 251 ended
+..20..90...100 - done.
+90...100 - done.
+90...100 - done.
+..70...30.....20.....80..processing of 264 ended
+.80...processing of 601 ended
+processing 602
+40...50.90...100 - done.
+processing of 445 ended
+processing 446
+.80...Input file size is 3600, 3600
+090...100 - done.
+...10.processing of 614 ended
+processing 615
+processing of 575 ended
+processing 576
+...80..90...100 - done.
+.80......10.processing of 290 ended
+...60..80...90...100 - done.
+90...100 - done.
+40...50...10....60.processing of 303 ended
+processing of 497 ended
+processing 498
+..20..Input file size is 3600, 3600
+0.30...90...100 - done.
+.30......60..90...100 - done.
+.30...processing of 536 ended
+processing 537
+Input file size is 3600, 3600
+090...100 - done.
+...60.processing of 640 ended
+processing 641
+..70....20..processing of 381 ended
+Input file size is 3600, 3600
+0.90...100 - done.
+..20.....10...70..Input file size is 3600, 3600
+0processing of 627 ended
+processing 628
+Input file size is 3600, 3600
+040...5040...50..70..40...50...60...70...30....80...Input file size is 3600, 3600
+0Input file size is 3600, 3564
+0...10...20...80....30....80...Input file size is 3600, 3600
+0...10.90...100 - done.
+..70...30....80......10.40...50Input file size is 3600, 3600
+0processing of 355 ended
+90...100 - done.
+...60...20..Input file size is 3600, 3564
+0...60.processing of 342 ended
+...10....60....10.90...100 - done.
+90...100 - done.
+processing of 394 ended
+40...50..20..processing of 459 ended
+.80......10.Input file size is 3600, 3564
+0...10.40...50.30.....20....70....70....70.....60...20....20..90...100 - done.
+...10..30......10...20..processing of 329 ended
+..20...40...50...10..80......60..80....30.....70...80....30......60....10...20..40...50.30...90...100 - done.
+90...100 - done.
+..20....20...90...100 - done.
+.30...processing of 407 ended
+processing of 433 ended
+..70..processing of 420 ended
+.30...40...50.80...30...40.40...50..70.....60...20...40...5040...5090...100 - done.
+40...50...60..30...processing of 524 ended
+.80...30...40..30.....50....70...80......60....60.90...100 - done.
+30...40....60.90...100 - done.
+processing of 485 ended
+..70....50..40...50processing of 472 ended
+...60.40...50.80......60...70....70....50...60...70..70...80...90...100 - done.
+..70..processing of 511 ended
+..70...80......60..60...70.80......60.90...100 - done.
+...80...80...processing of 563 ended
+.60...70.80...90...100 - done.
+90...100 - done.
+.80...processing of 550 ended
+90...100 - done.
+processing of 589 ended
+..70..processing of 602 ended
+..70..90...100 - done.
+...80..processing of 446 ended
+90...100 - done.
+...80..processing of 576 ended
+.80....80....90...100 - done.
+processing of 615 ended
+90...100 - done.
+90...100 - done.
+.90...100 - done.
+processing of 498 ended
+.90...100 - done.
+processing of 537 ended
+processing of 641 ended
+processing of 628 ended
+DROP TABLE
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Driver: VRT/Virtual Raster
+Files: raster_output.vrt
+       ./tiles/1.tiff
+       ./tiles/2.tiff
+       ./tiles/3.tiff
+       ./tiles/4.tiff
+       ./tiles/5.tiff
+       ./tiles/9.tiff
+       ./tiles/11.tiff
+       ./tiles/12.tiff
+       ./tiles/13.tiff
+       ./tiles/14.tiff
+       ./tiles/15.tiff
+       ./tiles/16.tiff
+       ./tiles/34.tiff
+       ./tiles/35.tiff
+       ./tiles/36.tiff
+       ./tiles/37.tiff
+       ./tiles/38.tiff
+       ./tiles/39.tiff
+       ./tiles/40.tiff
+       ./tiles/41.tiff
+       ./tiles/42.tiff
+       ./tiles/43.tiff
+       ./tiles/44.tiff
+       ./tiles/45.tiff
+       ./tiles/46.tiff
+       ./tiles/47.tiff
+       ./tiles/48.tiff
+       ./tiles/49.tiff
+       ./tiles/50.tiff
+       ./tiles/51.tiff
+       ./tiles/52.tiff
+       ./tiles/53.tiff
+       ./tiles/54.tiff
+       ./tiles/55.tiff
+       ./tiles/56.tiff
+       ./tiles/57.tiff
+       ./tiles/58.tiff
+       ./tiles/61.tiff
+       ./tiles/62.tiff
+       ./tiles/70.tiff
+       ./tiles/71.tiff
+       ./tiles/72.tiff
+       ./tiles/73.tiff
+       ./tiles/74.tiff
+       ./tiles/75.tiff
+       ./tiles/76.tiff
+       ./tiles/77.tiff
+       ./tiles/78.tiff
+       ./tiles/79.tiff
+       ./tiles/80.tiff
+       ./tiles/81.tiff
+       ./tiles/82.tiff
+       ./tiles/83.tiff
+       ./tiles/84.tiff
+       ./tiles/85.tiff
+       ./tiles/86.tiff
+       ./tiles/87.tiff
+       ./tiles/88.tiff
+       ./tiles/89.tiff
+       ./tiles/90.tiff
+       ./tiles/91.tiff
+       ./tiles/92.tiff
+       ./tiles/93.tiff
+       ./tiles/94.tiff
+       ./tiles/95.tiff
+       ./tiles/96.tiff
+       ./tiles/97.tiff
+       ./tiles/98.tiff
+       ./tiles/99.tiff
+       ./tiles/100.tiff
+       ./tiles/101.tiff
+       ./tiles/102.tiff
+       ./tiles/103.tiff
+       ./tiles/104.tiff
+       ./tiles/105.tiff
+       ./tiles/106.tiff
+       ./tiles/107.tiff
+       ./tiles/108.tiff
+       ./tiles/109.tiff
+       ./tiles/110.tiff
+       ./tiles/111.tiff
+       ./tiles/112.tiff
+       ./tiles/113.tiff
+       ./tiles/114.tiff
+       ./tiles/115.tiff
+       ./tiles/116.tiff
+       ./tiles/117.tiff
+       ./tiles/118.tiff
+       ./tiles/119.tiff
+       ./tiles/120.tiff
+       ./tiles/121.tiff
+       ./tiles/122.tiff
+       ./tiles/123.tiff
+       ./tiles/124.tiff
+       ./tiles/125.tiff
+       ./tiles/126.tiff
+       ./tiles/127.tiff
+       ./tiles/128.tiff
+       ./tiles/129.tiff
+       ./tiles/130.tiff
+       ./tiles/131.tiff
+       ./tiles/132.tiff
+       ./tiles/133.tiff
+       ./tiles/134.tiff
+       ./tiles/135.tiff
+       ./tiles/136.tiff
+       ./tiles/137.tiff
+       ./tiles/138.tiff
+       ./tiles/139.tiff
+       ./tiles/140.tiff
+       ./tiles/141.tiff
+       ./tiles/142.tiff
+       ./tiles/143.tiff
+       ./tiles/144.tiff
+       ./tiles/145.tiff
+       ./tiles/146.tiff
+       ./tiles/147.tiff
+       ./tiles/148.tiff
+       ./tiles/149.tiff
+       ./tiles/150.tiff
+       ./tiles/151.tiff
+       ./tiles/152.tiff
+       ./tiles/153.tiff
+       ./tiles/154.tiff
+       ./tiles/155.tiff
+       ./tiles/156.tiff
+       ./tiles/157.tiff
+       ./tiles/158.tiff
+       ./tiles/159.tiff
+       ./tiles/160.tiff
+       ./tiles/161.tiff
+       ./tiles/162.tiff
+       ./tiles/163.tiff
+       ./tiles/164.tiff
+       ./tiles/165.tiff
+       ./tiles/166.tiff
+       ./tiles/167.tiff
+       ./tiles/168.tiff
+       ./tiles/169.tiff
+       ./tiles/170.tiff
+       ./tiles/171.tiff
+       ./tiles/172.tiff
+       ./tiles/173.tiff
+       ./tiles/174.tiff
+       ./tiles/175.tiff
+       ./tiles/176.tiff
+       ./tiles/177.tiff
+       ./tiles/178.tiff
+       ./tiles/179.tiff
+       ./tiles/180.tiff
+       ./tiles/181.tiff
+       ./tiles/182.tiff
+       ./tiles/183.tiff
+       ./tiles/184.tiff
+       ./tiles/185.tiff
+       ./tiles/186.tiff
+       ./tiles/187.tiff
+       ./tiles/188.tiff
+       ./tiles/189.tiff
+       ./tiles/190.tiff
+       ./tiles/191.tiff
+       ./tiles/192.tiff
+       ./tiles/193.tiff
+       ./tiles/194.tiff
+       ./tiles/195.tiff
+       ./tiles/196.tiff
+       ./tiles/197.tiff
+       ./tiles/198.tiff
+       ./tiles/199.tiff
+       ./tiles/200.tiff
+       ./tiles/201.tiff
+       ./tiles/202.tiff
+       ./tiles/203.tiff
+       ./tiles/204.tiff
+       ./tiles/205.tiff
+       ./tiles/206.tiff
+       ./tiles/207.tiff
+       ./tiles/208.tiff
+       ./tiles/209.tiff
+       ./tiles/210.tiff
+       ./tiles/211.tiff
+       ./tiles/212.tiff
+       ./tiles/213.tiff
+       ./tiles/214.tiff
+       ./tiles/215.tiff
+       ./tiles/216.tiff
+       ./tiles/217.tiff
+       ./tiles/218.tiff
+       ./tiles/219.tiff
+       ./tiles/220.tiff
+       ./tiles/221.tiff
+       ./tiles/222.tiff
+       ./tiles/223.tiff
+       ./tiles/224.tiff
+       ./tiles/225.tiff
+       ./tiles/226.tiff
+       ./tiles/227.tiff
+       ./tiles/228.tiff
+       ./tiles/229.tiff
+       ./tiles/230.tiff
+       ./tiles/231.tiff
+       ./tiles/232.tiff
+       ./tiles/233.tiff
+       ./tiles/234.tiff
+       ./tiles/235.tiff
+       ./tiles/236.tiff
+       ./tiles/237.tiff
+       ./tiles/238.tiff
+       ./tiles/239.tiff
+       ./tiles/240.tiff
+       ./tiles/241.tiff
+       ./tiles/242.tiff
+       ./tiles/243.tiff
+       ./tiles/244.tiff
+       ./tiles/245.tiff
+       ./tiles/246.tiff
+       ./tiles/247.tiff
+       ./tiles/248.tiff
+       ./tiles/249.tiff
+       ./tiles/250.tiff
+       ./tiles/251.tiff
+       ./tiles/252.tiff
+       ./tiles/253.tiff
+       ./tiles/254.tiff
+       ./tiles/255.tiff
+       ./tiles/256.tiff
+       ./tiles/257.tiff
+       ./tiles/258.tiff
+       ./tiles/259.tiff
+       ./tiles/260.tiff
+       ./tiles/261.tiff
+       ./tiles/262.tiff
+       ./tiles/263.tiff
+       ./tiles/264.tiff
+       ./tiles/265.tiff
+       ./tiles/266.tiff
+       ./tiles/267.tiff
+       ./tiles/268.tiff
+       ./tiles/269.tiff
+       ./tiles/270.tiff
+       ./tiles/271.tiff
+       ./tiles/272.tiff
+       ./tiles/273.tiff
+       ./tiles/274.tiff
+       ./tiles/275.tiff
+       ./tiles/276.tiff
+       ./tiles/277.tiff
+       ./tiles/278.tiff
+       ./tiles/279.tiff
+       ./tiles/280.tiff
+       ./tiles/281.tiff
+       ./tiles/282.tiff
+       ./tiles/283.tiff
+       ./tiles/284.tiff
+       ./tiles/285.tiff
+       ./tiles/286.tiff
+       ./tiles/287.tiff
+       ./tiles/288.tiff
+       ./tiles/289.tiff
+       ./tiles/290.tiff
+       ./tiles/291.tiff
+       ./tiles/292.tiff
+       ./tiles/293.tiff
+       ./tiles/294.tiff
+       ./tiles/295.tiff
+       ./tiles/296.tiff
+       ./tiles/297.tiff
+       ./tiles/298.tiff
+       ./tiles/299.tiff
+       ./tiles/300.tiff
+       ./tiles/301.tiff
+       ./tiles/302.tiff
+       ./tiles/303.tiff
+       ./tiles/304.tiff
+       ./tiles/305.tiff
+       ./tiles/306.tiff
+       ./tiles/307.tiff
+       ./tiles/308.tiff
+       ./tiles/309.tiff
+       ./tiles/310.tiff
+       ./tiles/311.tiff
+       ./tiles/312.tiff
+       ./tiles/313.tiff
+       ./tiles/314.tiff
+       ./tiles/315.tiff
+       ./tiles/316.tiff
+       ./tiles/317.tiff
+       ./tiles/318.tiff
+       ./tiles/319.tiff
+       ./tiles/320.tiff
+       ./tiles/321.tiff
+       ./tiles/322.tiff
+       ./tiles/323.tiff
+       ./tiles/324.tiff
+       ./tiles/325.tiff
+       ./tiles/326.tiff
+       ./tiles/327.tiff
+       ./tiles/328.tiff
+       ./tiles/329.tiff
+       ./tiles/330.tiff
+       ./tiles/331.tiff
+       ./tiles/332.tiff
+       ./tiles/333.tiff
+       ./tiles/334.tiff
+       ./tiles/335.tiff
+       ./tiles/336.tiff
+       ./tiles/337.tiff
+       ./tiles/338.tiff
+       ./tiles/339.tiff
+       ./tiles/340.tiff
+       ./tiles/341.tiff
+       ./tiles/342.tiff
+       ./tiles/343.tiff
+       ./tiles/344.tiff
+       ./tiles/345.tiff
+       ./tiles/346.tiff
+       ./tiles/347.tiff
+       ./tiles/348.tiff
+       ./tiles/349.tiff
+       ./tiles/350.tiff
+       ./tiles/351.tiff
+       ./tiles/352.tiff
+       ./tiles/353.tiff
+       ./tiles/354.tiff
+       ./tiles/355.tiff
+       ./tiles/356.tiff
+       ./tiles/357.tiff
+       ./tiles/358.tiff
+       ./tiles/359.tiff
+       ./tiles/360.tiff
+       ./tiles/361.tiff
+       ./tiles/362.tiff
+       ./tiles/363.tiff
+       ./tiles/364.tiff
+       ./tiles/365.tiff
+       ./tiles/366.tiff
+       ./tiles/367.tiff
+       ./tiles/368.tiff
+       ./tiles/369.tiff
+       ./tiles/370.tiff
+       ./tiles/371.tiff
+       ./tiles/372.tiff
+       ./tiles/373.tiff
+       ./tiles/374.tiff
+       ./tiles/375.tiff
+       ./tiles/376.tiff
+       ./tiles/377.tiff
+       ./tiles/378.tiff
+       ./tiles/379.tiff
+       ./tiles/380.tiff
+       ./tiles/381.tiff
+       ./tiles/382.tiff
+       ./tiles/383.tiff
+       ./tiles/384.tiff
+       ./tiles/385.tiff
+       ./tiles/386.tiff
+       ./tiles/387.tiff
+       ./tiles/388.tiff
+       ./tiles/389.tiff
+       ./tiles/390.tiff
+       ./tiles/391.tiff
+       ./tiles/392.tiff
+       ./tiles/393.tiff
+       ./tiles/394.tiff
+       ./tiles/395.tiff
+       ./tiles/396.tiff
+       ./tiles/397.tiff
+       ./tiles/398.tiff
+       ./tiles/399.tiff
+       ./tiles/400.tiff
+       ./tiles/401.tiff
+       ./tiles/402.tiff
+       ./tiles/403.tiff
+       ./tiles/404.tiff
+       ./tiles/405.tiff
+       ./tiles/406.tiff
+       ./tiles/407.tiff
+       ./tiles/408.tiff
+       ./tiles/409.tiff
+       ./tiles/410.tiff
+       ./tiles/411.tiff
+       ./tiles/412.tiff
+       ./tiles/413.tiff
+       ./tiles/414.tiff
+       ./tiles/415.tiff
+       ./tiles/416.tiff
+       ./tiles/417.tiff
+       ./tiles/418.tiff
+       ./tiles/419.tiff
+       ./tiles/420.tiff
+       ./tiles/421.tiff
+       ./tiles/422.tiff
+       ./tiles/423.tiff
+       ./tiles/424.tiff
+       ./tiles/425.tiff
+       ./tiles/426.tiff
+       ./tiles/427.tiff
+       ./tiles/428.tiff
+       ./tiles/429.tiff
+       ./tiles/430.tiff
+       ./tiles/431.tiff
+       ./tiles/432.tiff
+       ./tiles/433.tiff
+       ./tiles/434.tiff
+       ./tiles/435.tiff
+       ./tiles/436.tiff
+       ./tiles/437.tiff
+       ./tiles/438.tiff
+       ./tiles/439.tiff
+       ./tiles/440.tiff
+       ./tiles/441.tiff
+       ./tiles/442.tiff
+       ./tiles/443.tiff
+       ./tiles/444.tiff
+       ./tiles/445.tiff
+       ./tiles/446.tiff
+       ./tiles/447.tiff
+       ./tiles/448.tiff
+       ./tiles/449.tiff
+       ./tiles/450.tiff
+       ./tiles/451.tiff
+       ./tiles/452.tiff
+       ./tiles/453.tiff
+       ./tiles/454.tiff
+       ./tiles/455.tiff
+       ./tiles/456.tiff
+       ./tiles/457.tiff
+       ./tiles/458.tiff
+       ./tiles/459.tiff
+       ./tiles/460.tiff
+       ./tiles/461.tiff
+       ./tiles/462.tiff
+       ./tiles/463.tiff
+       ./tiles/464.tiff
+       ./tiles/465.tiff
+       ./tiles/466.tiff
+       ./tiles/467.tiff
+       ./tiles/468.tiff
+       ./tiles/469.tiff
+       ./tiles/470.tiff
+       ./tiles/471.tiff
+       ./tiles/472.tiff
+       ./tiles/473.tiff
+       ./tiles/474.tiff
+       ./tiles/475.tiff
+       ./tiles/476.tiff
+       ./tiles/477.tiff
+       ./tiles/478.tiff
+       ./tiles/479.tiff
+       ./tiles/480.tiff
+       ./tiles/481.tiff
+       ./tiles/482.tiff
+       ./tiles/483.tiff
+       ./tiles/484.tiff
+       ./tiles/485.tiff
+       ./tiles/486.tiff
+       ./tiles/487.tiff
+       ./tiles/488.tiff
+       ./tiles/489.tiff
+       ./tiles/490.tiff
+       ./tiles/491.tiff
+       ./tiles/492.tiff
+       ./tiles/493.tiff
+       ./tiles/494.tiff
+       ./tiles/495.tiff
+       ./tiles/496.tiff
+       ./tiles/497.tiff
+       ./tiles/498.tiff
+       ./tiles/499.tiff
+       ./tiles/500.tiff
+       ./tiles/501.tiff
+       ./tiles/502.tiff
+       ./tiles/503.tiff
+       ./tiles/504.tiff
+       ./tiles/505.tiff
+       ./tiles/506.tiff
+       ./tiles/507.tiff
+       ./tiles/508.tiff
+       ./tiles/509.tiff
+       ./tiles/510.tiff
+       ./tiles/511.tiff
+       ./tiles/512.tiff
+       ./tiles/513.tiff
+       ./tiles/514.tiff
+       ./tiles/515.tiff
+       ./tiles/516.tiff
+       ./tiles/517.tiff
+       ./tiles/518.tiff
+       ./tiles/519.tiff
+       ./tiles/520.tiff
+       ./tiles/521.tiff
+       ./tiles/522.tiff
+       ./tiles/523.tiff
+       ./tiles/524.tiff
+       ./tiles/525.tiff
+       ./tiles/526.tiff
+       ./tiles/527.tiff
+       ./tiles/528.tiff
+       ./tiles/529.tiff
+       ./tiles/530.tiff
+       ./tiles/531.tiff
+       ./tiles/532.tiff
+       ./tiles/533.tiff
+       ./tiles/534.tiff
+       ./tiles/535.tiff
+       ./tiles/536.tiff
+       ./tiles/537.tiff
+       ./tiles/538.tiff
+       ./tiles/539.tiff
+       ./tiles/540.tiff
+       ./tiles/541.tiff
+       ./tiles/542.tiff
+       ./tiles/543.tiff
+       ./tiles/544.tiff
+       ./tiles/545.tiff
+       ./tiles/546.tiff
+       ./tiles/547.tiff
+       ./tiles/548.tiff
+       ./tiles/549.tiff
+       ./tiles/550.tiff
+       ./tiles/551.tiff
+       ./tiles/552.tiff
+       ./tiles/553.tiff
+       ./tiles/554.tiff
+       ./tiles/555.tiff
+       ./tiles/556.tiff
+       ./tiles/557.tiff
+       ./tiles/558.tiff
+       ./tiles/559.tiff
+       ./tiles/560.tiff
+       ./tiles/561.tiff
+       ./tiles/562.tiff
+       ./tiles/563.tiff
+       ./tiles/564.tiff
+       ./tiles/565.tiff
+       ./tiles/566.tiff
+       ./tiles/567.tiff
+       ./tiles/568.tiff
+       ./tiles/569.tiff
+       ./tiles/570.tiff
+       ./tiles/571.tiff
+       ./tiles/572.tiff
+       ./tiles/573.tiff
+       ./tiles/574.tiff
+       ./tiles/575.tiff
+       ./tiles/576.tiff
+       ./tiles/577.tiff
+       ./tiles/578.tiff
+       ./tiles/579.tiff
+       ./tiles/580.tiff
+       ./tiles/581.tiff
+       ./tiles/582.tiff
+       ./tiles/583.tiff
+       ./tiles/584.tiff
+       ./tiles/585.tiff
+       ./tiles/586.tiff
+       ./tiles/587.tiff
+       ./tiles/588.tiff
+       ./tiles/589.tiff
+       ./tiles/590.tiff
+       ./tiles/591.tiff
+       ./tiles/592.tiff
+       ./tiles/593.tiff
+       ./tiles/594.tiff
+       ./tiles/595.tiff
+       ./tiles/596.tiff
+       ./tiles/597.tiff
+       ./tiles/598.tiff
+       ./tiles/599.tiff
+       ./tiles/600.tiff
+       ./tiles/601.tiff
+       ./tiles/602.tiff
+       ./tiles/603.tiff
+       ./tiles/604.tiff
+       ./tiles/605.tiff
+       ./tiles/606.tiff
+       ./tiles/607.tiff
+       ./tiles/608.tiff
+       ./tiles/609.tiff
+       ./tiles/610.tiff
+       ./tiles/611.tiff
+       ./tiles/612.tiff
+       ./tiles/613.tiff
+       ./tiles/614.tiff
+       ./tiles/615.tiff
+       ./tiles/616.tiff
+       ./tiles/617.tiff
+       ./tiles/618.tiff
+       ./tiles/619.tiff
+       ./tiles/620.tiff
+       ./tiles/621.tiff
+       ./tiles/622.tiff
+       ./tiles/623.tiff
+       ./tiles/624.tiff
+       ./tiles/625.tiff
+       ./tiles/626.tiff
+       ./tiles/627.tiff
+       ./tiles/628.tiff
+       ./tiles/629.tiff
+       ./tiles/630.tiff
+       ./tiles/631.tiff
+       ./tiles/632.tiff
+       ./tiles/633.tiff
+       ./tiles/634.tiff
+       ./tiles/635.tiff
+       ./tiles/636.tiff
+       ./tiles/637.tiff
+       ./tiles/638.tiff
+       ./tiles/639.tiff
+       ./tiles/640.tiff
+       ./tiles/641.tiff
+       ./tiles/642.tiff
+       ./tiles/643.tiff
+       ./tiles/644.tiff
+       ./tiles/645.tiff
+       ./tiles/646.tiff
+       ./tiles/647.tiff
+       ./tiles/648.tiff
+Size is 129600, 63174
+Coordinate System is:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["geodetic latitude (Lat)",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["geodetic longitude (Lon)",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    ID["EPSG",4326]]
+Data axis to CRS axis mapping: 2,1
+Origin = (-180.000000000000028,89.900000000000006)
+Pixel Size = (0.002777777777778,-0.002777777777778)
+Corner Coordinates:
+Upper Left  (-180.0000000,  89.9000000) (180d 0' 0.00"W, 89d54' 0.00"N)
+Lower Left  (-180.0000000, -85.5833333) (180d 0' 0.00"W, 85d35' 0.00"S)
+Upper Right ( 180.0000000,  89.9000000) (180d 0' 0.00"E, 89d54' 0.00"N)
+Lower Right ( 180.0000000, -85.5833333) (180d 0' 0.00"E, 85d35' 0.00"S)
+Center      (  -0.0000000,   2.1583333) (  0d 0' 0.00"W,  2d 9'30.00"N)
+Band 1 Block=128x128 Type=UInt32, ColorInterp=Gray
+  Minimum=1774.000, Maximum=2457194.000, Mean=2034867.104, StdDev=460668.384
+  NoData Value=0
+  Metadata:
+    STATISTICS_APPROXIMATE=YES
+    STATISTICS_MAXIMUM=2457194
+    STATISTICS_MEAN=2034867.1040235
+    STATISTICS_MINIMUM=1774
+    STATISTICS_STDDEV=460668.38439685
+    STATISTICS_VALID_PERCENT=92.9
+COPY 2457234
+analysis done
+TOTAL SCRIPT TIME: 48

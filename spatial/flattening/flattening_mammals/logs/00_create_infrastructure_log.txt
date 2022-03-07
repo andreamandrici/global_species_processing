@@ -1,0 +1,142 @@
+NOTICE:  drop cascades to 26 other objects
+DETAIL:  drop cascades to table species_2022_mammals.a_input_mammals
+drop cascades to table species_2022_mammals.b_clip_mammals
+drop cascades to table species_2022_mammals.c_raster_mammals
+drop cascades to table species_2022_mammals.da_tiled_mammals
+drop cascades to table species_2022_mammals.o_raster
+drop cascades to function species_2022_mammals.st_createfishnet(integer,integer,double precision,double precision,double precision,double precision)
+drop cascades to function species_2022_mammals.f_pop_z_grid()
+drop cascades to function species_2022_mammals.f_pop_o_grid()
+drop cascades to function species_2022_mammals.f_pop_input(text,text,text,integer)
+drop cascades to function species_2022_mammals.f_clip(text,text,integer)
+drop cascades to function species_2022_mammals.f_raster(integer,text,text)
+drop cascades to function species_2022_mammals.f_pop_tiled(text,text,integer)
+drop cascades to function species_2022_mammals.f_pop_tiled_temp(integer,text,text)
+drop cascades to function species_2022_mammals.f_flatter(text,text,text,integer)
+drop cascades to function species_2022_mammals.f_pop_atts_tile(integer)
+drop cascades to function species_2022_mammals.f_flat_recode(integer)
+drop cascades to function species_2022_mammals.f_pop_o_raster(integer,text)
+drop cascades to table species_2022_mammals.z_grid
+drop cascades to table species_2022_mammals.o_grid
+drop cascades to table species_2022_mammals.db_tiled_temp
+drop cascades to table species_2022_mammals.dc_tiled_all
+drop cascades to table species_2022_mammals.e_flat_all
+drop cascades to table species_2022_mammals.fa_atts_tile
+drop cascades to table species_2022_mammals.fb_atts_all
+drop cascades to table species_2022_mammals.g_flat_temp
+drop cascades to table species_2022_mammals.h_flat
+CREATE SCHEMA
+NUMBER OF TOPICS 1
+processing topic 1
+Topic 1 is mammals
+NOTICE:  table "a_input_mammals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "b_clip_mammals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "c_raster_mammals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "da_tiled_mammals" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_raster" does not exist, skipping
+CREATE INDEX
+creating function using variables defined in the topic loop
+NOTICE:  function species_2022_mammals.st_createfishnet(pg_catalog.int4,pg_catalog.int4,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8,pg_catalog.float8) does not exist, skipping
+CREATE FUNCTION
+NOTICE:  function species_2022_mammals.f_pop_z_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_o_grid() does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_input(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_clip(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_raster(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_tiled(text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_tiled_temp(pg_catalog.int4,text,text) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_flatter(text,text,text,pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_atts_tile(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_flat_recode(pg_catalog.int4) does not exist, skipping
+COMMENT
+NOTICE:  function species_2022_mammals.f_pop_o_raster(pg_catalog.int4,text) does not exist, skipping
+COMMENT
+creating tables using variables defined in the topic loop
+NOTICE:  table "z_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "o_grid" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "db_tiled_temp" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "dc_tiled_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "e_flat_all" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "fa_atts_tile" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "fb_atts_all" does not exist, skipping
+CREATE TABLE
+NOTICE:  table "g_flat_temp" does not exist, skipping
+CREATE INDEX
+NOTICE:  table "h_flat" does not exist, skipping
+CREATE INDEX
+ 
+
+ 
+
+UPDATE 64800
+UPDATE 64800
+
+FIELDS WAS
+,mammals  integer[];
+REFIELDS IS
+mammals  integer[];
+
+ORDERS WAS
+,mammals;
+REORDERS IS
+mammals;
+
+INDEX_FLAT IS
+CREATE INDEX ON species_2022_mammals.h_flat USING GIN(mammals);
+;
+
+L_ATTS_AGG_JOINS IS
+LEFT JOIN (SELECT qid,tid,ARRAY_AGG(DISTINCT fid ORDER BY fid) mammals FROM atts_tile WHERE source='mammals' GROUP BY qid,tid) mammals USING(qid,tid)
+;
+
+L_ATTS_AGG_UPD IS
+UPDATE atts_tile_agg SET mammals = ARRAY[0] WHERE mammals IS NULL;
+;
+
+UNIONS WAS
+ UNION ALL SELECT qid,geom FROM species_2022_mammals.da_tiled_mammals;
+REUNIONS IS
+SELECT qid,geom FROM species_2022_mammals.da_tiled_mammals;
+
+POPS WAS
+wait\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','mammals');"\n;
+REPOPS IS
+\npsql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','mammals');"\n;
+
+FLAT WAS
+,''mammals'';
+REFLAT IS
+''mammals'';
+
+REPOPS IS ALSO 
+psql ${dbpar2} -t -c "SELECT ${SCH}.f_pop_tiled_temp(${OBJ},'${SCH}','mammals');"
+
+
+1 # GRID SIZE IN DEGREES
+10 # CELL SIZE IN ARCSEC
+180 # NUMBER OF ROWS IN THE GRID
+360 # NUMBER OF COLUMNS IN THE GRID
+360 # NUMBER OF ROWS/COLUMNS FOR CELL
+360 # NUMBER OF ROWS/COLUMNS FOR TILE
+
+analysis done
+TOTAL SCRIPT TIME: 8
