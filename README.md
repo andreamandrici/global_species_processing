@@ -1,6 +1,8 @@
 # GLOBAL SPECIES PROCESSING
 # Complete workflow for species import, pre- and post-processing.
 
+## [Database optimization](./database_optimization.md)
+
 ## [Sources](./sources.md)
 
 ## [Import](./import.md)
