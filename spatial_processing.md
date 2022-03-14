@@ -56,7 +56,7 @@ additional steps:
 
 `taxon/p_export_raster.sh` --> export attribute table as CSV
 
-final_species_schema.sql --> collects all taxa in schema species_year_all_taxa
+`final_species_schema.sql` --> collects all taxa in schema species_year_all_taxa
 
 `export_raster/sql/export_raster_taxon.sql` --> change cid in eport_raster.h_flat
 
