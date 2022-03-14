@@ -95,3 +95,26 @@ CREATE INDEX ON species_2022_all_taxa.mammals_attributes USING gin(mammals_threa
 CREATE INDEX ON species_2022_all_taxa.mammals_attributes USING gin(mammals_threatened);
 CREATE INDEX ON species_2022_all_taxa.mammals_attributes USING gin(mammals_endemic);
 ---------------------------------------------------
+-- COPY birds GEOMS
+---------------------------------------------------
+SELECT *
+INTO species_2022_all_taxa.birds_flat
+FROM species_2022_birds.h_flat
+ORDER BY qid,cid;
+ALTER TABLE species_2022_all_taxa.birds_flat ADD PRIMARY KEY(qid,cid);
+CREATE INDEX ON species_2022_all_taxa.birds_flat USING btree(qid ASC NULLS LAST);
+CREATE INDEX ON species_2022_all_taxa.birds_flat USING btree(cid ASC NULLS LAST);
+CREATE INDEX ON species_2022_all_taxa.birds_flat USING gin(birds);
+CREATE INDEX ON species_2022_all_taxa.birds_flat USING GIST(geom);
+---------------------------------------------------
+-- COPY birds ATTRIBUTES
+SELECT *
+INTO species_2022_all_taxa.birds_attributes
+FROM species_2022_birds.raster_output_attributes
+ORDER BY cid;
+ALTER TABLE species_2022_all_taxa.birds_attributes ADD PRIMARY KEY(cid);
+CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds);
+CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_threatened_endemic);
+CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_threatened);
+CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_endemic);
+---------------------------------------------------
