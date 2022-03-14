@@ -51,16 +51,16 @@ each taxon has configuration parameters and generating script.
 template folder is needed INSIDE taxon folder
 
 additional steps:
+
 `taxon/sql/attributes_taxon.sql` --> generates additional attribute table
+
 `taxon/p_export_raster.sh` --> export attribute table as CSV
 
 final_species_schema.sql --> collects all taxa in schema species_year_all_taxa
 
-
 `export_raster/sql/export_raster_taxon.sql` --> change cid in eport_raster.h_flat
+
 `export_raster/z_do_it_all.sh' (steps o,p,q) ---> export raster export_raster.h_flat
-
-
 
 flatter sequence
 
