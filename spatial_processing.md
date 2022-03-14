@@ -55,6 +55,7 @@ additional steps:
 -------------------------------------------------------------------------
 
 1.1  `taxon/sql/attributes_taxon.sql` --> generates additional attribute table
+
 1.2  `taxon/p_export_raster.sh` --> export attribute table as CSV
 
 ---------------------------------------------------------------------------
@@ -64,6 +65,7 @@ additional steps:
 ---------------------------------------------------------------------------
 
 3.1  `export_raster/sql/export_raster_taxon.sql` --> change cid in eport_raster.h_flat
+
 3.2  `export_raster/z_do_it_all.sh` (steps o,p,q) ---> export raster export_raster.h_flat
 
 flatter sequence
