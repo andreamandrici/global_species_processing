@@ -118,3 +118,52 @@ CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_threatene
 CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_threatened);
 CREATE INDEX ON species_2022_all_taxa.birds_attributes USING gin(birds_endemic);
 ---------------------------------------------------
+
+---------------------------------------------------
+-- COUNT RESULTS
+---------------------------------------------------
+SELECT
+1 ord,
+'corals' taxon,
+MAX(corals_richness) max_richness,
+MAX(corals_threatened_richness) max_threatened_richness,
+MAX(corals_endemic_richness) max_endemic_richness,
+MAX(corals_threatened_endemic_richness) max_threatened_endemic_richness
+FROM species_2022_all_taxa.corals_attributes
+UNION
+SELECT
+2 ord,
+'sharks' taxon,
+MAX(sharks_richness) max_richness,
+MAX(sharks_threatened_richness) max_threatened_richness,
+MAX(sharks_endemic_richness) max_endemic_richness,
+MAX(sharks_threatened_endemic_richness) max_threatened_endemic_richness
+FROM species_2022_all_taxa.sharks_attributes
+UNION
+SELECT
+3 ord,
+'amphibians' taxon,
+MAX(amphibians_richness) max_richness,
+MAX(amphibians_threatened_richness) max_threatened_richness,
+MAX(amphibians_endemic_richness) max_endemic_richness,
+MAX(amphibians_threatened_endemic_richness) max_threatened_endemic_richness
+FROM species_2022_all_taxa.amphibians_attributes
+UNION
+SELECT
+4 ord,
+'birds' taxon,
+MAX(birds_richness) max_richness,
+MAX(birds_threatened_richness) max_threatened_richness,
+MAX(birds_endemic_richness) max_endemic_richness,
+MAX(birds_threatened_endemic_richness) max_threatened_endemic_richness
+FROM species_2022_all_taxa.birds_attributes
+UNION
+SELECT
+5 ord,
+'mammals' taxon,
+MAX(mammals_richness) max_richness,
+MAX(mammals_threatened_richness) max_threatened_richness,
+MAX(mammals_endemic_richness) max_endemic_richness,
+MAX(mammals_threatened_endemic_richness) max_threatened_endemic_richness
+FROM species_2022_all_taxa.mammals_attributes
+order by ord;
