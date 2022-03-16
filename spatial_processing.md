@@ -45,8 +45,6 @@ Outputs are exported as raster vrt, with attribute table (to be used for reclass
 
 [Environment and log files](./spatial/flattening/) are reported. SQL files are also reported, when geometry fix was needed (after step `a_` of flattening).
 
-
-
 each taxon has configuration parameters and generating script.
 template folder is needed INSIDE taxon folder
 
@@ -60,7 +58,9 @@ additional steps:
 
 ---------------------------------------------------------------------------
 
-2.  `final_species_schema.sql` --> collects all taxa in schema species_year_all_taxa
+2.1  `final_species_schema.sql` --> collects all taxa in schema species_year_all_taxa
+
+2.2 `final_species_schema_metadata.sql` --> count results
 
 ---------------------------------------------------------------------------
 
@@ -103,3 +103,9 @@ SELECT * FROM cep202202.fb_atts_all WHERE country && '{188}' AND ecoregion && '{
 
 
 **Some of the species distribution ranges are too small to be (psuedo)rasterised at 1 Km (EG: 8 amphibians are left out, of which 3 are Data Deficient, 4 are Critically Endangered). They can be recovered assigning an artificial minimum range of 1 sqkm (the single pixel intersecting the centroid), then calculating the "boost" applied as ratio artificial/original. This goes in the todo-list**
+
+Further GRASS processing to develop [TOTAL RICHNESS](https://github.com/andreamandrici/global_species_processing/tree/main/spatial/total_richness).
+
+
+
+
