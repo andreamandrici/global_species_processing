@@ -20,6 +20,9 @@ Using the Santini et al. (2019) crosswalk, land cover classes are converted into
 
 For each species (id_no), total range area is computed, along with AOH in 1992 and 2022, AOH gain/loss between the two years, and the proportion of AOH (in 2022) relative to total range extent.
 
+Preliminary code is available in [a]()
+Preliminary results are available .
+
 ##### Country/Protection
 
 In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
