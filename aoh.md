@@ -24,6 +24,7 @@ Preliminary code is available in [Area of Habitat (AOH) code](./aoh/aoh.sql).
 
 Preliminary results are available [Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
 
+
 ##### Country/Protection
 
 In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
@@ -40,6 +41,7 @@ A fully spatially explicit model is also feasible, but it presents major constra
 
 Binary remapping: each species would need to be reconstructed as an individual binary layer from the flattened land cover–intersected dataset (raster or vector), thereby losing the single-run efficiency enabled by the current flattening approach.
 
-![Felis silvestris 2022 AOH](./aoh/felis_silvestris_aoh_22.png).
+![Felis silvestris 2022 AOH](./aoh/felis_silvestris_aoh_22.png)
+*image_caption*
 
 Fully vector-based implementation: even if used only as an intermediate processing step, the workflow would generate several billion records, requiring a substantially more powerful and dedicated computing infrastructure than is currently available.
