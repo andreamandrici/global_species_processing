@@ -38,26 +38,28 @@ Full preliminary code is available at [Area of Habitat (AOH) quantitative code](
 ##### Country/Protection
 
 In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
+Processing is started, results are not yet ready.
 
-#### Spatial
-
-##### Mapping
-
-A coarse spatial representation of the phenomenon can be obtained relatively quickly by selecting, for each id_no, the land cover classes (vector polygons in PostGIS) intersecting the species range and filtering them according to the selected habitats and crosswalk tables.
-
-##### Spatially explicit model
+#### Spatially explicit model
 
 A fully spatially explicit model is also feasible, but it presents major constraints:
 
-Binary remapping: each species would need to be reconstructed as an individual binary layer from the flattened land cover–intersected dataset (raster or vector), thereby losing the single-run efficiency enabled by the current flattening approach.
+**Binary remapping**: each species would need to be reconstructed as an individual binary layer from the flattened land cover–intersected dataset (raster or vector), thereby losing the single-run efficiency enabled by the current flattening approach.
 
 ![Felis silvestris 2024 Range](./aoh/felis_silvestris_range_24.png)
-*Felis silvestris 2024 range (green)*
+*Felis silvestris 2024 binary range (green)*
 
 ![Felis silvestris 1992 AOH](./aoh/felis_silvestris_aoh_92.png)
-*Felis silvestris 1992 aoh (red), overlapped on species range (green)*
+*Felis silvestris 1992 binary aoh (red), overlapped on species range (green)*
 
 ![Felis silvestris 2022 AOH](./aoh/felis_silvestris_aoh_22.png)
-*Felis silvestris 2022 aoh (yellow), overlapped on 1922 aoh (red) and species range (green)*
+*Felis silvestris 2022 binary aoh (yellow), overlapped on 1922 aoh (red) and species range (green)*
 
-Fully vector-based implementation: even if used only as an intermediate processing step, the workflow would generate several billion records, requiring a substantially more powerful and dedicated computing infrastructure than is currently available.
+**Fully vector-based implementation**: even if used only as an intermediate processing step, the workflow would generate several billion records, requiring a substantially more powerful and dedicated computing infrastructure than is currently available.
+
+![Felis silvestris 2025 Vector Range](./aoh/felis_range_25.png)
+*Felis silvestris 2025 vector range*
+
+![Felis silvestris 2022 Vector AOH](./aoh/felis_aoh_22.png)
+*Felis silvestris 2022 aoh (yellow), overlapped on species range (green)*
+
