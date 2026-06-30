@@ -39,7 +39,7 @@ A coarse spatial representation of the phenomenon can be obtained relatively qui
 A fully spatially explicit model is also feasible, but it presents major constraints:
 
 Binary remapping: each species would need to be reconstructed as an individual binary layer from the flattened land cover–intersected dataset (raster or vector), thereby losing the single-run efficiency enabled by the current flattening approach.
-![Test Image 4](https://github.com/tograh/testrepository/3DTest.png)
+
 ![Felis silvestris 2022 AOH](./aoh/felis_silvestris_aoh_22.png).
 
 Fully vector-based implementation: even if used only as an intermediate processing step, the workflow would generate several billion records, requiring a substantially more powerful and dedicated computing infrastructure than is currently available.
