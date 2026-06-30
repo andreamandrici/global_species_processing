@@ -18,7 +18,7 @@ This raster is intersected in GRASS GIS (using r.stats) with ESA Land Cover rast
 
 Using the Santini et al. (2019) crosswalk, land cover classes are converted into IUCN habitat classes. Species-specific habitat preferences (filtered to terrestrial species only) from the IUCN Red List database are then applied by unnesting CID–species relationships and selecting only relevant habitat classes.
 
-For each species (id_no), total range area is computed, along with AOH in 1992 and 2022, AOH gain/loss between the two years, and the proportion of AOH (in 2022) relative to total range extent.
+For each species (id_no), total range area is computed (both original vector and derived raster extensions are provided), along with AOH in 1992 and 2022, AOH gain/loss between the two years, and the proportion of AOH (in 2022) relative to total range extent.
 
 |id_no    |order_   |family |genus|binomial        |endemic|v_range_sqkm      |r_range_sqkm      |aoh_92_sqkm       |aoh_22_sqkm       |aoh_perc_range   |aoh_gain_loss_perc  |ecosystems   |category|threatened|habitats                                                                    |
 |---------|---------|-------|-----|----------------|-------|------------------|------------------|------------------|------------------|-----------------|--------------------|-------------|--------|----------|----------------------------------------------------------------------------|
@@ -27,10 +27,9 @@ For each species (id_no), total range area is computed, along with AOH in 1992 a
 |12520    |Carnivora|Felidae|Lynx |Lynx pardinus   |NULL   |1192.2424522393212|1192.2431491049508|112.31855075601801|109.29974437799301|9.167571603162264|-0.02687718420247919|{terrestrial}|EN      |True      |{3.8}                                                                       |
 |41688    |Carnivora|Ursidae|Ursus|Ursus arctos    |NULL   |24937291.660346873|24937328.201107223|22054120.44871323 |21776143.672609057|87.3234834822529 |-0.01260430116678688|{terrestrial}|LC      |NULL      |{1.1,1.2,1.4,14.1,14.2,14.3,3.1,3.3,3.4,3.5,3.6,4.1,4.2,4.4,4.5,5.3,5.4,8.2}|
 |181049859|Carnivora|Felidae|Felis|Felis silvestris|NULL   |1423733.320508563 |1423734.4318734384|1149627.8889810834|1138891.6385745232|79.99326370690486|-0.00933889174876908|{terrestrial}|LC      |NULL      |{1.4,14.1,14.2,14.3,1.5,3.4,3.8,4.4,5.3,5.4,6}                              |
+*Some carnivores results*
 
-
-
-Preliminary code is available in [Area of Habitat (AOH) code](./aoh/aoh.sql).
+Preliminary code is available in [Area of Habitat (AOH) quantitative code](./aoh/aoh.sql).
 
 Preliminary results are available [Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
 
