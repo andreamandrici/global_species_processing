@@ -32,7 +32,7 @@ In addition, the same r.stats approach is applied by integrating the CEP 2026 ra
 
 ##### Mapping
 
-A spatial representation of the phenomenon can be obtained relatively quickly by selecting, for each id_no, the land cover classes (vector in QGIS) intersecting the species range and filtering them according to the selected habitats and crosswalk tables.
+A coarse spatial representation of the phenomenon can be obtained relatively quickly by selecting, for each id_no, the land cover classes (vector polygons in PostGIS) intersecting the species range and filtering them according to the selected habitats and crosswalk tables.
 
 ##### Spatially explicit model
 
