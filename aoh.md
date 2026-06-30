@@ -64,5 +64,7 @@ A fully spatially explicit model is also feasible, but it presents major constra
 *Felis silvestris 2022 aoh*
 
 ![Felis silvestris 2022 Vector AOH detail](./aoh/felis_aoh_22_detail.png)
-*Felis silvestris 2022 aoh detail (yellow), overlapped on species range (green)*
+*Felis silvestris 2022 aoh detail (yellow), overlapped on species range (green)*.
+
+
 
