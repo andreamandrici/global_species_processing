@@ -33,7 +33,7 @@ A sample extract of the resulting table is shown below.
 
 Full preliminary results are available at [Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
 
-Full preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh/aoh.sql).
+Full preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh/aoh_quantitative.sql).
 
 ##### Country/Protection
 
