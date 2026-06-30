@@ -20,8 +20,8 @@ Using the Santini et al. (2019) crosswalk, land cover classes are converted into
 
 For each species (id_no), total range area is computed, along with AOH in 1992 and 2022, AOH gain/loss between the two years, and the proportion of AOH (in 2022) relative to total range extent.
 
-Preliminary code is available in [a]()
-Preliminary results are available .
+Preliminary code is available in [Area of Habitat (AOH) code](./aoh/aoh.sql)
+Preliminary results are available [Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
 
 ##### Country/Protection
 
