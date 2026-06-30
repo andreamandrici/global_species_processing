@@ -48,6 +48,6 @@ Binary remapping: each species would need to be reconstructed as an individual b
 *Felis silvestris 1992 aoh (red), overlapped on species range (green)*
 
 ![Felis silvestris 2022 AOH](./aoh/felis_silvestris_aoh_22.png)
-*Felis silvestris 1992 aoh (yellow), overlapped on species range*
+*Felis silvestris 2022 aoh (yellow), overlapped on 1922 aoh (red) and species range (green)*
 
 Fully vector-based implementation: even if used only as an intermediate processing step, the workflow would generate several billion records, requiring a substantially more powerful and dedicated computing infrastructure than is currently available.
