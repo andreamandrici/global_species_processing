@@ -16,3 +16,5 @@
 ## [Spatial processing](./spatial_processing.md)
 
 ## [Output functions](./output_functions.md)
+
+## [Area of Habitat (AOH)](./aoh.md)
