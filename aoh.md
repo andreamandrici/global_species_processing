@@ -42,7 +42,7 @@ Preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh
 
 ### Country/Protection
 
-In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
+In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country (whole and protected portion), and within protected areas (if considered useful).
 
 A sample extract of the resulting table is shown below.
 
