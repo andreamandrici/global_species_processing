@@ -1,4 +1,4 @@
-### AOH (Area of Habitat)
+# AOH (Area of Habitat)
 
 Developing a workflow for the systematic production of Area of Habitat (AOH)–derived metrics for terrestrial species, based on existing biodiversity and environmental datasets.
 
@@ -6,9 +6,9 @@ The approach is designed as a standardized transformation layer between IUCN Red
 
 The workflow relies exclusively on existing data sources and established scientific products, including IUCN Red List species and habitat information, global land cover datasets (e.g. ESA Copernicus), and published habitat crosswalks (e.g. Santini et al., Lumbierres et al., Jung et al.), together with indicator frameworks developed by Juffe-Bignoli et al.
 
-#### Quantitative approach
+## Quantitative approach
 
-##### Global
+### Global
 
 A quantitative, non–spatially explicit AOH workflow is easily implementable within the standard DOPA pipeline.
 
@@ -38,14 +38,14 @@ Full (all species, whole global extension) preliminary results are available at 
 
 Preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh/aoh_quantitative.sql).
 
-##### Country/Protection
+### Country/Protection
 
 In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
 Processing is started, results are not yet ready.
 
 Beyond the metrics presented here, the workflow provides a flexible basis for deriving additional biodiversity indicators through simple aggregation of the underlying statistics, without requiring further spatial processing. Potential applications include indicators by taxonomic group, threat category, endemicity, country or protected area, attribution of habitat gain and loss to specific land cover or IUCN habitat transitions, and support for conservation frameworks such as STAR (Species Threat Abatement and Restoration), CBD/GBF habitat-related indicators, protected area effectiveness assessments, and habitat representation and habitat availability metrics.
 
-#### Spatially explicit model
+## Spatially explicit model
 
 A fully spatially explicit model is also feasible, but it presents major constraints:
 
@@ -74,7 +74,7 @@ A fully spatially explicit model is also feasible, but it presents major constra
 Preliminary code is available at [Area of Habitat (AOH) spatial code](./aoh/aoh_spatial.sql).
 
 
-#### Bibliography 
+## Bibliography 
  
 -  Juffe-Bignoli D., Mandrici A., Delli G., Niamir A., Dubois G. Delivering Systematic and Repeatable Area-Based Conservation Assessments: From Global to Local Scales.  Land 2024, 13(9), 1506; https://doi.org/10.3390/land13091506 
 -  Santini, L., Butchart, S.H.M., Rondinini, C., Benitez-Lopez, A., Hilbers, J.P., Schipper, A.M., Cengic, M., Tobias, J.A. and Huijbregts, M.A.J. (2019), Applying habitat and population-density models to land-cover time series to inform IUCN Red List assessments. Conservation Biology, 33: 1084-1093. https://doi.org/10.1111/cobi.13279
