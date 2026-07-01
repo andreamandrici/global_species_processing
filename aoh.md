@@ -49,7 +49,7 @@ A sample extract of the resulting table is shown below.
 *sample Country-AOH results*
 xxxxxxx
 
-Full (all countries, all species, whole global extension;range and AOH are calculated only on the terrestrial portion of the country, whole or protected) preliminary results are available at [Country_Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
+Full (all countries, all species, whole global extension;range and AOH are calculated only on the terrestrial portion of the country, whole or protected) preliminary results are available at [Country_Species 2024 AOH](./aoh/country_26_mammals_24_lc_92_22.csv).
 
 Beyond the metrics presented here, the workflow provides a flexible basis for deriving additional biodiversity indicators through simple aggregation of the underlying statistics, without requiring further spatial processing. Potential applications include indicators by taxonomic group, threat category, endemicity, country or protected area, attribution of habitat gain and loss to specific land cover or IUCN habitat transitions, and support for conservation frameworks such as STAR (Species Threat Abatement and Restoration), CBD/GBF habitat-related indicators, protected area effectiveness assessments, and habitat representation and habitat availability metrics.
 
