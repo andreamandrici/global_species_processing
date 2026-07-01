@@ -36,6 +36,8 @@ Habitat gain and loss can be computed at both species and multi-species levels (
 
 Full (all species, whole global extension) preliminary results are available at [Species 2024 AOH](./aoh/species_2024_range_aoh_92_22.csv).
 
+Crosswalk table within Landcover classes and IUCN habitats are at [crosswalk_lc_habitat](./aoh/crosswalk_lc_habitat.csv).
+
 Preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh/aoh_quantitative.sql).
 
 ### Country/Protection
