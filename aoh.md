@@ -22,7 +22,7 @@ For each species (id_no), total range area is computed (both original vector and
 
 A sample extract of the resulting table is shown below.
 
-"sample AOH results"
+*sample AOH results*
 |id_no    |order_   |family |genus|binomial        |endemic|v_range_sqkm      |r_range_sqkm      |aoh_92_sqkm       |aoh_22_sqkm       |aoh_perc_range   |aoh_gain_loss_perc  |ecosystems   |category|threatened|habitats                                                                    |
 |---------|---------|-------|-----|----------------|-------|------------------|------------------|------------------|------------------|-----------------|--------------------|-------------|--------|----------|----------------------------------------------------------------------------|
 |3746     |_Carnivora_|_Canidae_|_Canis_|_Canis lupus_     |   |55647035.706165634|55647114.3515089  |42896749.733751416|42205872.81813306 |75.8455731442409 |-0.0161055772268631 |{terrestrial}|LC      |      |{1.1,1.2,1.4,14.2,1.5,3.1,3.4,3.5,4.1,4.2,4.4,5.10,5.4,6,8.1,8.2}           |
