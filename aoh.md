@@ -43,6 +43,8 @@ Preliminary code is available at [Area of Habitat (AOH) quantitative code](./aoh
 In addition, the same r.stats approach is applied by integrating the CEP 2026 raster (GISCO 2024 1:1M + GISCO EEZ). This allows the statistics to be aggregated not only at species level, but also by country and within protected areas.
 Processing is started, results are not yet ready.
 
+Beyond the metrics presented here, the workflow provides a flexible basis for deriving additional biodiversity indicators through simple aggregation of the underlying statistics, without requiring further spatial processing. Potential applications include indicators by taxonomic group, threat category, endemicity, country or protected area, attribution of habitat gain and loss to specific land cover or IUCN habitat transitions, and support for conservation frameworks such as STAR (Species Threat Abatement and Restoration), CBD/GBF habitat-related indicators, protected area effectiveness assessments, and habitat representation and habitat availability metrics.
+
 #### Spatially explicit model
 
 A fully spatially explicit model is also feasible, but it presents major constraints:
