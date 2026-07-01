@@ -69,4 +69,15 @@ A fully spatially explicit model is also feasible, but it presents major constra
 Preliminary code is available at [Area of Habitat (AOH) spatial code](./aoh/aoh_spatial.sql).
 
 
-
+#### Bibliography 
+ 
+-  Juffe-Bignoli D., Mandrici A., Delli G., Niamir A., Dubois G. Delivering Systematic and Repeatable Area-Based Conservation Assessments: From Global to Local Scales.  Land 2024, 13(9), 1506; https://doi.org/10.3390/land13091506 
+-  Santini, L., Butchart, S.H.M., Rondinini, C., Benitez-Lopez, A., Hilbers, J.P., Schipper, A.M., Cengic, M., Tobias, J.A. and Huijbregts, M.A.J. (2019), Applying habitat and population-density models to land-cover time series to inform IUCN Red List assessments. Conservation Biology, 33: 1084-1093. https://doi.org/10.1111/cobi.13279
+-  Rondinini, C., Di Marco, M., Chiozza F. et al. Global habitat suitability models of terrestrial mammals. Phil. Trans. R. Soc. B3662633-2641 (2011). http://doi.org/10.1098/rstb.2011.0113 
+-  Di Marco, M., Watson, J.E.M., Possingham, H.P. and Venter, 0. (2017), Limitations and trade-offs in the use of species distribution maps for protected area planning. J Appl Ecol, 54: 402-411. https://doi.org/10.1111/1365-2664.12771 
+-  Brooks, T.M., Stuart, L.P., Arcakaya H.R. et al. Measuring Terrestrial Area of Habitat (AOH) and Its Utility for the IUCN Red List, Trends in Ecology & Evolution, Volume 34, Issue 11, 2019, Pages 977 -986,ISSN 0169-534 7, https://doi.org/10.1016/j.tree.2019.06.009. 
+-  Jung, M., Dahal, P.R., Butchart, S.H.M. et al. A global map of terrestrial habitat types. Sci Data 7, 256 (2020). https://doi.org/10.1038/s41597-020-00599-8 
+-  Mair, L., Ben nun, L.A., Brooks, T.M. et al. A metric for spatially explicit contributions to science-based species targets. Nat Ecol Evol 5, 836-844 (2021). https://doi.org/10.1038/s41559-021-01432-0 
+-  Lumbierres, M., Dahal, P.R., Di Marco, M. et al. Translating habitat class to land cover to map area of habitat of terrestrial vertebrates. Conservation Biology. 36 (2021). http://dx.doi.org/10.llll/cobi.13851
+-  Dahal, P. R., Lumbierres, M., Butchart, S. H. M., Donald, P. F., and Rondinini, C.: A validation standard for area of habitat maps for terrestrial birds and mammals, Geosci. Model Dev., 15, 5093-5105, 2022. https://doi.org/10.5194/gmd-15-5093-2022
+-  Lumbierres, M., Dahal, P.R., Soria, C.D. et al. Area of Habitat maps for the world's terrestrial birds and mammals. Sci Data 9, 749 (2022). https://doi.org/10.1038/s41597-022-01838-w
