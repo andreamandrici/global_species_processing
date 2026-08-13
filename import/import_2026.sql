@@ -83,4 +83,11 @@ SELECT
 fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
 FROM species_2026_input_data_original.mammals_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
 ORDER BY id_no;
-
+-------------------------------------------------------------------------------------------------------
+--sharks_rays_chimaeras
+DROP TABLE IF EXISTS species_2026.spatial_sharks_rays_chimaeras;
+CREATE TABLE species_2026.spatial_sharks_rays_chimaeras AS
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.sharks_rays_chimaeras WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+ORDER BY id_no;
