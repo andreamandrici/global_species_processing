@@ -47,3 +47,40 @@ SELECT
 fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
 FROM species_2026_input_data_original.reef_forming_corals_part3 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
 ORDER BY id_no;
+-------------------------------------------------------------------------------------------------------
+--amphibians
+DROP TABLE IF EXISTS species_2026.spatial_amphibians;
+CREATE TABLE species_2026.spatial_amphibians AS
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.amphibians_part1 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+UNION ALL
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.amphibians_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+ORDER BY id_no;
+-------------------------------------------------------------------------------------------------------
+--reptiles
+DROP TABLE IF EXISTS species_2026.spatial_reptiles;
+CREATE TABLE species_2026.spatial_reptiles AS
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.reptiles_part1 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+UNION ALL
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.reptiles_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+ORDER BY id_no;
+-------------------------------------------------------------------------------------------------------
+--mammals
+DROP TABLE IF EXISTS species_2026.spatial_mammals;
+CREATE TABLE species_2026.spatial_mammals AS
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.mammals_part1 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+UNION ALL
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.mammals_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+ORDER BY id_no;
+
