@@ -22,3 +22,8 @@ BEGIN
    END LOOP;
 END;
 $$ LANGUAGE plpgsql;
+-------------------------------------------------------------------------------------------------------
+DROP SCHEMA foreign_data CASCADE;
+CREATE SCHEMA foreign_data;
+-------------------------------------------------------------------------------------------------------
+DROP SERVER IF EXISTS species_iucn_spatial_202607_fdw CASCADE;
