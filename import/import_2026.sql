@@ -27,3 +27,23 @@ DROP SCHEMA foreign_data CASCADE;
 CREATE SCHEMA foreign_data;
 -------------------------------------------------------------------------------------------------------
 DROP SERVER IF EXISTS species_iucn_spatial_202607_fdw CASCADE;
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+CREATE SCHEMA species_2026;
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+--corals
+DROP TABLE IF EXISTS species_2026.spatial_corals;
+CREATE TABLE species_2026.spatial_corals AS
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.reef_forming_corals_part1 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+UNION ALL
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.reef_forming_corals_part2 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+UNION ALL
+SELECT
+fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
+FROM species_2026_input_data_original.reef_forming_corals_part3 WHERE presence IN (1) AND origin IN (1,2,6) AND seasonal IN (1,2,3)
+ORDER BY id_no;
