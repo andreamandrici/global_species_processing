@@ -86,6 +86,168 @@ ORDER BY id_no;
 -------------------------------------------------------------------------------------------------------
 --sharks_rays_chimaeras
 DROP TABLE IF EXISTS species_2026.spatial_sharks_rays_chimaeras;
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-- NON SPATIAL
+-----------------------------------------------------------------------------
+DROP SERVER IF EXISTS species_iucn_non_spatial_1_202607_fdw CASCADE;
+CREATE SERVER species_iucn_non_spatial_1_202607_fdw
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/data/swap/species_2026/nonspatial/all_taxa',
+	format 'CSV' );
+------------------------------------------------------------------------------------------------------
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER species_iucn_non_spatial_1_202607_fdw INTO foreign_data;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+    newname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name::text
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        newname := tbname || '_1';
+
+        RAISE NOTICE 'CREATING TABLE : foreign_data.%', newname;
+
+        EXECUTE format(
+            'CREATE TABLE foreign_data.%I AS SELECT * FROM foreign_data.%I',
+            newname,
+            tbname
+        );
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        EXECUTE format('DROP FOREIGN TABLE foreign_data.%I', tbname);
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+DROP SERVER IF EXISTS species_iucn_non_spatial_2_202607_fdw CASCADE;
+CREATE SERVER species_iucn_non_spatial_2_202607_fdw
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/data/swap/species_2026/nonspatial/passeriformes',
+	format 'CSV' );
+------------------------------------------------------------------------------------------------------
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER species_iucn_non_spatial_2_202607_fdw INTO foreign_data;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+    newname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name::text
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        newname := tbname || '_2';
+
+        RAISE NOTICE 'CREATING TABLE : foreign_data.%', newname;
+
+        EXECUTE format(
+            'CREATE TABLE foreign_data.%I AS SELECT * FROM foreign_data.%I',
+            newname,
+            tbname
+        );
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        EXECUTE format('DROP FOREIGN TABLE foreign_data.%I', tbname);
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+DROP SERVER IF EXISTS species_iucn_non_spatial_3_202607_fdw CASCADE;
+CREATE SERVER species_iucn_non_spatial_3_202607_fdw
+  FOREIGN DATA WRAPPER ogr_fdw
+  OPTIONS (
+	datasource '/data/swap/species_2026/nonspatial/endemics',
+	format 'CSV' );
+------------------------------------------------------------------------------------------------------
+IMPORT FOREIGN SCHEMA ogr_all FROM SERVER species_iucn_non_spatial_3_202607_fdw INTO foreign_data;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+    newname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name::text
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        newname := tbname || '_0';
+
+        RAISE NOTICE 'CREATING TABLE : foreign_data.%', newname;
+
+        EXECUTE format(
+            'CREATE TABLE foreign_data.%I AS SELECT * FROM foreign_data.%I',
+            newname,
+            tbname
+        );
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-------------------------------------------------------------------------------------------------------
+DO
+$$
+DECLARE
+    tbname name;
+BEGIN
+    FOR tbname IN
+        SELECT foreign_table_name
+        FROM information_schema._pg_foreign_tables
+        WHERE foreign_table_schema = 'foreign_data'
+    LOOP
+        EXECUTE format('DROP FOREIGN TABLE foreign_data.%I', tbname);
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+-------------------------------------------------------------------------------------------------------
+
+------ TO DO HERE!
+
+-------------------------------------------------------------------------------------------------------
+DROP SCHEMA foreign_data CASCADE;
+CREATE SCHEMA foreign_data;
+-------------------------------------------------------------------------------------------------------
+DROP SERVER IF EXISTS species_iucn_non_spatial_1_202607_fdw CASCADE;
+DROP SERVER IF EXISTS species_iucn_non_spatial_2_202607_fdw CASCADE;
+DROP SERVER IF EXISTS species_iucn_non_spatial_3202607_fdw CASCADE;
+-------------------------------------------------------------------------------------------------------
 CREATE TABLE species_2026.spatial_sharks_rays_chimaeras AS
 SELECT
 fid,geom,id_no,sci_name::text,presence,origin,seasonal,compiler::text,yrcompiled,citation::text,subspecies::text,subpop::text,source::text,island::text,tax_comm::text,dist_comm::text,generalisd,legend::text,kingdom::text,phylum::text,class::text,order_::text,family::text,genus::text,category::text,marine::text,terrestria::text,freshwater::text,shape_leng,shape_area
