@@ -657,4 +657,26 @@ DROP TABLE IF EXISTS species_2026.class_species_country CASCADE;
 CREATE TABLE species_2026.class_species_country AS
 SELECT * FROM mt_country ORDER BY code;
 
+------------------------------------------------------------------------------------------
+--CLEAN spatial if missing in attributes. NONE DELETED
+------------------------------------------------------------------------------------------
+DELETE FROM species_2026.spatial_corals
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'corals');
+
+DELETE FROM species_2026.spatial_sharks
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'sharks');
+
+DELETE FROM species_2026.spatial_amphibians
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'amphibians');
+
+DELETE FROM species_2026.spatial_reptiles
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'reptiles');
+
+DELETE FROM species_2026.spatial_birds
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'birds');
+
+DELETE FROM species_2026.spatial_mammals
+WHERE id_no NOT IN (SELECT id_no FROM species_2026.dopa_species WHERE taxon = 'mammals');
+
+
 
