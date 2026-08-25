@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#launch it as ./range_amphibians_by_qid.sh > logs/range_amphibians_by_qid.log 2>&1 &
+#repeat for all the other systematic groups
+
 set -euo pipefail
 
 HOST="xxx"
