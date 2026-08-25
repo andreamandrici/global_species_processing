@@ -2,10 +2,10 @@
 
 set -euo pipefail
 
-HOST="s-jrciprap321p.jrc.it"
-PORT="5434"
-USER="h05ibex"
-DB="wolfe"
+HOST="xxx"
+PORT="xxx"
+USER="xxx"
+DB="xxx"
 
 SCHEMA="species_2026_amphibians"
 TABLE="h_flat"
