@@ -1,11 +1,12 @@
 SELECT * FROM species_2026.dopa_species WHERE binomial ='Puffinus puffinus';
 SELECT * FROM species_2026.species_ranges_check_by_years WHERE id_no=22698226;
 
-SELECT * FROM species_2026_corals.corals_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC;
-SELECT * FROM species_2026_sharks.sharks_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC;
-SELECT * FROM species_2026_amphibians.amphibians_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC;
-SELECT * FROM species_2026_reptiles.reptiles_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC;
-SELECT * FROM species_2026_mammals.mammals_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC;
+SELECT * FROM species_2026_corals.corals_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC; --max 10 tiles
+SELECT * FROM species_2026_sharks.sharks_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC; --max 12 tiles
+SELECT * FROM species_2026_amphibians.amphibians_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC; --max 8 tiles
+SELECT * FROM species_2026_reptiles.reptiles_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC; --max 2112 tiles,forse 4 specie
+SELECT * FROM species_2026_birds.birds_qid_check WHERE lost_qids > 100 ORDER BY lost_qids DESC; --max 16546 tiles, 1900 specie
+SELECT * FROM species_2026_mammals.mammals_qid_check WHERE lost_qids > 0 ORDER BY lost_qids DESC; --max 8944 tiles, 5 specie
 
 SELECT * FROM species_2026.species_ranges_check_by_years WHERE id_no=6494
 SELECT * FROM species_2026_reptiles.reptiles_qid_check WHERE id_no=6494 --20195
