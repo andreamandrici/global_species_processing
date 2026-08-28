@@ -15,3 +15,19 @@ SELECT DISTINCT fid id_no,qid FROM species_2026_reptiles.c_raster_reptiles WHERE
 SELECT DISTINCT fid id_no,qid FROM species_2026_reptiles.da_tiled_reptiles WHERE fid=6494 --18083
 SELECT DISTINCT fid id_no,qid FROM species_2026_reptiles.dc_tiled_all WHERE fid=6494 --18083
 SELECT DISTINCT qid FROM species_2026_reptiles.h_flat WHERE reptiles && '{6494}' --18083
+
+SELECT * FROM species_2026.species_ranges_check_by_years WHERE id_no=22697879
+SELECT * FROM species_2026_birds.birds_qid_check WHERE id_no=22697879 --16546
+SELECT DISTINCT fid id_no,qid FROM species_2026_birds.b_clip_birds WHERE fid=22697879 --1803
+SELECT DISTINCT fid id_no,qid FROM species_2026_birds.c_raster_birds WHERE fid=22697879 --1799
+SELECT DISTINCT fid id_no,qid FROM species_2026_birds.da_tiled_birds WHERE fid=22697879 --1793
+SELECT DISTINCT fid id_no,qid FROM species_2026_birds.dc_tiled_all WHERE fid=22697879 --1793
+SELECT DISTINCT qid FROM species_2026_birds.h_flat WHERE birds && '{22697879}' --1530
+
+SELECT * FROM species_2026.species_ranges_check_by_years WHERE id_no=2477
+SELECT * FROM species_2026_mammals.mammals_qid_check WHERE id_no=2477 --8944
+SELECT DISTINCT fid id_no,qid FROM species_2026_mammals.b_clip_mammals WHERE fid=2477 --29426
+SELECT DISTINCT fid id_no,qid FROM species_2026_mammals.c_raster_mammals WHERE fid=2477 --29426
+SELECT DISTINCT fid id_no,qid FROM species_2026_mammals.da_tiled_mammals WHERE fid=2477 --29420
+SELECT DISTINCT fid id_no,qid FROM species_2026_mammals.dc_tiled_all WHERE fid=2477 --29420
+SELECT DISTINCT qid FROM species_2026_mammals.h_flat WHERE mammals && '{2477}' --29420
