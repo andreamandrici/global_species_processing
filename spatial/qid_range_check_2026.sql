@@ -13,3 +13,5 @@ ROUND((ry26::numeric/ry23::numeric*100::numeric),2) c23
 FROM species_2026.species_ranges_check_by_years JOIN a USING(id_no)
 ORDER BY o,lost_qids DESC,id_no ;
 SELECT * FROM selected_species_range_qid;
+CREATE TABLE species_2026_reptiles.reptiles_tmp_check AS (SELECT * FROM species_2026_reptiles.h_flat WHERE reptiles && '{6494}');
+CREATE TABLE species_2026_mammals.mammals_tmp_check AS (SELECT * FROM species_2026_mammals.h_flat WHERE mammals && '{2477}');
